@@ -1,0 +1,16 @@
+{
+    "FullName" : "Sachin Dev Tomar",
+    "FirstName" : "Sachin",
+    "CurrentRole" : "Senior Software Engineer",
+    "DOB": "1996-06-22",
+    "ProfilePicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/official%20pic%20(1).jpg?alt=media&token=048e8b76-b9e7-440c-b151-f7365896f694",
+    "Expertise": ["Web Development", "UI/UX", "System Designing", ".Net Service Side Coding", "Mentoring"],
+    "FBLink":"https://www.facebook.com/s4004/",
+    "LinkedInLink":"https://www.linkedin.com/in/sachin-dev-tomar-1aa3b8107/",
+    "GitHubLink":"https://github.com/sachindevtomar",
+    "Twitter":"https://twitter.com/SachinDevTomar1",
+    "HackerRankLink":"https://www.hackerrank.com/sachin131",
+    "InstagramLink":"https://www.instagram.com/sachindevtomar/",
+    "MobileNumbers":["7906701366","8439113560"],
+    "WorkStarted": "2018-07-30"
+}

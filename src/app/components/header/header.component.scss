@@ -4,3 +4,22 @@
     background-color: $primary-light-color;
     color: $primary-dark-color;
 }
+
+.custom-nav-menu{
+    margin: 0px 20px 0px 20px;
+}
+
+.activeNav{
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, $primary-color, $secondary-color);
+}
+
+.nav-link:not(.activeNav):hover{
+    box-shadow: 5px 5px 5px #888888;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+    margin: -1px;
+}
