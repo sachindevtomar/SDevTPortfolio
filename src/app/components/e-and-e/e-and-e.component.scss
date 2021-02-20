@@ -12,9 +12,20 @@ $time: 6s;
     height: 92vh;
 }
 
+#loading-text{
+    position: relative;
+    top: 60%;
+    text-align: center;
+    font-style: italic;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .wrap {
   position: relative;
-  top: 50%;
+  top: 35%;
   left: 50%;
   width: 0; 
   height: 0; 
@@ -40,9 +51,9 @@ $time: 6s;
 @for $i from 1 through $total {
   $z: (random(360) * 1deg); // random angle to rotateZ
   $y: (random(360) * 1deg); // random to rotateX
-  $dotBGColor: #2D127C;
+  $dotBGColor: $secondary-color;
   @if $i%2==0 {
-    $dotBGColor: #00c4cc;
+    $dotBGColor: $primary-color;
   } 
 
   .c:nth-child(#{$i}){ // grab the nth particle
