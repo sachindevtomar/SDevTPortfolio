@@ -1,0 +1,79 @@
+@import "../styles.scss";
+
+// best in chrome
+$total: 500; // total particles
+$orb-size: 100px;
+$particle-size: 2px;
+$time: 7s; 
+
+.full-animation-div{
+    overflow: hidden;
+    background-color: black;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+#loading-text{
+    position: relative;
+    top: 60%;
+    text-align: center;
+    font-style: italic;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.animation-wrap-div {
+  position: relative;
+  top: 35%;
+  left: 50%;
+  width: 0; 
+  height: 0; 
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  animation: rotate $time 1; // rotate orb
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+.animation-dot {
+  position: absolute;
+  width: $particle-size;
+  height: $particle-size;
+  border-radius: 50%;
+  opacity: 0; 
+}
+
+@for $i from 1 through $total {
+  $z: (random(360) * 1deg); // random angle to rotateZ
+  $y: (random(360) * 1deg); // random to rotateX
+  $dotBGColor: $secondary-color;
+  @if $i%2==0 {
+    $dotBGColor: $primary-color;
+  } 
+
+  .animation-dot:nth-child(#{$i}){ // grab the nth particle
+    animation: orbit#{$i} $time 1;
+    animation-delay: ($i * .005s); 
+    background-color: $dotBGColor;
+  }
+
+  @keyframes orbit#{$i}{ 
+    10% {
+      opacity: 1; // fade in
+    }
+    30% {
+      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z); // form orb
+    }
+    100% {
+      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z); // hold orb state 30-80
+      opacity: 1; // hold opacity 20-80
+    }
+  }
+}

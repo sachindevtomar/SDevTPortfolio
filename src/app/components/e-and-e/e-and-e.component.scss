@@ -6,7 +6,7 @@ $orb-size: 100px;
 $particle-size: 2px;
 $time: 6s; 
 
-.full{
+.full-animation-div{
     overflow: hidden;
     background-color: black;
     height: 92vh;
@@ -23,7 +23,7 @@ $time: 6s;
     -webkit-text-fill-color: transparent;
 }
 
-.wrap {
+.animation-wrap-div {
   position: relative;
   top: 35%;
   left: 50%;
@@ -40,7 +40,7 @@ $time: 6s;
   }
 }
 
-.c {
+.animation-dot {
   position: absolute;
   width: $particle-size;
   height: $particle-size;
@@ -56,7 +56,7 @@ $time: 6s;
     $dotBGColor: $primary-color;
   } 
 
-  .c:nth-child(#{$i}){ // grab the nth particle
+  .animation-dot:nth-child(#{$i}){ // grab the nth particle
     animation: orbit#{$i} $time infinite;
     animation-delay: ($i * .005s); 
     background-color: $dotBGColor;
