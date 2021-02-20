@@ -11,7 +11,7 @@
 }
 
 #home-into-text{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 #home-custom-cursor{
@@ -29,3 +29,13 @@
     50%  {opacity: 0;}
     100% {opacity: 1;}
 }
+
+@media screen and (max-width: 480px) {
+    #home-into-text{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    #home-custom-cursor{
+        font-size: 27px;
+    }
+  }

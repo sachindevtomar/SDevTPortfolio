@@ -29,15 +29,22 @@ export class HomeComponent implements OnInit {
     var currentExpertise = this.data.Expertise[0];
     var currentExpertiseLength = 0;
     var shouldIncreaseExpertiseLength = true;
+    var waitForOneSecond = 0;
+    var speedForTypewriter = 50;
 
     this.timerId = setInterval(() => {
 
       if(!shouldChangeExpertise){
         if(currentExpertiseLength>=0){
-          if(shouldIncreaseExpertiseLength){
+          if(shouldIncreaseExpertiseLength && waitForOneSecond === 0){
             currentExpertiseLength++;
-            if(currentExpertiseLength === currentExpertise.length)
+            if(currentExpertiseLength === currentExpertise.length){
               shouldIncreaseExpertiseLength = false;
+              waitForOneSecond = 10
+            }
+          }
+          else if(waitForOneSecond > 0){
+            waitForOneSecond--;
           }
           else{
             currentExpertiseLength--;
@@ -57,7 +64,7 @@ export class HomeComponent implements OnInit {
       
       this.intoText = "I am into " + currentExpertise.substring(0,currentExpertiseLength);
 
-    }, 100);
+    }, speedForTypewriter);
   }
 
 }
