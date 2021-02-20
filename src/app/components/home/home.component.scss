@@ -1,15 +1,14 @@
 @import "../../../styles.scss";
 
 .complete-home-div{
-    height: 88vh;
-    background-color: gold;
+    height: 92vh;
+    background-color: rgb(221, 228, 236);
 }
 
 .center-content{
-    padding-top: 60px;
     width: 100%;
+    padding-top: 60px;
     text-align: center;
-    background-color:honeydew;
 }
 
 #home-custom-cursor{
@@ -32,6 +31,22 @@
     font-size: 3em;
     margin: 10px 15px 10px 15px;
     color:black;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.font-awesome-icon:hover{
+    transform: scale(1.2);
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#full-name-text{
     background: -webkit-linear-gradient($secondary-color, $primary-color);
     -webkit-background-clip: text;
     background-clip: text;
