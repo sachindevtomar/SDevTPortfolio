@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .complete-home-div{
     height: 88vh;
     background-color: gold;
@@ -8,10 +10,6 @@
     width: 100%;
     text-align: center;
     background-color:honeydew;
-}
-
-#home-into-text{
-    margin-top: 0px;
 }
 
 #home-custom-cursor{
@@ -30,12 +28,42 @@
     100% {opacity: 1;}
 }
 
+.font-awesome-icon{
+    font-size: 3em;
+    margin: 10px 15px 10px 15px;
+    color:black;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-pic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#social-media-div{
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 480px) {
     #home-into-text{
-        font-size: 15px;
-        margin-top: 0px;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     #home-custom-cursor{
         font-size: 27px;
     }
-  }
+    .font-awesome-icon{
+        font-size: 2em;
+        margin: 10px;
+    }
+    .profile-pic{
+        margin-top: 30px;
+    }
+    #social-media-div{
+        margin-top: 10px;
+    }
+}

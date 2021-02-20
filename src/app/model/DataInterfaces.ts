@@ -6,6 +6,7 @@ export interface Data {
     ProfilePicURL: String;
     Expertise: String[];
     FBLink:String;
+    GooglePlus:String;
     LinkedInLink:String;
     GitHubLink:String;
     Twitter:String;

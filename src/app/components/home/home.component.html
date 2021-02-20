@@ -3,5 +3,14 @@
         <h3 id>Hi👋, I'm <b>{{data.FullName}}</b></h3>
         <img class="img-fluid rounded-circle profile-pic" src={{data.ProfilePicURL}} alt="Profile Pic" width="150">
         <h3 id="home-into-text">{{intoText}}<span id="home-cursor-span"><h1 id="home-custom-cursor">I</h1></span></h3>
+
+        <div id="social-media-div">
+            <a [href]="data.GitHubLink" target="_blank"><i class="fab fa-github font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.LinkedInLink" target="_blank"><i class="fab fa-linkedin-in font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.FBLink" target="_blank"><i class="fab fa-facebook font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.GooglePlus" target="_blank"><i class="fab fa-google-plus font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.Twitter" target="_blank"><i class="fab fa-twitter font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.HackerRankLink" target="_blank"><i class="fab fa-hackerrank font-awesome-icon" aria-hidden="true"></i></a>
+        </div>
     </div>
 </div>
