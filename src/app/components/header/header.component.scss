@@ -5,6 +5,14 @@
     color: $primary-dark-color;
 }
 
+.navbar-toggler-option{
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+
 .custom-nav-menu{
     margin: 0px 20px 0px 20px;
     font-weight: bold;

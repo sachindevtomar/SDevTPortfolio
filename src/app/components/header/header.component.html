@@ -1,10 +1,11 @@
 <nav class="navbar navbar-light navbar-expand-md fixed-top" id="navbar">
     <img src="../../../assets/img/logo.PNG" width="100px" height="40px">
     <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars navbar-toggler-option" *ngIf="isNavbarCollapsed"></i>
+        <i class="fas fa-angle-double-up navbar-toggler-option" *ngIf="!isNavbarCollapsed"></i>
     </button>
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse justify-content-end" id="navbarsDefault">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" (click)="isNavbarCollapsed = !isNavbarCollapsed">
             <li class="nav-item custom-nav-menu">
                 <a class="nav-link" routerLink="/home" routerLinkActive="activeNav">Home</a>
             </li>
