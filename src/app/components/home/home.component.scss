@@ -9,3 +9,23 @@
     text-align: center;
     background-color:honeydew;
 }
+
+#home-into-text{
+    margin-top: 20px;
+}
+
+#home-custom-cursor{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    animation-name: blink;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@keyframes blink {
+    0%   {opacity: 1;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
