@@ -11,8 +11,55 @@
     //background-image: linear-gradient(to top, rgba(0,196,204, 0.5), rgba(45,18,124, 0.5));
     background-color: rgba($color: #000000, $alpha: 0.5 );
     height: 92vh;
+    padding: 20px;
 }
 
-.texth{
-    color: White;
+.section-title p::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    background-image: linear-gradient(to right, $secondary-color , $primary-color);
+    margin: 4px 10px;
+}
+
+.title-text{
+    color: whitesmoke;
+    letter-spacing: 0.2em;
+}
+
+.pic-content{
+    
+}
+
+.intro-content{
+    
+}
+
+.pic-img{
+    border-radius: 50px;
+}
+
+.primary-name-text{
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .content-div {
+        padding: 10px;
+    }
+    .intro-content{
+        margin-top: 20px;
+    }
+    .primary-name-text{
+        background: -webkit-linear-gradient($primary-color, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
 }

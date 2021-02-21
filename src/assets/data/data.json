@@ -2,11 +2,19 @@
     "FullName" : "Sachin Dev Tomar",
     "FirstName" : "Sachin",
     "CurrentRole" : "Senior Software Engineer",
-    "DOB": "1996-06-22",
     "ProfilePicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/official%20pic%20(1).jpg?alt=media&token=60e20e4f-1a7a-48c6-a252-7c0016ace906",
     "Expertise": ["Web Development", "UI/UX", "System Designing", ".Net Service Side Coding", "Mentoring"],
     "SocialMediaLinks":["https://www.facebook.com/s4004/","https://www.linkedin.com/in/sachin-dev-tomar-1aa3b8107/", "https://github.com/sachindevtomar", "https://twitter.com/SachinDevTomar1", "https://www.hackerrank.com/sachin131", "https://www.instagram.com/sachindevtomar/","mailto:tomarsachindev@gmail.com"],
     "MobileNumbers":["7906701366","8439113560"],
     "WorkStarted": "2018-07-30",
-    "Interests":["Competitive Coding", "Music", "Playing Cricket", "Video Games", "Debugging", "Travelling"]
+    "Interests":["Competitive Coding", "Music", "Playing Cricket", "Video Games", "Debugging", "Travelling"],
+    "Intro":{
+        "Short": "I am a Computer Science Graduate from Dr. A.P.J. Abdul Kalam Technical University Uttar Pradesh",
+        "Long": "I am having 2.5+ years of experience in IT industries and contributed in each phase of development lifecycle which helped my current organization to deliver products on time. I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and for the success of the organization.",
+        "Graduation": "Bachelor of technology",
+        "Hometown": "Agra",
+        "State": "Uttar Pradesh",
+        "EmailId": "tomarsachindev@gmail.com",
+        "DOB": "1996-06-22"
+    }
 }
