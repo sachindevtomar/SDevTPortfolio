@@ -5,13 +5,8 @@
     "DOB": "1996-06-22",
     "ProfilePicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/official%20pic%20(1).jpg?alt=media&token=60e20e4f-1a7a-48c6-a252-7c0016ace906",
     "Expertise": ["Web Development", "UI/UX", "System Designing", ".Net Service Side Coding", "Mentoring"],
-    "FBLink":"https://www.facebook.com/s4004/",
-    "LinkedInLink":"https://www.linkedin.com/in/sachin-dev-tomar-1aa3b8107/",
-    "GitHubLink":"https://github.com/sachindevtomar",
-    "Twitter":"https://twitter.com/SachinDevTomar1",
-    "HackerRankLink":"https://www.hackerrank.com/sachin131",
-    "InstagramLink":"https://www.instagram.com/sachindevtomar/",
-    "GooglePlus":"mailto:tomarsachindev@gmail.com",
+    "SocialMediaLinks":["https://www.facebook.com/s4004/","https://www.linkedin.com/in/sachin-dev-tomar-1aa3b8107/", "https://github.com/sachindevtomar", "https://twitter.com/SachinDevTomar1", "https://www.hackerrank.com/sachin131", "https://www.instagram.com/sachindevtomar/","mailto:tomarsachindev@gmail.com"],
     "MobileNumbers":["7906701366","8439113560"],
-    "WorkStarted": "2018-07-30"
+    "WorkStarted": "2018-07-30",
+    "Interests":["Competitive Coding", "Music", "Playing Cricket", "Video Games", "Debugging", "Travelling"]
 }

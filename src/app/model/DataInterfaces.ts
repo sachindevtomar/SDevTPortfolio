@@ -5,13 +5,8 @@ export interface Data {
     DOB: String;
     ProfilePicURL: String;
     Expertise: String[];
-    FBLink:String;
-    GooglePlus:String;
-    LinkedInLink:String;
-    GitHubLink:String;
-    Twitter:String;
-    HackerRankLink:String;
-    InstagramLink:String;
+    SocialMediaLinks:String[];
     MobileNumbers:String[];
     WorkStarted: String;
+    Interests: String[];
 }
