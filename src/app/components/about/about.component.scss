@@ -1,17 +1,21 @@
 @import "../../../styles.scss";
 
 .full-div {
-    height: 92vh;
     background-image: url("../../../assets/img/Main-Desktop-Background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 92vh;
   }
 .content-div {
     //background-image: linear-gradient(to top, rgba(0,196,204, 0.5), rgba(45,18,124, 0.5));
     background-color: rgba($color: #000000, $alpha: 0.5 );
-    height: 92vh;
     padding: 20px;
+}
+
+.section-title{
+    margin-left: 15px;
 }
 
 .section-title p::after {
@@ -33,7 +37,7 @@
 }
 
 .intro-content{
-    
+    margin-top: 10px;
 }
 
 .pic-img{
@@ -46,6 +50,18 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+}
+
+.plain-text{
+    color: white;
+}
+
+.grid-text-2{
+    margin-top: 15px;
+}
+
+.grid-text-span-i{
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 480px) {
@@ -61,5 +77,15 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
+    }
+    .grid-text-2{
+        margin-top: 0px;
+    }
+    .grid-text-common{
+        margin-top: 8px;
+        padding-left: 0px;
+    }
+    .grid-text-span-i{
+        margin-right: 5px;
     }
 }

@@ -1,7 +1,7 @@
 <div class="full-div">
     <div class="content-div container">
         <section id="aboutme">
-            <div class="container">
+            <div class="">
                 <div class="row section-title">
                     <p class="title-text">ABOUT ME</p>
                 </div>
@@ -11,6 +11,26 @@
                     </div>
                     <div class="intro-content col-md-9 col-xs-12">
                         <h3 class="primary-name-text">Hello! I am {{data.FullName}}</h3>
+                        <p class="plain-text">{{data.Intro.Short}}</p>
+                        <div class="container grid-text">
+                            <div class="row grid-text-1">
+                                <div class="grid-text-11 col-md-6 grid-text-common">
+                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Birthday : </strong>{{data.Intro.DOB.toString() | date}}</p>
+                                </div>
+                                <div class="grid-text-12 col-md-6 grid-text-common">
+                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Degree : </strong>{{data.Intro.Graduation}}</p>
+                                </div>
+                            </div>
+                            <div class="row grid-text-2">
+                                <div class="grid-text-21 col-md-6 grid-text-common">
+                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Hometown : </strong>{{data.Intro.Hometown}}, {{data.Intro.State}}</p>
+                                </div>
+                                <div class="grid-text-22 col-md-6 grid-text-common">
+                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Email : </strong>{{data.Intro.EmailId}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="plain-text">{{data.Intro.Long}}</p>
                     </div>
                 </div>
             </div>
