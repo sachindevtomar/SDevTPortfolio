@@ -33,7 +33,7 @@ export class AppComponent {
     setTimeout(() => {
       clearInterval(this.timerId);
       setTimeout(() => { this.showLoading = false; }, 500)
-    }, 7000);
+    }, 1000);
   }
 
   loadingTextAnimation():void{
