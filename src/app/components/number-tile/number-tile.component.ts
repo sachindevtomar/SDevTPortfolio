@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NumberTile } from 'src/app/model/DataInterfaces';
 
 @Component({
   selector: 'app-number-tile',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./number-tile.component.scss']
 })
 export class NumberTileComponent implements OnInit {
+  @Input() numberTile: NumberTile;
 
   constructor() { }
 

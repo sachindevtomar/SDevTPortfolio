@@ -33,9 +33,9 @@
                         <p class="plain-text">{{data.Intro.Long}}</p>
                     </div>
 
-                    <div class="row col-md-12 tile-section-main-div">
-                        <div class="col-md-3" *ngFor="let numberTile of data.NumberTiles">
-                            <app-number-tile> </app-number-tile>
+                    <div class="row col-md-12 col-xs-12 tile-section-main-div">
+                        <div class="col-md-3 col-xs-12 tile-section-single-div" *ngFor="let numberTile of data.NumberTiles">
+                            <app-number-tile [numberTile]="numberTile"> </app-number-tile>
                         </div>
                     </div>
                 </div>
