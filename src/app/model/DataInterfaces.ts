@@ -3,6 +3,7 @@ export interface Data {
     FirstName : String;
     CurrentRole : String;
     ProfilePicURL: String;
+    SecondaryPicURL: String;
     Expertise: String[];
     SocialMediaLinks:String[];
     MobileNumbers:String[];
