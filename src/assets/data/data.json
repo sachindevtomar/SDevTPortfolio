@@ -16,5 +16,23 @@
         "State": "Uttar Pradesh",
         "EmailId": "tomarsachindev@gmail.com",
         "DOB": "1996-06-22"
-    }
+    },
+    "NumberTiles":[
+        {"Name": "Internships",
+        "Count": 2,
+        "FontAwesomeClass": "fas fa-id-card-alt"
+        },{
+            "Name": "Certifications",
+            "Count": 9,
+            "FontAwesomeClass": "fas fa-award"
+        },{
+            "Name": "Organizations",
+            "Count": 3,
+            "FontAwesomeClass": "fas fa-landmark"
+        },{
+            "Name": "Projects",
+            "Count": 4,
+            "FontAwesomeClass": "fas fa-laptop-code"
+        }
+    ]
 }

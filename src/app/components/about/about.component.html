@@ -11,7 +11,7 @@
                     </div>
                     <div class="intro-content col-md-9 col-xs-12">
                         <h3 class="primary-name-text">Hello! I am {{data.FullName}}</h3>
-                        <p class="plain-text">{{data.Intro.Short}}</p>
+                        <em><p class="plain-text">{{data.Intro.Short}}</p></em>
                         <div class="container grid-text">
                             <div class="row grid-text-1">
                                 <div class="grid-text-11 col-md-6 grid-text-common">
@@ -31,6 +31,12 @@
                             </div>
                         </div>
                         <p class="plain-text">{{data.Intro.Long}}</p>
+                    </div>
+
+                    <div class="row col-md-12 tile-section-main-div">
+                        <div class="col-md-3" *ngFor="let numberTile of data.NumberTiles">
+                            <app-number-tile> </app-number-tile>
+                        </div>
                     </div>
                 </div>
             </div>

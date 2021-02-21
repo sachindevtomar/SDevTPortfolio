@@ -45,7 +45,7 @@
 }
 
 .primary-name-text{
-    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    background: -webkit-linear-gradient($primary-color, white);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -63,7 +63,9 @@
 .grid-text-span-i{
     margin-right: 10px;
 }
-
+.tile-section-main-div{
+    margin-top: 20px;
+}
 @media screen and (max-width: 480px) {
     .content-div {
         padding: 10px;

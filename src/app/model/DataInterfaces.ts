@@ -9,6 +9,7 @@ export interface Data {
     WorkStarted: String;
     Interests: String[];
     Intro: Intro;
+    NumberTiles: NumberTile[];
 }
 
 export interface Intro {
@@ -19,4 +20,10 @@ export interface Intro {
     State:String;
     EmailId:String;
     DOB: String;
+}
+
+export interface NumberTile {
+    Name:String;
+    Count:Number;
+    FontAwesomeClass:String;
 }
