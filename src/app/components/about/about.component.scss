@@ -1,35 +1,12 @@
 @import "../../../styles.scss";
 
 .full-div {
-    background-image: url("../../../assets/img/Main-Desktop-Background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     min-height: 92vh;
   }
 .content-div {
     //background-image: linear-gradient(to top, rgba(0,196,204, 0.5), rgba(45,18,124, 0.5));
     background-color: rgba($color: #000000, $alpha: 0.5 );
     padding: 20px;
-}
-
-.section-title{
-    margin-left: 15px;
-}
-
-.section-title p::after {
-    content: "";
-    width: 120px;
-    height: 3px;
-    display: inline-block;
-    background-image: linear-gradient(to right, $secondary-color , $primary-color);
-    margin: 4px 10px;
-}
-
-.title-text{
-    color: whitesmoke;
-    letter-spacing: 0.2em;
 }
 
 .intro-content{

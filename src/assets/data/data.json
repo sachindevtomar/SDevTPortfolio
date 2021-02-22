@@ -35,5 +35,43 @@
             "Count": 4,
             "FontAwesomeClass": "fas fa-laptop-code"
         }
+    ],
+    "WorkExperience":[
+        {
+            "CompanyName":"Ivy (Entain Group)",
+            "Location":"Hyderabad, Telangana, India",
+            "Position":"Senior Software Engineer",
+            "StartDate": "2021-01-04",
+            "EndDate": "",
+            "Responsibilities":[""],
+            "logoUrl":"../../../assets/img/ivy_logo.jpg"
+        },
+        {
+            "CompanyName":"MAQ Software",
+            "Location":"Hyderabad, Telangana, India",
+            "Position":"Software Engineer 2",
+            "StartDate": "2020-02-28",
+            "EndDate": "2020-12-29",
+            "Responsibilities":["Created .Net Core Microservices with complete Dev/Prod Release and Build Pipelines.","Worked on every stage of development (Design, Implementation, Testing, deployment).","Interacted with clients in a daily stand ups and gathered requirements.","Worked with Continuous Integration Methodology and DevOps.","Performed Load Testing for the Web API over multiple platforms.","Created custom visual using d3.js for PowerBI and Web Applications."],
+            "logoUrl":"../../../assets/img/maq_logo.jpg"
+        },
+        {
+            "CompanyName":"MAQ Software",
+            "Location":"Hyderabad, Telangana, India",
+            "Position":"Software Engineer 1",
+            "StartDate": "2018-07-30",
+            "EndDate": "2020-02-27",
+            "Responsibilities":["MCSA Certified and also Completed Microsoft's certification on SQL, Power BI, Azure.","Created design documents for the new PBIs and fixed the dev and prod build failures.","Worked on Recommendation Engine, Business Rules, GDPR, ML POCs.","Wrote Unit, smoke and integration tests and also wrote front end test cases using jasmine and karma framework."],
+            "logoUrl":"../../../assets/img/maq_logo.jpg"
+        },
+        {
+            "CompanyName":"Tata Consultancy Services",
+            "Location":"Lucknow, Uttar Pradesh, India",
+            "Position":"Intern",
+            "StartDate": "2017-06-14",
+            "EndDate": "2017-07-19",
+            "Responsibilities":["Developed an android application for the Jeev Aashraya (a Lucknow based NGO).","It has an user friendly interface and helps user to directly connect to the Jeev Ashraya.","It has features like Goggle map routes, Google signin, NewsFeed, Localization etc."],
+            "logoUrl":"../../../assets/img/tcs_logo.jpg"
+        }
     ]
 }
