@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { AboutComponent } from './components/about/about.component';
 import { NumberTileComponent } from './components/number-tile/number-tile.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { OrderByPipe } from './pipes/order-by.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     SkillsComponent,
     AboutComponent,
     NumberTileComponent,
-    ExperienceComponent
+    ExperienceComponent, 
+    OrderByPipe
   ],
   imports: [
     BrowserModule,

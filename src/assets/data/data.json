@@ -69,6 +69,7 @@
             "CompanyName": "Ivy (Entain Group)",
             "Location": "Hyderabad, Telangana, India",
             "LogoUrl": "../../../assets/img/ivy_logo.jpg",
+            "OrderInUI": 1,
             "MoreInfos": [
                 {
                     "Position": "Senior Software Engineer",
@@ -87,7 +88,8 @@
             "CompanyName": "MAQ Software",
             "Location": "Hyderabad, Telangana, India",
             "LogoUrl": "../../../assets/img/maq_logo.jpg",
-            "MoreInfo": [
+            "OrderInUI": 2,
+            "MoreInfos": [
                 {
                     "Position": "Software Engineer 2",
                     "StartDate": "2020-02-28",
@@ -118,7 +120,8 @@
             "CompanyName": "Tata Consultancy Services",
             "Location": "Lucknow, Uttar Pradesh, India",
             "LogoUrl": "../../../assets/img/tcs_logo.jpg",
-            "MoreInfo": [
+            "OrderInUI": 3,
+            "MoreInfos": [
                 {
                     "Position": "Intern",
                     "StartDate": "2017-06-14",

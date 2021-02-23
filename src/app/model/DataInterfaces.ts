@@ -34,7 +34,8 @@ export interface WorkExperience {
     CompanyName:String;
     Location:String;
     LogoUrl:String;
-    MoreInfos:MoreInfo[];
+    OrderInUI: Number,
+    MoreInfos: MoreInfo[];
 }
 
 export interface MoreInfo {

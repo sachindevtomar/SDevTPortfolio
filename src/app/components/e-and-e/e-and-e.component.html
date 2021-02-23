@@ -5,8 +5,8 @@
                 <p class="title-text">Work Experience</p>
             </div>
             <div class="row section-content">
-                <div>
-
+                <div *ngFor="let exp of data.WorkExperiences | orderBy: 'OrderInUI'">
+                    <app-experience [exp]="exp"></app-experience>
                 </div>
             </div>
         </section>
