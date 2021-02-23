@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import fullData from '../../../assets/data/data.json';
+import {Data} from '../../model/DataInterfaces';
 
 @Component({
   selector: 'app-e-and-e',
@@ -6,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./e-and-e.component.scss']
 })
 export class EAndEComponent implements OnInit {
-
+  data: Data = fullData;
+  
   constructor() { }
 
   ngOnInit(): void {

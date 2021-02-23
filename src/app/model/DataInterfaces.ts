@@ -11,6 +11,7 @@ export interface Data {
     Interests: String[];
     Intro: Intro;
     NumberTiles: NumberTile[];
+    WorkExperiences: WorkExperience[];
 }
 
 export interface Intro {
@@ -27,4 +28,18 @@ export interface NumberTile {
     Name:String;
     Count:Number;
     FontAwesomeClass:String;
+}
+
+export interface WorkExperience {
+    CompanyName:String;
+    Location:String;
+    LogoUrl:String;
+    MoreInfos:MoreInfo[];
+}
+
+export interface MoreInfo {
+    Position:String;
+    StartDate:String;
+    EndDate:String;
+    Responsibilities: String[];
 }
