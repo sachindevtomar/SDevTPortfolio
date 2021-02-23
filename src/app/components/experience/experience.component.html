@@ -1,1 +1,25 @@
-<p style="color: azure;">experience works! {{exp.CompanyName}}</p>
+<div class="row col-md-12">
+    <div class="logo-right-div col-md-2 col-xs-3" style="background-color: blueviolet;">
+        <img [src]="exp.LogoUrl" class="company-logo-img" width="80px" height="80px">
+    </div>
+    <div class="company-info-left-div col-md-10 col-xs-9" style="background-color: brown;">
+        <div *ngIf="exp.MoreInfos.length == 1; else multiplePositions">
+            <h4 class="themed-text plain-text">{{exp.MoreInfos[0].Position}}</h4>
+            <p class="plain-text">{{exp.CompanyName}}</p>
+            <p class="plain-text fade-text">{{exp.MoreInfos[0].StartDate.toString() | date: 'MMM YYYY'}} - {{(exp.MoreInfos[0].EndDate.toString() !== "") ? (exp.MoreInfos[0].EndDate.toString() | date: 'MMM YYYY') : "Present"}}</p>
+            <p class="plain-text fade-text">{{exp.Location}}</p>
+            <ng-container 
+             [ngTemplateOutlet]="keyResponsibilities" 
+             [ngTemplateOutletContext]="{experienceIndex:0}">
+            </ng-container>
+        </div>   
+
+        <ng-template #multiplePositions>content here...</ng-template>
+    </div>
+</div>
+
+<ng-template #keyResponsibilities let-experienceIndex='experienceIndex'>
+    <ul class="plain-text">
+        <li *ngFor="let item of exp.MoreInfos[experienceIndex].Responsibilities">{{item}}</li>
+    </ul>
+</ng-template>

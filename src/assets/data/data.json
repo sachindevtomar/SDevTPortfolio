@@ -68,7 +68,7 @@
         {
             "CompanyName": "Ivy (Entain Group)",
             "Location": "Hyderabad, Telangana, India",
-            "LogoUrl": "../../../assets/img/ivy_logo.jpg",
+            "LogoUrl": "../../../assets/img/ivy_logo.png",
             "OrderInUI": 1,
             "MoreInfos": [
                 {
@@ -87,7 +87,7 @@
         {
             "CompanyName": "MAQ Software",
             "Location": "Hyderabad, Telangana, India",
-            "LogoUrl": "../../../assets/img/maq_logo.jpg",
+            "LogoUrl": "../../../assets/img/maq_logo.png",
             "OrderInUI": 2,
             "MoreInfos": [
                 {

@@ -1,0 +1,24 @@
+@import "../../../styles.scss";
+
+.company-logo-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.themed-text{
+    background: -webkit-linear-gradient($primary-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.plain-text{
+    margin-bottom: 0em;
+    color:white;
+}
+
+.fade-text{
+    color:gray;
+}
