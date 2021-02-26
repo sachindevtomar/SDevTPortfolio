@@ -1,8 +1,8 @@
-<div class="row col-md-12">
-    <div class="logo-right-div col-md-2 col-xs-3" style="background-color: blueviolet;">
+<div class="row">
+    <div class="logo-right-div col-md-2 col-3" style="background-color: blueviolet;">
         <img [src]="exp.LogoUrl" class="company-logo-img" width="80px" height="80px">
     </div>
-    <div class="company-info-left-div col-md-10 col-xs-9" style="background-color: brown;">
+    <div class="company-info-left-div col-md-10 col-9" style="background-color: brown;">
         <ng-container
         [ngTemplateOutlet]="exp.MoreInfos.length == 1 ? singlePositions:multiplePositions" [ngTemplateOutletContext]="{experience:exp}">
         </ng-container>   
