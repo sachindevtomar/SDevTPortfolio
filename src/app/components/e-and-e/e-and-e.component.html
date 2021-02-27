@@ -22,7 +22,11 @@
                         <div class="edu-tile-inside">
                             <p class="edu-tile-image"><span><i class="fas fa-landmark edu-tile-image-icon"></i></span></p>
                             <div class="edu-tile-content">
-
+                                <h4 class="themed-text">{{edu.CourseName}}</h4>
+                                <p class="plain-text">{{edu.InstituteName}} , {{edu.Location}}</p>
+                                <p class="plain-text">{{edu.StartDate.toString() | date: 'YYYY'}} - {{edu.EndDate.toString() | date: 'YYYY'}}</p>
+                                <p class="plain-text">{{edu.Stream}}</p>
+                                <p class="plain-text">Percentage: <b>{{edu.Percentile}}</b></p>
                             </div>
                         </div>
                     </div>

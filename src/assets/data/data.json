@@ -137,8 +137,8 @@
     ],
     "Educations":[
         {
-            "InstituteName":"Feroze Gandhi Institute of Engineering and Technology",
-            "Location":"Raebareli, Uttar Pradesh, India",
+            "InstituteName":"FGIET",
+            "Location":"Raebareli",
             "Board": "AKTU",
             "CourseName": "Bachelor of Technology",
             "StartDate": "2014-06-1",
@@ -148,7 +148,7 @@
         },
         {
             "InstituteName":"Pt. G. R. S. Inter College",
-            "Location":"Agra, Uttar Pradesh, India",
+            "Location":"Agra",
             "Board":"UP Board",
             "CourseName": "Intermediate",
             "StartDate": "2011-06-1",
@@ -158,7 +158,7 @@
         },
         {
             "InstituteName":"Pt. G. R. S. Inter College",
-            "Location":"Agra, Uttar Pradesh, India",
+            "Location":"Agra",
             "Board":"UP Board",
             "CourseName": "High School",
             "StartDate": "2010-06-1",

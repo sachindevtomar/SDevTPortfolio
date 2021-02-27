@@ -36,7 +36,23 @@
     -webkit-text-fill-color: transparent;
     font-size: 30px;
 }
+.edu-tile-content{
+    margin-top: -40px;
+}
 
+.themed-text{
+    background: -webkit-linear-gradient($primary-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 0em;
+}
+
+.plain-text{
+    margin-bottom: 0em;
+    color:white;
+}
 @media screen and (max-width: 480px) {
     .edu-tile-full{
         margin-top: 20px;
