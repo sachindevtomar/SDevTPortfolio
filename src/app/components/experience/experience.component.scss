@@ -4,6 +4,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 80px;
+    height: 80px;
 }
 
 .themed-text{
@@ -12,6 +14,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    margin-bottom: 0em;
 }
 
 .plain-text{
@@ -21,4 +24,67 @@
 
 .fade-text{
     color:gray;
+}
+
+.custom-ul{
+    padding: 0;
+}
+
+.multiple-company-title-div{
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.multiple-exp-div{
+    margin-top: 20px;
+}
+
+.exp-connecting-dot-i{
+    background: -webkit-linear-gradient($primary-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5px;
+}
+
+.exp-connection-div{
+    text-align: center;
+    overflow: hidden;
+}
+
+.exp-connecting-line-div{
+    width: 3px;
+    height: 100%;
+    margin: auto;
+    margin-top: 25px;
+    background-image: linear-gradient(to top, white, $primary-color);
+}
+
+@media screen and (max-width: 480px) {
+    .company-logo-img{
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+    .multiple-company-title-div{
+        min-height: 70px;
+    }
+    .company-info-left-div, .multiple-exp-div {
+        .plain-text{
+            font-size: small;
+        }
+        .themed-text{
+            font-size: large;
+        }
+        .multiple-company-title-div{
+            .plain-text{
+                font-size: large;
+            }
+        }
+    }
+    .plain-text h4{
+        font-size: 1.0rem;
+        color:yellow;
+    }
 }

@@ -1,16 +1,34 @@
 <div class="row">
-    <div class="logo-right-div col-md-2 col-3" style="background-color: blueviolet;">
-        <img [src]="exp.LogoUrl" class="company-logo-img" width="80px" height="80px">
+    <div class="logo-right-div col-md-2 col-3">
+        <img [src]="exp.LogoUrl" class="company-logo-img" width="60px" height="60px">
     </div>
-    <div class="company-info-left-div col-md-10 col-9" style="background-color: brown;">
+    <div class="company-info-left-div col-md-10 col-9">
         <ng-container
         [ngTemplateOutlet]="exp.MoreInfos.length == 1 ? singlePositions:multiplePositions" [ngTemplateOutletContext]="{experience:exp}">
         </ng-container>   
     </div>
 </div>
 
+<div *ngIf="exp.MoreInfos.length > 1">
+    <div class="multiple-exp-div row" *ngFor="let info of exp.MoreInfos">
+        <div class="exp-connection-div col-md-2 col-3">
+            <i class="exp-connecting-dot-i fas fa-dot-circle"></i>
+            <div class="exp-connecting-line-div"></div>
+        </div>
+        <div class="col-md-10 col-9">
+            <h4 class="themed-text">{{info.Position}}</h4>
+            <p class="plain-text fade-text">{{info.StartDate.toString() | date: 'MMM YYYY'}} - {{(info.EndDate.toString() !== "") ? (info.EndDate.toString() | date: 'MMM YYYY') : "Present"}} ({{getDateDifference(info.StartDate.toString(), info.EndDate.toString())}})</p>
+            <p class="plain-text fade-text">{{exp.Location}}</p>
+            <ng-container 
+            [ngTemplateOutlet] = "keyResponsibilities"
+            [ngTemplateOutletContext]="{responsibilities:info.Responsibilities}">
+            </ng-container>
+        </div>
+    </div>
+</div>
+
 <ng-template #singlePositions let-experience='experience'> 
-    <h4 class="themed-text plain-text">{{exp.MoreInfos[0].Position}}</h4>
+    <h4 class="themed-text">{{exp.MoreInfos[0].Position}}</h4>
     <p class="plain-text">{{exp.CompanyName}}</p>
     <p class="plain-text fade-text">{{exp.MoreInfos[0].StartDate.toString() | date: 'MMM YYYY'}} - {{(exp.MoreInfos[0].EndDate.toString() !== "") ? (exp.MoreInfos[0].EndDate.toString() | date: 'MMM YYYY') : "Present"}} ({{getDateDifference(exp.MoreInfos[0].StartDate.toString(), exp.MoreInfos[0].EndDate.toString())}})</p>
     <p class="plain-text fade-text">{{exp.Location}}</p>
@@ -21,22 +39,16 @@
 </ng-template>
 
 <ng-template #multiplePositions let-experience='experience'> 
-    <h3 class="plain-text">{{experience.CompanyName}}</h3>
-    <p class="plain-text">{{getDateDifference(experience.MoreInfos[experience.MoreInfos.length -1].StartDate, experience.MoreInfos[0].EndDate)}}</p>
-    
-    <div *ngFor="let info of experience.MoreInfos">
-        <h4 class="themed-text plain-text">{{info.Position}}</h4>
-        <p class="plain-text fade-text">{{info.StartDate.toString() | date: 'MMM YYYY'}} - {{(info.EndDate.toString() !== "") ? (info.EndDate.toString() | date: 'MMM YYYY') : "Present"}} ({{getDateDifference(info.StartDate.toString(), info.EndDate.toString())}})</p>
-        <p class="plain-text fade-text">{{experience.Location}}</p>
-        <ng-container 
-        [ngTemplateOutlet] = "keyResponsibilities"
-        [ngTemplateOutletContext]="{responsibilities:info.Responsibilities}">
-        </ng-container>
+    <div class="multiple-company-title-div">
+        <div>
+            <h3 class="plain-text">{{experience.CompanyName}}</h3>
+            <p class="plain-text">{{getDateDifference(experience.MoreInfos[experience.MoreInfos.length -1].StartDate, experience.MoreInfos[0].EndDate)}}</p>
+        </div>
     </div>
 </ng-template>  
 
 <ng-template #keyResponsibilities let-responsibilities='responsibilities'>
-    <ul class="plain-text">
+    <ul class="plain-text custom-ul">
         <li *ngFor="let item of responsibilities">{{item}}</li>
     </ul>
 </ng-template>

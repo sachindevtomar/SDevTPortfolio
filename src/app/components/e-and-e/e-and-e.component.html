@@ -1,12 +1,13 @@
 <div class="full-div">
     <div class="content-div container">
-        <section id="aboutme">
+        <section id="e-and-e">
             <div class="row section-title">
                 <p class="title-text">WORK EXPERIENCE</p>
             </div>
             <div class="section-content">
                 <div *ngFor="let exp of data.WorkExperiences | orderBy: 'OrderInUI'">
                     <app-experience [exp]="exp"></app-experience>
+                    <div class="custom-hr"></div>
                 </div>
             </div>
         </section>
