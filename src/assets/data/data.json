@@ -134,5 +134,37 @@
                 }
             ]
         }
+    ],
+    "Educations":[
+        {
+            "InstituteName":"Feroze Gandhi Institute of Engineering and Technology",
+            "Location":"Raebareli, Uttar Pradesh, India",
+            "Board": "AKTU",
+            "CourseName": "Bachelor of Technology",
+            "StartDate": "2014-06-1",
+            "EndDate": "2018-06-1",
+            "Stream": "Computer Science and Engineering",
+            "Percentile": "76.44%"
+        },
+        {
+            "InstituteName":"Pt. G. R. S. Inter College",
+            "Location":"Agra, Uttar Pradesh, India",
+            "Board":"UP Board",
+            "CourseName": "Intermediate",
+            "StartDate": "2011-06-1",
+            "EndDate": "2013-06-1",
+            "Stream": "PCM",
+            "Percentile": "76.40%"
+        },
+        {
+            "InstituteName":"Pt. G. R. S. Inter College",
+            "Location":"Agra, Uttar Pradesh, India",
+            "Board":"UP Board",
+            "CourseName": "High School",
+            "StartDate": "2010-06-1",
+            "EndDate": "2011-06-1",
+            "Stream": "Science",
+            "Percentile": "70.67%"
+        }
     ]
 }

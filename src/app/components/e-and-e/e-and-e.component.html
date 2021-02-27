@@ -1,6 +1,6 @@
 <div class="full-div">
     <div class="content-div container">
-        <section id="e-and-e">
+        <section id="work-experience">
             <div class="row section-title">
                 <p class="title-text">WORK EXPERIENCE</p>
             </div>
@@ -8,6 +8,24 @@
                 <div *ngFor="let exp of data.WorkExperiences | orderBy: 'OrderInUI'">
                     <app-experience [exp]="exp"></app-experience>
                     <div class="custom-hr"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="row section-title">
+                <p class="title-text">EDUCATION</p>
+            </div>
+            <div class="section-content row">
+                <div class="col-md-4 col-xs-12 tile-section-single-div" *ngFor="let edu of data.Educations">
+                    <div class="edu-tile-full">
+                        <div class="edu-tile-inside">
+                            <p class="edu-tile-image"><span><i class="fas fa-landmark edu-tile-image-icon"></i></span></p>
+                            <div class="edu-tile-content">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

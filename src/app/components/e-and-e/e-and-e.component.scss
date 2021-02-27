@@ -3,3 +3,42 @@
 .section-title{
     margin-left: 0px;
 }
+
+#education{
+    margin-top: 30px;
+}
+
+.edu-tile-full{
+    padding: 20px 0px 20px 0px;
+}
+.edu-tile-inside{
+    background-color: rgba(255,255,255,0.2);
+    float: left;
+    border: 1px solid black;
+    min-height: 130px;
+    width: 100%;
+    text-align: center;
+}
+.edu-tile-image{
+    border: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding-top: 10px;
+}
+.edu-tile-image-icon{
+    background: -webkit-linear-gradient($primary-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .edu-tile-full{
+        margin-top: 20px;
+    }
+}
