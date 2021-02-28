@@ -16,7 +16,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class AppComponent {
   loadingText: String = "Loading";
   timerId: any;
-  showLoading: Boolean = true;
+  showLoading: Boolean = false;
 
   constructor() { }
 

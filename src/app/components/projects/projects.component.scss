@@ -1,0 +1,9 @@
+@import "../../../styles.scss";
+
+.full-div {
+    min-height: 92vh;
+  }
+.content-div {
+    background-color: rgba($color: #000000, $alpha: 0.5 );
+    padding: 20px;
+}

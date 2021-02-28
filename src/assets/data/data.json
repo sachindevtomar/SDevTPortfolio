@@ -166,5 +166,47 @@
             "Stream": "Science",
             "Percentile": "70.67%"
         }
+    ],
+    "Projects":[
+        {
+            "Title":"FEE Hub",
+            "Description": "It is a single page Angular 9 based web application for Front end expertise assignment. Build is setup using Github action and deployed using firebase",
+            "Technologies": ["Angular", "Typescript", "Bootstrap", "HTML/SCSS"],
+            "StartDate": "2020-03-1",
+            "EndDate": "2020-04-1",
+            "RepoLink": "https://github.com/sachindevtomar/FEEHub",
+            "HostLink": "https://feehub-b8a09.firebaseapp.com/",
+            "FontAwesomeClass": "fa-laptop"
+        },
+        {
+            "Title":"Incident Reporting",
+            "Description": "Incident Reporting is an android application which provides easy and safe handling of accident cases. It has user 3 user interface for police admin, public user, onsite police",
+            "Technologies": ["Android", "Firebase", "XML", "Google APIs"],
+            "StartDate": "2018-04-1",
+            "EndDate": "2018-07-1",
+            "RepoLink": "https://github.com/sachindevtomar/IncidentReporting",
+            "HostLink": "",
+            "FontAwesomeClass": "fa-mobile-alt"
+        },
+        {
+            "Title":"Jeev Aashraya",
+            "Description": "It is an android application for the Jeev Aashraya (a Lucknow based NGO). It has an user friendly interface and helps user to directly connect to the Jeev Ashraya.",
+            "Technologies": ["Android", "Firebase", "XML", "Google APIs"],
+            "StartDate": "2017-06-1",
+            "EndDate": "2017-08-1",
+            "RepoLink": "",
+            "HostLink": "",
+            "FontAwesomeClass": "fa-mobile-alt"
+        },
+        {
+            "Title":"ShopEasy",
+            "Description": "It is an Online Shopping Cart System with lots of features. It is a responsive and user friendly web application. ",
+            "Technologies": ["JSP", "Servlet", "MySql", "HTML/CSS", "JQuery", "JavaScript", "Bootstrap"],
+            "StartDate": "2017-01-1",
+            "EndDate": "2017-03-1",
+            "RepoLink": "https://github.com/sachindevtomar/ShopEasy",
+            "HostLink": "",
+            "FontAwesomeClass": "fa-laptop"
+        }
     ]
 }
