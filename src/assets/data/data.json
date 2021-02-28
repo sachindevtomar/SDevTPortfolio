@@ -176,7 +176,8 @@
             "EndDate": "2020-04-1",
             "RepoLink": "https://github.com/sachindevtomar/FEEHub",
             "HostLink": "https://feehub-b8a09.firebaseapp.com/",
-            "FontAwesomeClass": "fa-laptop"
+            "FontAwesomeClass": "fa-laptop",
+            "ProjectType": "Web App"
         },
         {
             "Title":"Incident Reporting",
@@ -186,7 +187,8 @@
             "EndDate": "2018-07-1",
             "RepoLink": "https://github.com/sachindevtomar/IncidentReporting",
             "HostLink": "",
-            "FontAwesomeClass": "fa-mobile-alt"
+            "FontAwesomeClass": "fa-mobile-alt",
+            "ProjectType": "Mobile App"
         },
         {
             "Title":"Jeev Aashraya",
@@ -196,7 +198,8 @@
             "EndDate": "2017-08-1",
             "RepoLink": "",
             "HostLink": "",
-            "FontAwesomeClass": "fa-mobile-alt"
+            "FontAwesomeClass": "fa-mobile-alt",
+            "ProjectType": "Mobile App"
         },
         {
             "Title":"ShopEasy",
@@ -206,7 +209,8 @@
             "EndDate": "2017-03-1",
             "RepoLink": "https://github.com/sachindevtomar/ShopEasy",
             "HostLink": "",
-            "FontAwesomeClass": "fa-laptop"
+            "FontAwesomeClass": "fa-laptop",
+            "ProjectType": "Web App"
         }
     ]
 }

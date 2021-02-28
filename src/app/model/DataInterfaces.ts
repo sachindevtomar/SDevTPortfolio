@@ -60,6 +60,7 @@ export interface Project {
     EndDate:String;
     HostLink:String;
     FontAwesomeClass:String;
+    ProjectType: String;
 }
 
 export interface MoreInfo {

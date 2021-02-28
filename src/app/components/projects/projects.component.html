@@ -8,7 +8,7 @@
                 <div class="col-md-4 col-12 proj-main-tile-div" *ngFor="let proj of data.Projects">
                     <div class="col-md-12 col-12 proj-tile-div">
                         <div class="tile-logo-div">
-                            <i class="fas" [ngClass]="proj.FontAwesomeClass"></i>
+                            <i class="fas" [title]="proj.ProjectType" [ngClass]="proj.FontAwesomeClass"></i>
                         </div>
                         <div class="proj-tile-content">
                             <h4 class="themed-text">{{proj.Title}}</h4>
@@ -17,11 +17,16 @@
                             </div>
                             <div class="link-time-div row">
                                 <div class="link-time-left-div col-md-5 col-5">
-                                    <a [href]="proj.RepoLink" target="_blank" *ngIf="proj.RepoLink !==''"><i class="fab fa-github-square"></i></a>
+                                    <a [href]="proj.RepoLink" target="_blank" *ngIf="proj.RepoLink !==''"><i class="fab fa-github"></i></a>
                                     <a [href]="proj.HostLink" target="_blank" *ngIf="proj.HostLink"><i class="fas fa-rocket"></i></a>
                                 </div>
                                 <div class="link-time-right-div col-md-7 col-7">
                                     <p class="plain-text">({{proj.StartDate.toString() | date: 'MMM YYYY'}} - {{proj.EndDate.toString() | date: 'MMM YYYY'}})</p>
+                                </div>
+                            </div>
+                            <div class="tech-tag-div row">
+                                <div class="single-tag-div" *ngFor="let tech of proj.Technologies">
+                                    <p>{{tech}}</p>
                                 </div>
                             </div>
                         </div>

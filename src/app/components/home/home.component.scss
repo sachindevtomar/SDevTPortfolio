@@ -1,7 +1,8 @@
 @import "../../../styles.scss";
 
 .complete-home-div{
-    height: 92vh;
+    height: 100%;
+    min-height: 92vh;
     background-color: rgb(221, 228, 236);
 }
 
