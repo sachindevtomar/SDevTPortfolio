@@ -10,7 +10,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 25px;
+    font-size: large;
 }
 
 .custom-nav-menu{
@@ -25,10 +25,45 @@
     border-image-source: linear-gradient(to left, $primary-color, $secondary-color);
 }
 
-.nav-link:not(.activeNav):hover{
-    box-shadow: 5px 5px 5px #888888;
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid gainsboro;
-    margin: -1px;
+//for mobile
+@media screen and (max-width: 480px) {
+    .custom-navbar-nav{
+        .custom-nav-div{
+            ul{
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    border-bottom: 1px solid gray;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    font-size: x-large;
+                    background: -webkit-linear-gradient($secondary-color, $primary-color);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                li:first-child{
+                    margin-top: -100px;
+                }
+            }
+        }
+    }
 }
+
+//for laptops
+@media screen and (min-width: 768px) {
+    .custom-navbar-nav{
+        height: 60px;
+        padding-top: 0px;
+        .nav-link:not(.activeNav):hover{
+            box-shadow: 5px 5px 5px #888888;
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid gainsboro;
+            margin: -1px;
+        }
+    }
+}
+
