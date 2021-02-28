@@ -13,6 +13,7 @@ export interface Data {
     NumberTiles: NumberTile[];
     WorkExperiences: WorkExperience[];
     Educations: Education[];
+    Projects: Project[];
 }
 
 export interface Intro {
@@ -48,6 +49,17 @@ export interface Education {
     EndDate:String;
     Stream:String;
     Percentile:String;
+}
+
+export interface Project {
+    Title:String;
+    Description:String;
+    Technologies:String[];
+    RepoLink:String;
+    StartDate:String;
+    EndDate:String;
+    HostLink:String;
+    FontAwesomeClass:String;
 }
 
 export interface MoreInfo {
