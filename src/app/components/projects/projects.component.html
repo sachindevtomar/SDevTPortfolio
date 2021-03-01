@@ -6,7 +6,9 @@
             </div>
             <div class="row section-content">
                 <div class="col-md-4 col-12 proj-main-tile-div" *ngFor="let proj of data.Projects">
-                    <div class="col-md-12 col-12 proj-tile-div">
+                    <div class="col-md-12 col-12 proj-tile-div" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div class="tile-logo-div">
                             <i class="fas" [title]="proj.ProjectType" [ngClass]="proj.FontAwesomeClass"></i>
                         </div>

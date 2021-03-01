@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" data-aos="zoom-in-right">
     <div class="logo-right-div col-md-2 col-3">
         <img [src]="exp.LogoUrl" class="company-logo-img" width="60px" height="60px">
     </div>
@@ -10,7 +10,7 @@
 </div>
 
 <div *ngIf="exp.MoreInfos.length > 1">
-    <div class="multiple-exp-div row" *ngFor="let info of exp.MoreInfos">
+    <div class="multiple-exp-div row" data-aos="zoom-in-right" *ngFor="let info of exp.MoreInfos">
         <div class="exp-connection-div col-md-2 col-3">
             <i class="exp-connecting-dot-i fas fa-dot-circle"></i>
             <div class="exp-connecting-line-div"></div>
