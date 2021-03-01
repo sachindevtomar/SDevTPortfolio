@@ -1,0 +1,36 @@
+@import "../../../styles.scss";
+
+.full-div {
+    min-height: 92vh;
+  }
+.content-div {
+    background-color: rgba($color: #000000, $alpha: 0.5 );
+    padding: 20px;
+}
+
+.themed-text{
+    background: -webkit-linear-gradient($primary-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 0em;
+    text-align: center;
+}
+.title-text{
+    margin-bottom: 0px;
+}
+.plain-text{
+    margin-bottom: 0em;
+    color:white;
+}
+
+//For Mobile
+@media screen and (max-width: 480px) {
+    
+}
+
+//for laptops
+@media screen and (min-width: 768px) {
+   
+}
