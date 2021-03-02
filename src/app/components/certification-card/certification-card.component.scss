@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+@import "../skills/skills.component.scss";
+
+.cert-main-div{
+    padding: 10px;
+
+    .cert-logo{
+        width: 100%;
+        height: 60px;
+        max-width: 100px;
+    }
+
+    .themed-text{
+        background: -webkit-linear-gradient($primary-color, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        margin-bottom: 0em;
+    }
+    
+    .plain-text{
+        margin-bottom: 0em;
+        color:white;
+    }
+}
+
+//for mobile
+@media screen and (max-width: 480px) {
+    .cert-main-div{
+        padding: 0px;
+        .cert-logo{
+            width: 100%;
+            height: 40px;
+            max-width: 40px;
+        }
+    }
+}

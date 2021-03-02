@@ -2,35 +2,42 @@
 
 .full-div {
     min-height: 92vh;
+    .content-div {
+        background-color: rgba($color: #000000, $alpha: 0.5 );
+        padding: 20px;
+        .title-text{
+            margin-bottom: 0px;
+        }
+    }
+    .themed-text{
+        background: -webkit-linear-gradient($primary-color, white);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        margin-bottom: 0em;
+        text-align: center;
+    }
+    
+    .plain-text{
+        margin-bottom: 0em;
+        color:white;
+    }
+    .skill-card{
+        margin-top: 20px;
+    }
+    
+    .info-text-div{
+        margin-top: 20px;
+    }
+    
+    #certifications{
+        margin-top: 20px;
+    }
   }
-.content-div {
-    background-color: rgba($color: #000000, $alpha: 0.5 );
-    padding: 20px;
-}
 
-.themed-text{
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    margin-bottom: 0em;
-    text-align: center;
-}
-.title-text{
-    margin-bottom: 0px;
-}
-.plain-text{
-    margin-bottom: 0em;
-    color:white;
-}
-.skill-card{
-    margin-top: 20px;
-}
 
-.info-text-div{
-    margin-top: 20px;
-}
+
 //For Mobile
 @media screen and (max-width: 480px) {
     .info-text{

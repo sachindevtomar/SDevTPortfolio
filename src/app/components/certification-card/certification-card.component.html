@@ -1,0 +1,10 @@
+<div class="cert-main-div row" [attr.data-aos]="position%2 == 0 ? 'fade-right':'fade-left'">
+    <div class="cert-left col-md-3 col-4">
+        <img [src]="cert.LogoURL" alt="cert-logo" class="tech-img">
+    </div>
+    <div class="cert-right col-md-9 col-8">
+        <p class="themed-text">{{cert.Name}}</p>
+        <p class="plain-text">{{cert.Company}}</p>
+        <p class="plain-text">Issued: {{cert.IssuedDate.toString() | date}}</p>
+    </div>
+</div>

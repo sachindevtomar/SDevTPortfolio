@@ -13,5 +13,16 @@
                 </div>
             </div>
         </section>
+
+        <section id="certifications">
+            <div class="row section-title">
+                <p class="title-text">Certifications</p>
+            </div>
+            <div class="row section-content">
+                <div class="col-md-6 col-12 skill-card" *ngFor="let cert of data.Certifications; let position = index">
+                    <app-certification-card [cert]="cert" [position]="position"></app-certification-card>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
