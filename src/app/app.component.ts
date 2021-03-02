@@ -3,13 +3,6 @@ import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
-  animations: [
-    trigger('slideInOut', [
-      transition(':leave', [
-        animate('1500ms ease-in', style({transform: 'translateY(-100%)'}))
-      ])
-    ])
-  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

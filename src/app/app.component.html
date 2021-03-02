@@ -1,5 +1,5 @@
 
-<div class="full-animation-div" *ngIf="showLoading" [@slideInOut]>
+<div class="full-animation-div" *ngIf="showLoading">
     <div class="animation-wrap-div">
         <div class="animation-dot" *ngFor="let i of [].constructor(500)">
 
@@ -8,7 +8,7 @@
     <h2 id="loading-text">{{loadingText}}</h2>
 </div>
 
-<div *ngIf="!showLoading" [@slideInOut]>
+<div *ngIf="!showLoading">
     <app-header id="app-header"></app-header>
     <router-outlet></router-outlet>
 </div>
