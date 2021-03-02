@@ -2,8 +2,8 @@
     "FullName": "Sachin Dev Tomar",
     "FirstName": "Sachin",
     "CurrentRole": "Senior Software Engineer",
-    "ProfilePicURL": "../../../assets/img/official-pic.jpg",
-    "SecondaryPicURL": "../../../assets/img/secondary-pic.jpg",
+    "ProfilePicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/official-pic.jpg?alt=media&token=81e7326d-d1f8-4bf1-80fd-d3c95cf7dbdc",
+    "SecondaryPicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/secondary-pic.jpg?alt=media&token=233943f6-7471-4b72-8570-a1cf10ead9df",
     "Expertise": [
         "Web Development",
         "UI/UX",
@@ -68,7 +68,7 @@
         {
             "CompanyName": "Ivy (Entain Group)",
             "Location": "Hyderabad, Telangana, India",
-            "LogoUrl": "../../../assets/img/ivy_logo.png",
+            "LogoUrl": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/ivy_logo.png?alt=media&token=8fe06ce0-e36a-4967-9120-660bb32accb8",
             "OrderInUI": 1,
             "MoreInfos": [
                 {
@@ -87,7 +87,7 @@
         {
             "CompanyName": "MAQ Software",
             "Location": "Hyderabad, Telangana, India",
-            "LogoUrl": "../../../assets/img/maq_logo.png",
+            "LogoUrl": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/maq_logo.png?alt=media&token=77377f88-b428-45a1-98dc-06205e5b3fe2",
             "OrderInUI": 2,
             "MoreInfos": [
                 {
@@ -119,7 +119,7 @@
         {
             "CompanyName": "Tata Consultancy Services",
             "Location": "Lucknow, Uttar Pradesh, India",
-            "LogoUrl": "../../../assets/img/tcs_logo.jpg",
+            "LogoUrl": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tcs_logo.jpg?alt=media&token=e3e7e4dd-7389-4f6f-aa51-4c5401483511",
             "OrderInUI": 3,
             "MoreInfos": [
                 {
@@ -218,85 +218,85 @@
             "Name": ".Net Core",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/dotnet.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fdotnet.svg?alt=media&token=bd7e41e4-a56e-43bb-b367-ade435c31248"
         },
         {
             "Name": "Angular",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/angular.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fangular.svg?alt=media&token=dd0b4d6a-2d2a-4348-8421-f0a114b65f0b"
         },
         {
             "Name": "C++",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/cpp.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fcpp.svg?alt=media&token=224d6560-974c-4b1d-a8f4-84af5f029056"
         },
         {
             "Name": "Android",
             "TotalLevel": 10,
             "MyLevel": 7,
-            "LogoURL": "../../../assets/img/tech/android.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fandroid.svg?alt=media&token=4d5c6336-513c-42dc-92b1-1fcdbd20728b"
         },
         {
             "Name": "Microsoft Azure",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/azure.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fazure.svg?alt=media&token=f09e81dd-76dd-420b-8684-6dac98b0a75e"
         },
         {
             "Name": "Bootstrap",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/bootstrap.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fbootstrap.svg?alt=media&token=805c87da-f2dd-4f98-abdc-0545224a677b"
         },
         {
             "Name": "CSharp",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/csharp.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fcsharp.svg?alt=media&token=f019c911-28f7-4244-b67a-63d216974342"
         },
         {
             "Name": "HTML",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/html.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fhtml.svg?alt=media&token=1432151d-2bde-461f-95c5-c497cbdb601f"
         },
         {
             "Name": "CSS",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/css.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fcss.svg?alt=media&token=1d651666-1d91-4197-a7c7-a8c65d9585de"
         },
         {
             "Name": "Javascript",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/javascript.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fjavascript.svg?alt=media&token=2ef27808-639f-484f-aaf5-d49444a7fdcb"
         },
         {
             "Name": "Typescript",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/typescript.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Ftypescript.svg?alt=media&token=3902f4da-e743-46fd-bed3-0af12bd6ab97"
         },
         {
             "Name": "GitHub",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/github.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fgithub.svg?alt=media&token=e4dead40-c563-44d3-a2e2-20e50883858e"
         },
         {
             "Name": "React",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/react.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Freact.svg?alt=media&token=dc06fb00-e0ed-4963-a26f-3bd6d5175a0f"
         },
         {
             "Name": "Java",
             "TotalLevel": 10,
             "MyLevel": 7,
-            "LogoURL": "../../../assets/img/tech/java.svg"
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fjava.svg?alt=media&token=be3910a5-35cf-49e4-8c1b-cbdbb00b3ddc"
         }
     ],
     "Certifications":[
@@ -305,84 +305,84 @@
             "Company": "Microsoft",
             "IssuedDate": "2020-11-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/500d4682-ef58-4a22-a9a5-89b07ff33411",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "Azure for Developers: Implementing and Developing Functions",
             "Company": "LinkedIn",
             "IssuedDate": "2020-09-01",
             "VerificationLink": "http://www.linkedin.com/learning/azure-for-developers-implementing-and-developing-functions?trk=flagship-lil_details_certification",
-            "LogoURL": "../../../assets/img/linkedin_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/linkedin_logo.jpg?alt=media&token=8352bff7-35fc-4405-956b-8712af5e21c5" 
         },
         {
             "Name": "DP-201 Designing an Azure Data Solution",
             "Company": "Microsoft",
             "IssuedDate": "2020-09-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/25fb0823-9145-4b0d-ae50-cee15dc48161",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "Microsoft Certified: Azure Data Engineer Associate",
             "Company": "Microsoft",
             "IssuedDate": "2020-09-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/76a714f4-cfdc-483b-9c3f-ebcef8f750cd",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "DP-200 Implementing an Azure Data Solution",
             "Company": "Microsoft",
             "IssuedDate": "2020-07-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/a9b98975-b17e-459b-ab22-67f72b06ada9",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "Microsoft Certified: Azure AI Engineer Associate",
             "Company": "Microsoft",
             "IssuedDate": "2019-12-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/668b8aa8-55c0-4e79-abc3-2ece1b718952",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "Exam 762: Developing SQL Databases",
             "Company": "Microsoft",
             "IssuedDate": "2019-04-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/feb180e7-684a-4895-9ec5-1ada2644066f",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "MCSA: SQL 2016 Database Development - Certified 2019",
             "Company": "Microsoft",
             "IssuedDate": "2019-04-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/8cd9d589-c95a-4ec0-8eb9-d77dd73f77ee",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "EF SET Certificate™",
             "Company": "EF Standard English Test (EF SET) ",
             "IssuedDate": "2019-10-01",
             "VerificationLink": "https://www.efset.org/cert/k3PWBG",
-            "LogoURL": "../../../assets/img/efset_logo.png" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/efset_logo.png?alt=media&token=b4e0933e-b035-4406-910a-a58a777e2763" 
         },
         {
             "Name": "Exam 778: Analyzing and Visualizing Data with Power BI",
             "Company": "Microsoft",
             "IssuedDate": "2018-10-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/edffaba5-8e9a-4bee-b5b4-28fd68d3621a",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "Exam 761: Querying Data with Transact-SQL",
             "Company": "Microsoft",
             "IssuedDate": "2018-09-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/32758fc3-ea6f-469a-9281-0b8adcea2387",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         },
         {
             "Name": "Microsoft Certified: Azure Developer Associate",
             "Company": "Microsoft",
             "IssuedDate": "2019-07-01",
             "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/d42a1479-e3c1-41fd-9846-0786e85fdc5e",
-            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
         }
     ]
 }
