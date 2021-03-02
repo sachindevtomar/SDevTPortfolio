@@ -218,91 +218,91 @@
             "Name": ".Net Core",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/dotnet.png"
+            "LogoURL": "../../../assets/img/tech/dotnet.svg"
         },
         {
             "Name": "Angular",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/angular.png"
+            "LogoURL": "../../../assets/img/tech/angular.svg"
         },
         {
             "Name": "C++",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/cpp.png"
+            "LogoURL": "../../../assets/img/tech/cpp.svg"
         },
         {
             "Name": "Android",
             "TotalLevel": 10,
             "MyLevel": 7,
-            "LogoURL": "../../../assets/img/tech/android.png"
+            "LogoURL": "../../../assets/img/tech/android.svg"
         },
         {
             "Name": "Microsoft Azure",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/azure.png"
+            "LogoURL": "../../../assets/img/tech/azure.svg"
         },
         {
             "Name": "Bootstrap",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/bootstrap.png"
+            "LogoURL": "../../../assets/img/tech/bootstrap.svg"
         },
         {
             "Name": "CSharp",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/csharp.png"
+            "LogoURL": "../../../assets/img/tech/csharp.svg"
         },
         {
             "Name": "HTML",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/html.png"
+            "LogoURL": "../../../assets/img/tech/html.svg"
         },
         {
             "Name": "CSS",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/css.png"
+            "LogoURL": "../../../assets/img/tech/css.svg"
         },
         {
             "Name": "Javascript",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/javascript.png"
+            "LogoURL": "../../../assets/img/tech/javascript.svg"
         },
         {
             "Name": "Typescript",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/typescript.png"
+            "LogoURL": "../../../assets/img/tech/typescript.svg"
         },
         {
             "Name": "GitHub",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/github.png"
+            "LogoURL": "../../../assets/img/tech/github.svg"
         },
         {
             "Name": "Javascript",
             "TotalLevel": 10,
             "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/javascript.png"
+            "LogoURL": "../../../assets/img/tech/javascript.svg"
         },
         {
             "Name": "React",
             "TotalLevel": 10,
             "MyLevel": 8,
-            "LogoURL": "../../../assets/img/tech/react.png"
+            "LogoURL": "../../../assets/img/tech/react.svg"
         },
         {
             "Name": "Java",
             "TotalLevel": 10,
             "MyLevel": 7,
-            "LogoURL": "../../../assets/img/tech/java.png"
+            "LogoURL": "../../../assets/img/tech/java.svg"
         }
     ]
 }

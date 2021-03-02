@@ -73,7 +73,7 @@ export interface MoreInfo {
 
 export interface Skill {
     Name: String;
-    TotalLevel: Number;
-    MyLevel: Number;
+    TotalLevel: number;
+    MyLevel: number;
     LogoURL: String;
 }

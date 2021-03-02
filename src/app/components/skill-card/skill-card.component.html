@@ -1,0 +1,16 @@
+<div>
+    <div class="flip-card" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img [src]="skill.LogoURL" alt="tech-logo" class="tech-img">
+            <h4 class="themed-text">{{skill.Name}}</h4>
+          </div>
+          <div class="flip-card-back">
+            <p class="plain-text">Skill Level</p>
+            <h3>{{skill.MyLevel}} / {{skill.TotalLevel}}</h3> 
+            <p class="plain-text">{{getSkillLevel(skill.MyLevel, skill.TotalLevel)}}</p>
+          </div>
+        </div>
+    </div>
+</div>

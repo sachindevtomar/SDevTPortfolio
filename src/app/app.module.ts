@@ -13,6 +13,7 @@ import { AboutComponent } from './components/about/about.component';
 import { NumberTileComponent } from './components/number-tile/number-tile.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { OrderByPipe } from './pipes/order-by.pipe';
+import { SkillCardComponent } from './components/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { OrderByPipe } from './pipes/order-by.pipe';
     AboutComponent,
     NumberTileComponent,
     ExperienceComponent, 
-    OrderByPipe
+    OrderByPipe, SkillCardComponent
   ],
   imports: [
     BrowserModule,

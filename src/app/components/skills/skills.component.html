@@ -5,6 +5,9 @@
                 <p class="title-text">SKILLS</p>
             </div>
             <div class="row section-content">
+                <div class="col-md-2 col-4 skill-card" *ngFor="let skill of data.Skills">
+                    <app-skill-card [skill]="skill"></app-skill-card>
+                </div>
             </div>
         </section>
     </div>
