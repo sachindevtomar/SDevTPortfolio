@@ -6,6 +6,6 @@ data-aos-duration="1500">
     <div class="cert-right col-md-9 col-8">
         <p class="themed-text">{{cert.Name}}</p>
         <p class="plain-text">{{cert.Company}}</p>
-        <p class="plain-text">Issued: {{cert.IssuedDate.toString() | date}}</p>
+        <p class="plain-text">Issued: {{cert.IssuedDate.toString() | date: 'MMM YYYY'}}</p>
     </div>
 </div>
