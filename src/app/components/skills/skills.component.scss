@@ -27,12 +27,22 @@
 .skill-card{
     margin-top: 20px;
 }
+
+.info-text-div{
+    margin-top: 20px;
+}
 //For Mobile
 @media screen and (max-width: 480px) {
-    
+    .info-text{
+        margin-top: 10px;
+        font-size: smaller;
+    }
 }
 
 //for laptops
 @media screen and (min-width: 768px) {
-   
+    .info-text{
+        margin-top: 50px;
+        font-size: smaller;
+    }
 }

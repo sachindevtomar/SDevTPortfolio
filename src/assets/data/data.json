@@ -287,12 +287,6 @@
             "LogoURL": "../../../assets/img/tech/github.svg"
         },
         {
-            "Name": "Javascript",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "../../../assets/img/tech/javascript.svg"
-        },
-        {
             "Name": "React",
             "TotalLevel": 10,
             "MyLevel": 8,
