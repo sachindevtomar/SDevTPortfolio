@@ -298,5 +298,91 @@
             "MyLevel": 7,
             "LogoURL": "../../../assets/img/tech/java.svg"
         }
+    ],
+    "Certifications":[
+        {
+            "Name": "AZ-303 Microsoft Azure Architect Technologies",
+            "Company": "Microsoft",
+            "IssuedDate": "2020-11-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/500d4682-ef58-4a22-a9a5-89b07ff33411",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "Azure for Developers: Implementing and Developing Functions",
+            "Company": "LinkedIn",
+            "IssuedDate": "2020-09-01",
+            "VerificationLink": "http://www.linkedin.com/learning/azure-for-developers-implementing-and-developing-functions?trk=flagship-lil_details_certification",
+            "LogoURL": "../../../assets/img/linkedin_logo.jpg" 
+        },
+        {
+            "Name": "DP-201 Designing an Azure Data Solution",
+            "Company": "Microsoft",
+            "IssuedDate": "2020-09-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/25fb0823-9145-4b0d-ae50-cee15dc48161",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "Microsoft Certified: Azure Data Engineer Associate",
+            "Company": "Microsoft",
+            "IssuedDate": "2020-09-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/76a714f4-cfdc-483b-9c3f-ebcef8f750cd",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "DP-200 Implementing an Azure Data Solution",
+            "Company": "Microsoft",
+            "IssuedDate": "2020-07-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/a9b98975-b17e-459b-ab22-67f72b06ada9",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "Microsoft Certified: Azure AI Engineer Associate",
+            "Company": "Microsoft",
+            "IssuedDate": "2019-12-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/668b8aa8-55c0-4e79-abc3-2ece1b718952",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "Exam 762: Developing SQL Databases",
+            "Company": "Microsoft",
+            "IssuedDate": "2019-04-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/feb180e7-684a-4895-9ec5-1ada2644066f",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "MCSA: SQL 2016 Database Development - Certified 2019",
+            "Company": "Microsoft",
+            "IssuedDate": "2019-04-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/8cd9d589-c95a-4ec0-8eb9-d77dd73f77ee",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "EF SET Certificate™",
+            "Company": "EF Standard English Test (EF SET) ",
+            "IssuedDate": "2019-10-01",
+            "VerificationLink": "https://www.efset.org/cert/k3PWBG",
+            "LogoURL": "../../../assets/img/efset_logo.png" 
+        },
+        {
+            "Name": "Exam 778: Analyzing and Visualizing Data with Power BI",
+            "Company": "Microsoft",
+            "IssuedDate": "2018-10-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/edffaba5-8e9a-4bee-b5b4-28fd68d3621a",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "Exam 761: Querying Data with Transact-SQL",
+            "Company": "Microsoft",
+            "IssuedDate": "2018-09-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/32758fc3-ea6f-469a-9281-0b8adcea2387",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        },
+        {
+            "Name": "Microsoft Certified: Azure Developer Associate",
+            "Company": "Microsoft",
+            "IssuedDate": "2019-07-01",
+            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/d42a1479-e3c1-41fd-9846-0786e85fdc5e",
+            "LogoURL": "../../../assets/img/microsoft_logo.jpg" 
+        }
     ]
 }

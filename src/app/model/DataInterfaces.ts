@@ -15,6 +15,7 @@ export interface Data {
     Educations: Education[];
     Projects: Project[];
     Skills: Skill[];
+    Certifications: Certification[];
 }
 
 export interface Intro {
@@ -75,5 +76,13 @@ export interface Skill {
     Name: String;
     TotalLevel: number;
     MyLevel: number;
+    LogoURL: String;
+}
+
+export interface Certification {
+    Name: String;
+    Company: String;
+    IssuedDate: String;
+    VerificationLink: String;
     LogoURL: String;
 }
