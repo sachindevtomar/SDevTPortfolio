@@ -212,5 +212,97 @@
             "FontAwesomeClass": "fa-laptop",
             "ProjectType": "Web App"
         }
+    ],
+    "Skills":[
+        {
+            "Name": ".Net Core",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/dotnet.png"
+        },
+        {
+            "Name": "Angular",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/angular.png"
+        },
+        {
+            "Name": "C++",
+            "TotalLevel": 10,
+            "MyLevel": 8,
+            "LogoURL": "../../../assets/img/tech/cpp.png"
+        },
+        {
+            "Name": "Android",
+            "TotalLevel": 10,
+            "MyLevel": 7,
+            "LogoURL": "../../../assets/img/tech/android.png"
+        },
+        {
+            "Name": "Microsoft Azure",
+            "TotalLevel": 10,
+            "MyLevel": 8,
+            "LogoURL": "../../../assets/img/tech/azure.png"
+        },
+        {
+            "Name": "Bootstrap",
+            "TotalLevel": 10,
+            "MyLevel": 8,
+            "LogoURL": "../../../assets/img/tech/bootstrap.png"
+        },
+        {
+            "Name": "CSharp",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/csharp.png"
+        },
+        {
+            "Name": "HTML",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/html.png"
+        },
+        {
+            "Name": "CSS",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/css.png"
+        },
+        {
+            "Name": "Javascript",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/javascript.png"
+        },
+        {
+            "Name": "Typescript",
+            "TotalLevel": 10,
+            "MyLevel": 8,
+            "LogoURL": "../../../assets/img/tech/typescript.png"
+        },
+        {
+            "Name": "GitHub",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/github.png"
+        },
+        {
+            "Name": "Javascript",
+            "TotalLevel": 10,
+            "MyLevel": 9,
+            "LogoURL": "../../../assets/img/tech/javascript.png"
+        },
+        {
+            "Name": "React",
+            "TotalLevel": 10,
+            "MyLevel": 8,
+            "LogoURL": "../../../assets/img/tech/react.png"
+        },
+        {
+            "Name": "Java",
+            "TotalLevel": 10,
+            "MyLevel": 7,
+            "LogoURL": "../../../assets/img/tech/java.png"
+        }
     ]
 }

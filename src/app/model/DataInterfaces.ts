@@ -14,6 +14,7 @@ export interface Data {
     WorkExperiences: WorkExperience[];
     Educations: Education[];
     Projects: Project[];
+    Skills: Skill[];
 }
 
 export interface Intro {
@@ -68,4 +69,11 @@ export interface MoreInfo {
     StartDate:String;
     EndDate:String;
     Responsibilities: String[];
+}
+
+export interface Skill {
+    Name: String;
+    TotalLevel: Number;
+    MyLevel: Number;
+    LogoURL: String;
 }
