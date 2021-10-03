@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { getLeetCodeSubmissionStats } from 'src/app/data-fetcher/getLeetCodeSubmissionStats';
 import fullData from '../../../assets/data/data.json';
 import {Data} from '../../model/DataInterfaces';
 
@@ -14,9 +15,17 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     this.displayExpertiseWithBlink();
-    
+    let data;
+
+    try {
+      data = await getLeetCodeSubmissionStats('Sachin131');
+      console.log(data);
+    }
+    catch(err){
+      console.log(err);
+    }
   }
 
   ngOnDestroy(): void{

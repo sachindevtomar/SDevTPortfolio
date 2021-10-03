@@ -25,6 +25,8 @@
     "angular-cli-ghpages": "^1.0.0-rc.1",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
+    "graphql": "^15.6.0",
+    "graphql-request": "^3.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
