@@ -11,22 +11,27 @@ export interface AllQuestionsCountNode {
     allQuestionsCount: AllQuestionsCountNode[];
     matchedUser: {
       submitStats: {
-        acSubmissionNum: SubmissionCountNode[];
+        totalSubmissionNum: SubmissionCountNode[];
       };
+      profile: {
+        ranking: number;
+        reputation: number;
+        starRating: number;
+        userAvatar: string;
+      }
     };
   }
   
   export type Theme = "light" | "dark" | "midnight";
-  
-  export interface IGenerateStatSVG {
-    allQuestionsCount: AllQuestionsCountNode[];
-    acSubmissionNum: SubmissionCountNode[];
-    theme?: Theme;
+
+  export interface IGetRecentSubmissionList{
+    recentSubmissionList: RecentSubmission[];
   }
-  
-  export type ThemeColours = {
-    bg: string;
-    text: string;
-    secondaryText: string;
-    altDiffText?: string;
-  };
+
+  export interface RecentSubmission{
+    title: string;
+    titleSlug: string;
+    timestamp: string;
+    statusDisplay: string;
+    lang: string;
+  }

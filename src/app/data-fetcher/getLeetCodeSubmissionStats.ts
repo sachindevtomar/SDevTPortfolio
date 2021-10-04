@@ -10,15 +10,20 @@ const query = gql`
     }
     matchedUser(username: $username) {
       submitStats {
-        acSubmissionNum {
+        totalSubmissionNum {
           difficulty
           count
           submissions
         }
       }
+      profile {
+        ranking
+        reputation
+        starRating
+        userAvatar
+      }
     }
-  }
-`;
+  }`;
 
 const requestHeaders = {
     'Access-Control-Allow-Origin': 'http://localhost:4200',
