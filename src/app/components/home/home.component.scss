@@ -2,86 +2,110 @@
 $primary-color:#00c4cc;
 $secondary-color:#2D127C;
 
-.complete-home-div{
+#home-section{
     height: 100%;
     min-height: 92vh;
     background-color: rgb(221, 228, 236);
+
+    .center-content{
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        
+        #home-custom-cursor{
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            animation-name: blink;
+            animation-duration: 800ms;
+            animation-iteration-count: infinite;
+            opacity: 1;
+        }
+        
+        .profile-pic{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #full-name-text{
+            background: -webkit-linear-gradient($secondary-color, $primary-color);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #social-media-div{
+            margin-top: 50px;
+            
+            .font-awesome-icon{
+                font-size: 3em;
+                margin: 10px 15px 10px 15px;
+                color:black;
+                background: -webkit-linear-gradient($secondary-color, $primary-color);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+            
+            .font-awesome-icon:hover{
+                transform: scale(1.2);
+                background: -webkit-linear-gradient($primary-color, $secondary-color);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        
+        @keyframes blink {
+            0%   {opacity: 1;}
+            50%  {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @media screen and (max-width: 480px) {
+            #home-into-text{
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            #home-custom-cursor{
+                font-size: 27px;
+            }
+            .font-awesome-icon{
+                font-size: 2em;
+                margin: 10px;
+            }
+            .profile-pic{
+                margin-top: 30px;
+            }
+            #social-media-div{
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
-.center-content{
-    width: 100%;
-    padding-top: 60px;
-    text-align: center;
-}
-
-#home-custom-cursor{
-    display: inline-block;
-    position: relative;
-    top: 4px;
-    animation-name: blink;
-    animation-duration: 800ms;
-    animation-iteration-count: infinite;
-    opacity: 1;
-}
-
-@keyframes blink {
-    0%   {opacity: 1;}
-    50%  {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-.font-awesome-icon{
-    font-size: 3em;
-    margin: 10px 15px 10px 15px;
-    color:black;
-    background: -webkit-linear-gradient($secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
-
-.font-awesome-icon:hover{
-    transform: scale(1.2);
-    background: -webkit-linear-gradient($primary-color, $secondary-color);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#full-name-text{
-    background: -webkit-linear-gradient($secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.profile-pic{
+#leetcode-section{
     margin-top: 20px;
-    margin-bottom: 20px;
-}
+    width: 100%;
+    min-height: 92vh;
+    height: 100%;
 
-#social-media-div{
-    margin-top: 50px;
-}
-
-@media screen and (max-width: 480px) {
-    #home-into-text{
-        font-size: 18px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    #home-custom-cursor{
-        font-size: 27px;
-    }
-    .font-awesome-icon{
-        font-size: 2em;
-        margin: 10px;
-    }
-    .profile-pic{
-        margin-top: 30px;
-    }
-    #social-media-div{
-        margin-top: 10px;
+    .dashboard{
+        .pie-chart{
+            width: 40%;
+            background-color: brown;
+            height: 50vh;
+        }
+        .stats{
+            width: 60%;
+            background-color: chocolate;
+            height: 50vh;
+        }
+        .plain-text{
+            margin-bottom: 0em;
+            color:white;
+        }
     }
 }

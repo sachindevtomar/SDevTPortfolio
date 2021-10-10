@@ -15,6 +15,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { OrderByPipe } from './pipes/order-by.pipe';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { CertificationCardComponent } from './components/certification-card/certification-card.component';
+import { StatsCardComponent } from './components/stats-card/stats-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import { CertificationCardComponent } from './components/certification-card/cert
     AboutComponent,
     NumberTileComponent,
     ExperienceComponent, 
-    OrderByPipe, SkillCardComponent, CertificationCardComponent
+    OrderByPipe, 
+    SkillCardComponent, 
+    CertificationCardComponent,
+    StatsCardComponent
   ],
   imports: [
     BrowserModule,

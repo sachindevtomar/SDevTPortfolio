@@ -11,6 +11,7 @@ export interface AllQuestionsCountNode {
     allQuestionsCount: AllQuestionsCountNode[];
     matchedUser: {
       submitStats: {
+        acSubmissionNum: SubmissionCountNode[];
         totalSubmissionNum: SubmissionCountNode[];
       };
       profile: {

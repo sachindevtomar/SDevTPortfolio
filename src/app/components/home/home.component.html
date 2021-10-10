@@ -1,4 +1,4 @@
-<div class="complete-home-div">
+<section id="home-section">
     <div class="container center-content">
         <h3 id>Hi👋, I'm <b id="full-name-text">{{data.FullName}}</b></h3>
         <img class="img-fluid rounded-circle profile-pic" [src]="data.ProfilePicURL" alt="Profile Pic" width="150">
@@ -13,4 +13,20 @@
             <a [href]="data.SocialMediaLinks[4]" target="_blank"><i class="fab fa-hackerrank font-awesome-icon" aria-hidden="true"></i></a>
         </div>
     </div>
-</div>
+</section>
+
+<section id="leetcode-section">
+    <div class="container">
+        <div class="row section-title">
+            <p class="title-text">LeetCode Dashboard</p>
+        </div>
+        <div class="row dashboard">
+            <div class="pie-chart">
+
+            </div>
+            <div class="stats">
+                <!-- iterate over stats-card components -->
+            </div>
+        </div>
+    </div>
+</section>

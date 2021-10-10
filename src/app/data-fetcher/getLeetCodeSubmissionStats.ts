@@ -10,6 +10,11 @@ const query = gql`
     }
     matchedUser(username: $username) {
       submitStats {
+        acSubmissionNum {
+          difficulty
+          count
+          submissions
+        }
         totalSubmissionNum {
           difficulty
           count
