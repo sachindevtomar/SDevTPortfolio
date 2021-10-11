@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Skill} from '../../model/DataInterfaces';
+import { IStatsFigure } from 'src/app/model/StatsFigure';
+import {Skill} from '../../model/ProfileDataInterfaces';
 
 @Component({
   selector: 'app-stats-card',
@@ -7,10 +8,7 @@ import {Skill} from '../../model/DataInterfaces';
   styleUrls: ['./stats-card.component.scss']
 })
 export class StatsCardComponent implements OnInit {
-  @Input() myCount: number;
-  @Input() mySubmissions: number;
-  @Input() totalCount: number;
-  @Input() difficulty: string;
+  @Input() statsFigure: IStatsFigure;
 
 
   constructor() { }

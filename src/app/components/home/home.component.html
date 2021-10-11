@@ -25,7 +25,9 @@
 
             </div>
             <div class="stats">
-                <!-- iterate over stats-card components -->
+                <ng-template *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure">
+                    <app-stats-card [statsFigure]="statsFigure"></app-stats-card>   
+                </ng-template>
             </div>
         </div>
     </div>

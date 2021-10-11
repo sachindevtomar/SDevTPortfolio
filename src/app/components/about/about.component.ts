@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import fullData from '../../../assets/data/data.json';
-import {Data} from '../../model/DataInterfaces';
+import {Data} from '../../model/ProfileDataInterfaces';
 
 @Component({
   selector: 'app-about',

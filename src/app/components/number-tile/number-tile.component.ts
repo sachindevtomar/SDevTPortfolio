@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NumberTile } from 'src/app/model/DataInterfaces';
+import { NumberTile } from 'src/app/model/ProfileDataInterfaces';
 
 @Component({
   selector: 'app-number-tile',

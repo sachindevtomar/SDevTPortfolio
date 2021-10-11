@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Certification } from 'src/app/model/DataInterfaces';
+import { Certification } from 'src/app/model/ProfileDataInterfaces';
 
 @Component({
   selector: 'app-certification-card',

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { getLeetCodeRecentSubmissionList } from 'src/app/data-fetcher/getLeetCodeRecentSubmissionList';
 import { getLeetCodeSubmissionStats } from 'src/app/data-fetcher/getLeetCodeSubmissionStats';
+import { IGetRecentSubmissionList, IGetSubmissionStats } from 'src/app/model/LeetCodeTypes';
+import { IStatsFigure } from 'src/app/model/StatsFigure';
 import fullData from '../../../assets/data/data.json';
-import {Data} from '../../model/DataInterfaces';
+import {Data} from '../../model/ProfileDataInterfaces';
 
 @Component({
   selector: 'app-center',
@@ -13,6 +15,9 @@ export class HomeComponent implements OnInit {
   data: Data = fullData;
   intoText: String = "I am into ";
   timerId: any;
+  userStats: IGetSubmissionStats;
+  userRecentSubmission: IGetRecentSubmissionList;
+  statsFigures: IStatsFigure[] = [];
 
   constructor() { }
 
@@ -22,22 +27,38 @@ export class HomeComponent implements OnInit {
     const username = 'Sachin131';
 
     try {
-      const [userStats, userRecentSubmission] = await Promise.all([
+        [this.userStats, this.userRecentSubmission] = await Promise.all([
         getLeetCodeSubmissionStats(username), 
         getLeetCodeRecentSubmissionList(username)
-      ])
-      
+      ]);
+      this.getStatsFigure(this.userStats);
     }
     catch(err){
       console.log(err);
     }
   }
 
+  trackByStatsFigure(index: number, statsFigure: IStatsFigure): IStatsFigure{
+    return statsFigure;
+  }
+
   ngOnDestroy(): void{
     clearInterval(this.timerId);
   }
 
-  displayExpertiseWithBlink():void{
+  
+  private getStatsFigure(userStats: IGetSubmissionStats) {
+    
+    userStats?.matchedUser.submitStats.acSubmissionNum.forEach((sub,index) => {
+      this.statsFigures.push({
+        myCount: sub.count,
+        mySubmissions: sub.submissions,
+        difficulty: sub.difficulty,
+        totalCount: userStats?.allQuestionsCount[index]?.count ?? 0
+      });
+    });
+  }
+  private displayExpertiseWithBlink():void{
     var expertiseArrayCount = 0;
     var shouldChangeExpertise = false;
     var currentExpertise = this.data.Expertise[0];
@@ -82,3 +103,4 @@ export class HomeComponent implements OnInit {
   }
 
 }
+

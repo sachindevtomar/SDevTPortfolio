@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Skill} from '../../model/DataInterfaces';
+import {Skill} from '../../model/ProfileDataInterfaces';
 
 @Component({
   selector: 'app-skill-card',
