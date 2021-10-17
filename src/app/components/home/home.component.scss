@@ -62,27 +62,6 @@ $secondary-color:#2D127C;
             50%  {opacity: 0;}
             100% {opacity: 1;}
         }
-
-        @media screen and (max-width: 480px) {
-            #home-into-text{
-                font-size: 18px;
-                margin-top: 30px;
-                margin-bottom: 20px;
-            }
-            #home-custom-cursor{
-                font-size: 27px;
-            }
-            .font-awesome-icon{
-                font-size: 2em;
-                margin: 10px;
-            }
-            .profile-pic{
-                margin-top: 30px;
-            }
-            #social-media-div{
-                margin-top: 10px;
-            }
-        }
     }
 }
 
@@ -100,12 +79,54 @@ $secondary-color:#2D127C;
         }
         .stats{
             width: 60%;
-            background-color: chocolate;
-            height: 50vh;
+            app-stats-card{
+                display: inline-block;
+                width: 30%;
+                margin: 10px;
+            }
         }
         .plain-text{
             margin-bottom: 0em;
             color:white;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #home-into-text{
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    #home-custom-cursor{
+        font-size: 27px;
+    }
+    .font-awesome-icon{
+        font-size: 2em;
+        margin: 10px;
+    }
+    .profile-pic{
+        margin-top: 30px;
+    }
+    #social-media-div{
+        margin-top: 10px;
+    }
+    #leetcode-section{
+        .dashboard{
+            .pie-chart{
+                width: 100%;
+                height: 50vh;
+            }
+            .stats{
+                width: 100%;
+                app-stats-card{
+                    width: 45%;
+                    margin: 0px;
+                    margin-left: 3%;
+                }
+                margin-bottom: 10px;
+            }
         }
     }
 }

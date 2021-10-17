@@ -16,6 +16,8 @@ import { OrderByPipe } from './pipes/order-by.pipe';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { CertificationCardComponent } from './components/certification-card/certification-card.component';
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { Donut3DChartComponent } from './components/high-charts/3D-donut-chart.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,15 @@ import { StatsCardComponent } from './components/stats-card/stats-card.component
     OrderByPipe, 
     SkillCardComponent, 
     CertificationCardComponent,
-    StatsCardComponent
+    StatsCardComponent,
+    Donut3DChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

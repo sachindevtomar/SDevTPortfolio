@@ -22,12 +22,10 @@
         </div>
         <div class="row dashboard">
             <div class="pie-chart">
-
+                <app-3D-donut-chart></app-3D-donut-chart>
             </div>
             <div class="stats">
-                <ng-template *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure">
-                    <app-stats-card [statsFigure]="statsFigure"></app-stats-card>   
-                </ng-template>
+                <app-stats-card *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure" [statsFigure]="statsFigure" ></app-stats-card>   
             </div>
         </div>
     </div>

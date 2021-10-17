@@ -27,6 +27,8 @@
     "bootstrap": "^4.5.0",
     "graphql": "^15.6.0",
     "graphql-request": "^3.5.0",
+    "highcharts": "^9.2.2",
+    "highcharts-angular": "^2.10.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
