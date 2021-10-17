@@ -1,5 +1,4 @@
-import { Component, VERSION, OnInit, Input } from '@angular/core';
-import { IStatsFigure } from 'src/app/model/StatsFigure';
+import { Component, OnInit, HostListener, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import * as Highcharts from 'highcharts';
 
 import More from 'highcharts/highcharts-more';
@@ -23,10 +22,15 @@ Accessibility(Highcharts);
 @Component({
   selector: 'app-3D-donut-chart',
   templateUrl: './3D-donut-chart.component.html',
-  styleUrls: ['./3D-donut-chart.component.scss']
+  styleUrls: ['./3D-donut-chart.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Default
 })
-export class Donut3DChartComponent implements OnInit {
-  //@Input() statsFigure: IStatsFigure;
+export class Donut3DChartComponent implements OnInit, OnChanges {
+  @Input() seriesData: [string, number][];
+  @Input() seriesName: string;
+  @Input() chartTitle: string = '';
+  isMobile: boolean = false;
+  chart: Highcharts.Chart;
 
   activity: any;
   xData: any;
@@ -34,46 +38,57 @@ export class Donut3DChartComponent implements OnInit {
   options:any;
 
   constructor() { 
+    this.getScreenSize();
+  }
 
-    this.options = {
-      chart: {
-          type: 'pie',
-          options3d: {
-              enabled: true,
-              alpha: 45
-          }
-      },
-      title: {
-          text: 'Weekly fruit delivery'
-      },
-      subtitle: {
-          text: ''
-      },
-      plotOptions: {
-          pie: {
-              innerSize: 100,
-              depth: 45
-          }
-      },
-      series: [{
-          name: 'Delivered amount',
-          data: [
-              ['Bananas', 8],
-              ['Kiwi', 3],
-              ['Mixed nuts', 1],
-              ['Oranges', 6],
-              ['Apples', 8],
-              ['Pears', 4],
-              ['Clementines', 4],
-              ['Reddish (bag)', 1],
-              ['Grapes (bunch)', 1]
-          ]
-      }]
-    };
+  ngOnChanges(changes: SimpleChanges): void {
+    if(changes.seriesData){
+      this.seriesData = changes.seriesData.currentValue;
+      this.options = {
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 40
+            },
+            backgroundColor: {
+              linearGradient: [0, 0, 500, 500],
+              stops: [
+                  [0, 'rgb(255, 255, 255)'],
+                  [1, 'rgb(200, 200, 255)']
+              ]
+            },
+        },
+        plotOptions: {
+            pie: {
+                innerSize: this.isMobile ? 100 : 150,
+                depth: 75
+            }
+        },
+        series: [{
+            name: this.seriesName,
+            data: this.seriesData
+        }],
+        title: {
+            text: this.chartTitle
+        },
+        subtitle: {
+            text: ''
+        }
+      };
+    }
   }
 
   ngOnInit(): void {
-    Highcharts.chart('container', this.options);
+    this.chart = Highcharts.chart('chart-container', this.options);
+    this.chart.setTitle({
+      useHTML: true,
+      text: "<img src='../../../assets/images/LeetCodeLogo.png' alt='' width='50' height='50'/>" + " Dashboard"
+    });
   }
 
+  @HostListener('window:resize', ['$event'])
+  getScreenSize() {
+        this.isMobile = window.innerWidth <=480;
+  }
 }

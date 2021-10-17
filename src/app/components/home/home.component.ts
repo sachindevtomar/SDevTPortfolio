@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   userStats: IGetSubmissionStats;
   userRecentSubmission: IGetRecentSubmissionList;
   statsFigures: IStatsFigure[] = [];
+  seriesData: [string, number][] = [];
 
   constructor() { }
 
@@ -32,6 +33,7 @@ export class HomeComponent implements OnInit {
         getLeetCodeRecentSubmissionList(username)
       ]);
       this.getStatsFigure(this.userStats);
+      this.setSeriesData();
     }
     catch(err){
       console.log(err);
@@ -46,7 +48,6 @@ export class HomeComponent implements OnInit {
     clearInterval(this.timerId);
   }
 
-  
   private getStatsFigure(userStats: IGetSubmissionStats) {
     
     userStats?.matchedUser.submitStats.acSubmissionNum.forEach((sub,index) => {
@@ -58,6 +59,18 @@ export class HomeComponent implements OnInit {
       });
     });
   }
+
+  private setSeriesData(): void{
+    if(this.statsFigures.length > 0){
+      this.statsFigures.forEach(s=>{
+        this.seriesData.push([s.difficulty,s.myCount]);
+      });
+    }
+    else{
+      console.log("No stats available");
+    }
+  }
+
   private displayExpertiseWithBlink():void{
     var expertiseArrayCount = 0;
     var shouldChangeExpertise = false;

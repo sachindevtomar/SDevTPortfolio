@@ -18,11 +18,11 @@
 <section id="leetcode-section">
     <div class="container">
         <div class="row section-title">
-            <p class="title-text">LeetCode Dashboard</p>
+            <p class="title-text">LeetCode</p>
         </div>
         <div class="row dashboard">
-            <div class="pie-chart">
-                <app-3D-donut-chart></app-3D-donut-chart>
+            <div class="pie-chart" *ngIf="!!seriesData && seriesData.length > 0">
+                <app-3D-donut-chart [seriesData]="seriesData" seriesName="Solved"></app-3D-donut-chart>
             </div>
             <div class="stats">
                 <app-stats-card *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure" [statsFigure]="statsFigure" ></app-stats-card>   

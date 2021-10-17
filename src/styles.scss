@@ -60,3 +60,9 @@ body {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
+@media screen and (max-width: 480px) {
+    .section-title{
+        margin-left: 0px;
+    }
+}
