@@ -26,9 +26,10 @@ Accessibility(Highcharts);
   changeDetection: ChangeDetectionStrategy.Default
 })
 export class Donut3DChartComponent implements OnInit, OnChanges {
-  @Input() seriesData: [string, number][];
+  @Input() seriesData: [string, number, boolean][];
   @Input() seriesName: string;
   @Input() chartTitle: string = '';
+  @Input() selectedDifficulty: string = '';
   isMobile: boolean = false;
   chart: Highcharts.Chart;
 
@@ -76,11 +77,23 @@ export class Donut3DChartComponent implements OnInit, OnChanges {
             text: ''
         }
       };
+      
+      this.chart = Highcharts.chart('chart-container', this.options);
+      this.chart.series[0].data.forEach((d: any, i: number)=>{
+        if(d.name === this.selectedDifficulty)
+          this.chart.series[0].data[i].update({
+            selected: true
+          });
+        else{
+          this.chart.series[0].data[i].update({
+            selected: false
+          });
+        }
+      })
     }
   }
 
   ngOnInit(): void {
-    this.chart = Highcharts.chart('chart-container', this.options);
     this.chart.setTitle({
       useHTML: true,
       text: "<img src='../../../assets/images/LeetCodeLogo.png' alt='' width='50' height='50'/>" + " Dashboard"

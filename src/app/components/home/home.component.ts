@@ -18,7 +18,8 @@ export class HomeComponent implements OnInit {
   userStats: IGetSubmissionStats;
   userRecentSubmission: IGetRecentSubmissionList;
   statsFigures: IStatsFigure[] = [];
-  seriesData: [string, number][] = [];
+  seriesData: [string, number, boolean][] = [];
+  selectedDifficulty: string;
 
   constructor() { }
 
@@ -48,6 +49,14 @@ export class HomeComponent implements OnInit {
     clearInterval(this.timerId);
   }
 
+  highlightChart(difficulty: string): void{
+    this.seriesData = this.seriesData.map(s=>{
+      s[2] = s[0] === difficulty;
+      return s;
+    });
+    this.selectedDifficulty = difficulty;
+  }
+
   private getStatsFigure(userStats: IGetSubmissionStats) {
     
     userStats?.matchedUser.submitStats.acSubmissionNum.forEach((sub,index) => {
@@ -63,7 +72,7 @@ export class HomeComponent implements OnInit {
   private setSeriesData(): void{
     if(this.statsFigures.length > 0){
       this.statsFigures.forEach(s=>{
-        this.seriesData.push([s.difficulty,s.myCount]);
+        this.seriesData.push([s.difficulty, s.myCount, false]);
       });
     }
     else{

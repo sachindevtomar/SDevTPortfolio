@@ -9,7 +9,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class AppComponent {
   loadingText: String = "Loading";
   timerId: any;
-  showLoading: Boolean = false; //need to put this to true for showing loading screen in the beginning
+  showLoading: Boolean = true; //need to put this to true for showing loading screen in the beginning
 
   constructor() { }
 

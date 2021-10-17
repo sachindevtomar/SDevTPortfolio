@@ -22,10 +22,10 @@
         </div>
         <div class="row dashboard">
             <div class="pie-chart" *ngIf="!!seriesData && seriesData.length > 0">
-                <app-3D-donut-chart [seriesData]="seriesData" seriesName="Solved"></app-3D-donut-chart>
+                <app-3D-donut-chart [seriesData]="seriesData" seriesName="Solved" [selectedDifficulty]="selectedDifficulty"></app-3D-donut-chart>
             </div>
             <div class="stats">
-                <app-stats-card *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure" [statsFigure]="statsFigure" ></app-stats-card>   
+                <app-stats-card *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure" [statsFigure]="statsFigure" (click)="highlightChart(statsFigure.difficulty)"></app-stats-card>   
             </div>
         </div>
     </div>
