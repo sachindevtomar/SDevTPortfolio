@@ -74,7 +74,6 @@ $secondary-color:#2D127C;
     .dashboard{
         .pie-chart{
             width: 40%;
-            background-color: brown;
         }
         .stats{
             width: 60%;
@@ -126,5 +125,27 @@ $secondary-color:#2D127C;
                 margin-bottom: 10px;
             }
         }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px){
+    
+    #leetcode-section{
+        width: 100%;
+        min-height: 92vh;
+
+        .dashboard{
+            .pie-chart{
+                width: 50%;
+            }
+            .stats{
+                width: 50%;
+                app-stats-card{
+                    width: 40%;
+                    margin-left: 6%;
+                }
+            }
+        }
+
     }
 }
