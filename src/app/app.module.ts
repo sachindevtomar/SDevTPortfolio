@@ -17,7 +17,7 @@ import { SkillCardComponent } from './components/skill-card/skill-card.component
 import { CertificationCardComponent } from './components/certification-card/certification-card.component';
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
 import { HighchartsChartModule } from 'highcharts-angular';
-import { Donut3DChartComponent } from './components/high-charts/3D-donut-chart.component';
+import { Donut3DChartComponent } from './components/high-charts/3D-donut-chart/3D-donut-chart.component';
 
 @NgModule({
   declarations: [

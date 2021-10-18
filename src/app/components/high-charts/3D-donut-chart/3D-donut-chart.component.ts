@@ -26,7 +26,7 @@ Accessibility(Highcharts);
   changeDetection: ChangeDetectionStrategy.Default
 })
 export class Donut3DChartComponent implements OnInit, OnChanges {
-  @Input() seriesData: [string, number, boolean][];
+  @Input() seriesData: [string, number][];
   @Input() seriesName: string;
   @Input() chartTitle: string = '';
   @Input() selectedDifficulty: string = '';
@@ -78,30 +78,28 @@ export class Donut3DChartComponent implements OnInit, OnChanges {
         }
       };
       
-      this.chart = Highcharts.chart('chart-container', this.options);
-      this.chart.series[0].data.forEach((d: any, i: number)=>{
-        if(d.name === this.selectedDifficulty)
-          this.chart.series[0].data[i].update({
-            selected: true
-          });
-        else{
-          this.chart.series[0].data[i].update({
-            selected: false
-          });
-        }
-      })
+      this.update3DDonutChart();
     }
   }
 
   ngOnInit(): void {
-    this.chart.setTitle({
-      useHTML: true,
-      text: "<img src='../../../assets/images/LeetCodeLogo.png' alt='' width='50' height='50'/>" + " Dashboard"
-    });
+    
   }
 
   @HostListener('window:resize', ['$event'])
-  getScreenSize() {
+  getScreenSize(): void {
         this.isMobile = window.innerWidth <=480;
+  }
+  
+  private update3DDonutChart(): void {
+    this.chart = Highcharts.chart('chart-container', this.options);
+      this.chart.series[0].data.forEach((d: any, i: number)=>{
+        if(d.name === this.selectedDifficulty)
+          this.chart.series[0].data[i].onMouseOver();
+      });
+      this.chart.setTitle({
+        useHTML: true,
+        text: "<img src='https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/LeetCodeLogo.png?alt=media&token=da272d1b-c4ef-4ec1-80fd-6a3a8d6c0ed5' alt='' width='50' height='50'/>" + " Dashboard"
+      });
   }
 }

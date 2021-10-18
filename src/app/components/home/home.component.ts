@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   userStats: IGetSubmissionStats;
   userRecentSubmission: IGetRecentSubmissionList;
   statsFigures: IStatsFigure[] = [];
-  seriesData: [string, number, boolean][] = [];
+  seriesData: [string, number][] = [];
   selectedDifficulty: string;
 
   constructor() { }
@@ -50,10 +50,7 @@ export class HomeComponent implements OnInit {
   }
 
   highlightChart(difficulty: string): void{
-    this.seriesData = this.seriesData.map(s=>{
-      s[2] = s[0] === difficulty;
-      return s;
-    });
+    this.seriesData = this.seriesData.map(s=>s);
     this.selectedDifficulty = difficulty;
   }
 
@@ -72,7 +69,7 @@ export class HomeComponent implements OnInit {
   private setSeriesData(): void{
     if(this.statsFigures.length > 0){
       this.statsFigures.forEach(s=>{
-        this.seriesData.push([s.difficulty, s.myCount, false]);
+        this.seriesData.push([s.difficulty, s.myCount]);
       });
     }
     else{
