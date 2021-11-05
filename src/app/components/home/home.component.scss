@@ -70,6 +70,16 @@ $secondary-color:#2D127C;
     width: 100%;
     min-height: 92vh;
     height: 100%;
+    
+    .spinner-border{
+        position: relative;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: 150px;
+        width: 100px;
+        height: 100px;
+
+    }
 
     .dashboard{
         .pie-chart{
@@ -86,6 +96,13 @@ $secondary-color:#2D127C;
         .plain-text{
             margin-bottom: 0em;
             color:white;
+        }
+    }
+
+    .recent-submission{
+        margin-top: 20px;
+        .title-text{
+            margin-bottom: 5px;
         }
     }
 
@@ -111,6 +128,16 @@ $secondary-color:#2D127C;
         margin-top: 10px;
     }
     #leetcode-section{
+    
+        .spinner-border{
+            position: relative;
+            left: 50%;
+            margin-left: -40px;
+            margin-top: 120px;
+            width: 80px;
+            height: 80px;
+        }
+
         .dashboard{
             .pie-chart{
                 width: 100%;
@@ -133,6 +160,15 @@ $secondary-color:#2D127C;
     #leetcode-section{
         width: 100%;
         min-height: 92vh;
+
+        .spinner-border{
+            position: relative;
+            left: 50%;
+            margin-left: -30px;
+            width: 60px;
+            height: 60px;
+            margin-top: 120px;
+        }
 
         .dashboard{
             .pie-chart{

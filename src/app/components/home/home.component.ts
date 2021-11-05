@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { getLeetCodeRecentSubmissionList } from 'src/app/data-fetcher/getLeetCodeRecentSubmissionList';
 import { getLeetCodeSubmissionStats } from 'src/app/data-fetcher/getLeetCodeSubmissionStats';
-import { IGetRecentSubmissionList, IGetSubmissionStats } from 'src/app/model/LeetCodeTypes';
+import { IGetRecentSubmissionList, IGetSubmissionStats, RecentSubmission } from 'src/app/model/LeetCodeTypes';
 import { IStatsFigure } from 'src/app/model/StatsFigure';
 import fullData from '../../../assets/data/data.json';
 import {Data} from '../../model/ProfileDataInterfaces';
@@ -16,10 +16,12 @@ export class HomeComponent implements OnInit {
   intoText: String = "I am into ";
   timerId: any;
   userStats: IGetSubmissionStats;
-  userRecentSubmission: IGetRecentSubmissionList;
+  userRecentSubmissions: IGetRecentSubmissionList;
+  uniqueRecentSubmissions: RecentSubmission[] = [];
   statsFigures: IStatsFigure[] = [];
   seriesData: [string, number][] = [];
   selectedDifficulty: string;
+  recentSubmissionCount: number = 10;
 
   constructor() { }
 
@@ -29,10 +31,11 @@ export class HomeComponent implements OnInit {
     const username = 'Sachin131';
 
     try {
-        [this.userStats, this.userRecentSubmission] = await Promise.all([
+        [this.userStats, this.userRecentSubmissions] = await Promise.all([
         getLeetCodeSubmissionStats(username), 
         getLeetCodeRecentSubmissionList(username)
       ]);
+      this.getSortedRecentSubmission(this.userRecentSubmissions);
       this.getStatsFigure(this.userStats);
       this.setSeriesData();
     }
@@ -45,6 +48,10 @@ export class HomeComponent implements OnInit {
     return statsFigure;
   }
 
+  trackByRecentSubmission(index: number, recentSubmission: RecentSubmission): RecentSubmission{
+    return recentSubmission;
+  }
+
   ngOnDestroy(): void{
     clearInterval(this.timerId);
   }
@@ -52,6 +59,22 @@ export class HomeComponent implements OnInit {
   highlightChart(difficulty: string): void{
     this.seriesData = this.seriesData.map(s=>s);
     this.selectedDifficulty = difficulty;
+  }
+
+  private getSortedRecentSubmission(userRecentSubmissions: IGetRecentSubmissionList){
+    const map = new Map();
+    for (const item of userRecentSubmissions.recentSubmissionList) {
+        if(!map.has(item.titleSlug)){
+            map.set(item.titleSlug, true);   
+            this.uniqueRecentSubmissions.push({
+                titleSlug: item.titleSlug,
+                title: item.title,
+                timestamp: item.timestamp,
+                statusDisplay: item.statusDisplay,
+                lang: item.lang
+            });
+        }
+    }
   }
 
   private getStatsFigure(userStats: IGetSubmissionStats) {

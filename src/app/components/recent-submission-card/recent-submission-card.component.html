@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="title-part">
+    <p>{{recentSubmission.title}}</p>
+  </div>
+  <div class="sub-part">
+    <div class="lang-text">
+      <p class="plain-text"><i>Lang: {{recentSubmission.lang}}</i></p> 
+    </div>
+    <div class="status-text" [ngClass]="recentSubmission.statusDisplay === 'Accepted' ? 'status-pass' : 'status-fail'">
+      <p class="plain-text">{{recentSubmission.statusDisplay}}</p>
+    </div>
+  </div>
+</div>

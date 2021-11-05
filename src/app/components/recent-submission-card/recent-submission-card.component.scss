@@ -1,0 +1,49 @@
+@import "../../../styles.scss";
+
+$status-pass-color: #85d885;
+$status-fail-color: #d66b6b; 
+
+.card {
+    background-image: linear-gradient(to right, $secondary-color , $primary-color);
+    color: white;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .sub-part{
+        width: 100%;
+        
+        .lang-text{
+            float: left;
+        }
+        .status-text{
+            margin-left: 20px;
+            padding: 2px 5px;
+            border-radius: 10px;
+            float: left;
+            p{
+                margin-bottom: 0px;
+                color: black;
+            }
+        }
+        .status-pass{
+            background-image: linear-gradient(to right, $primary-color , $status-pass-color);
+        }
+        .status-fail{
+            background-image: linear-gradient(to right, $primary-color , $status-fail-color);
+        }
+    }
+}
+
+//for mobile
+@media screen and (max-width: 480px) {
+    
+        .card {
+            padding-top: 10px;
+            .plain-text{
+                font-size: small;
+            }
+        }
+}

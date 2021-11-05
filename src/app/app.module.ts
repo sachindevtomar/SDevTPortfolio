@@ -18,6 +18,7 @@ import { CertificationCardComponent } from './components/certification-card/cert
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { Donut3DChartComponent } from './components/high-charts/3D-donut-chart/3D-donut-chart.component';
+import { RecentSubmissionCardComponent } from './components/recent-submission-card/recent-submission-card.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { Donut3DChartComponent } from './components/high-charts/3D-donut-chart/3
     SkillCardComponent, 
     CertificationCardComponent,
     StatsCardComponent,
+    RecentSubmissionCardComponent,
     Donut3DChartComponent
   ],
   imports: [
