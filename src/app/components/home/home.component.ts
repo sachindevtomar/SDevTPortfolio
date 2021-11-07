@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
   statsFigures: IStatsFigure[] = [];
   seriesData: [string, number][] = [];
   selectedDifficulty: string;
-  recentSubmissionCount: number = 10;
 
   constructor() { }
 
