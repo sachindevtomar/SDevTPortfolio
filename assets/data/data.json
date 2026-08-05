@@ -1,388 +1,448 @@
 {
-    "FullName": "Sachin Dev Tomar",
-    "FirstName": "Sachin",
-    "CurrentRole": "Senior Software Engineer",
-    "ProfilePicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/official-pic.jpg?alt=media&token=81e7326d-d1f8-4bf1-80fd-d3c95cf7dbdc",
-    "SecondaryPicURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/secondary-pic.jpg?alt=media&token=233943f6-7471-4b72-8570-a1cf10ead9df",
-    "Expertise": [
-        "Web Development",
-        "UI/UX",
-        "System Designing",
-        ".Net Service Side Coding",
-        "Mentoring"
-    ],
-    "SocialMediaLinks": [
-        "https://www.facebook.com/s4004/",
-        "https://www.linkedin.com/in/sachin-dev-tomar-1aa3b8107/",
-        "https://github.com/sachindevtomar",
-        "https://twitter.com/SachinDevTomar1",
-        "https://www.hackerrank.com/sachin131",
-        "https://www.instagram.com/sachindevtomar/",
-        "mailto:tomarsachindev@gmail.com"
-    ],
-    "MobileNumbers": [
-        "7906701366",
-        "8439113560"
-    ],
-    "WorkStarted": "2018-07-30",
-    "Interests": [
-        "Competitive Coding",
-        "Music",
-        "Playing Cricket",
-        "Video Games",
-        "Debugging",
-        "Travelling"
-    ],
-    "Intro": {
-        "Short": "I am a Computer Science Graduate from Dr. A.P.J. Abdul Kalam Technical University Uttar Pradesh.",
-        "Long": "I am having 2.5+ years of experience in IT industries and contributed in each phase of development lifecycle which helped my current organization to deliver products on time. I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and for the success of the organization.",
-        "Graduation": "Bachelor of technology",
-        "Hometown": "Agra",
-        "State": "Uttar Pradesh",
-        "EmailId": "tomarsachindev@gmail.com",
-        "DOB": "1996-06-22"
+  "FullName": "Sachin Dev Tomar",
+  "FirstName": "Sachin",
+  "CurrentRole": "Senior Software Engineer",
+  "ProfilePicURL": "https://github.com/sachindevtomar.png?size=400",
+  "SecondaryPicURL": "https://github.com/sachindevtomar.png?size=400",
+  "Expertise": [
+    "Full-stack .NET",
+    "Microservices",
+    "Angular",
+    "Azure Cloud",
+    "System Design",
+    "Mentoring"
+  ],
+  "SocialMediaLinks": [
+    "https://www.facebook.com/s4004/",
+    "https://www.linkedin.com/in/sachin-dev-tomar-1aa3b8107/",
+    "https://github.com/sachindevtomar",
+    "https://twitter.com/SachinDevTomar1",
+    "https://www.hackerrank.com/sachin131",
+    "https://www.instagram.com/sachindevtomar/",
+    "mailto:tomarsachindev@gmail.com"
+  ],
+  "MobileNumbers": [
+    "7906701366",
+    "8439113560"
+  ],
+  "WorkStarted": "2018-07-30",
+  "Interests": [
+    "Competitive Coding",
+    "Music",
+    "Playing Cricket",
+    "Video Games",
+    "Debugging",
+    "Travelling"
+  ],
+  "Intro": {
+    "Short": "Senior Software Engineer based in Gurugram, building reliable full-stack products with C#, .NET, Angular, and Azure.",
+    "Long": "I am a full-stack engineer with 8+ years of experience across product and services organizations. I specialize in C#, .NET / Web API microservices, Angular, SQL Server, Azure, Docker, and SOLID design practices. I enjoy owning features end-to-end, raising engineering quality through unit testing and code reviews, and mentoring teammates through design and delivery.",
+    "Graduation": "Bachelor of Technology",
+    "Hometown": "Agra",
+    "State": "Uttar Pradesh",
+    "EmailId": "tomarsachindev@gmail.com",
+    "DOB": "1996-06-22"
+  },
+  "NumberTiles": [
+    {
+      "Name": "Years Experience",
+      "Count": 8,
+      "FontAwesomeClass": "fas fa-briefcase"
     },
-    "NumberTiles": [
+    {
+      "Name": "Certifications",
+      "Count": 12,
+      "FontAwesomeClass": "fas fa-award"
+    },
+    {
+      "Name": "Organizations",
+      "Count": 5,
+      "FontAwesomeClass": "fas fa-landmark"
+    },
+    {
+      "Name": "Projects",
+      "Count": 4,
+      "FontAwesomeClass": "fas fa-laptop-code"
+    }
+  ],
+  "WorkExperiences": [
+    {
+      "CompanyName": "Leapwork",
+      "Location": "Gurugram, Haryana, India",
+      "LogoUrl": "assets/logos/leapwork.svg",
+      "OrderInUI": 1,
+      "MoreInfos": [
         {
-            "Name": "Internships",
-            "Count": 2,
-            "FontAwesomeClass": "fas fa-id-card-alt"
-        },
-        {
-            "Name": "Certifications",
-            "Count": 9,
-            "FontAwesomeClass": "fas fa-award"
-        },
-        {
-            "Name": "Organizations",
-            "Count": 3,
-            "FontAwesomeClass": "fas fa-landmark"
-        },
-        {
-            "Name": "Projects",
-            "Count": 4,
-            "FontAwesomeClass": "fas fa-laptop-code"
+          "Position": "Senior Software Engineer",
+          "StartDate": "2024-04-01",
+          "EndDate": "",
+          "Responsibilities": [
+            "Build and enhance core platform capabilities for a no-code test automation product used by enterprise customers.",
+            "Design and deliver .NET / C# services and APIs with a focus on reliability, observability, and maintainable architecture.",
+            "Collaborate with product, design, and QA to ship production features across agile sprints.",
+            "Champion engineering best practices including unit testing, code reviews, and SOLID principles."
+          ]
         }
-    ],
-    "WorkExperiences": [
+      ]
+    },
+    {
+      "CompanyName": "Nagarro",
+      "Location": "Gurugram, Haryana, India",
+      "LogoUrl": "assets/logos/nagarro.svg",
+      "OrderInUI": 2,
+      "MoreInfos": [
         {
-            "CompanyName": "Ivy (Entain Group)",
-            "Location": "Hyderabad, Telangana, India",
-            "LogoUrl": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/ivy_logo.png?alt=media&token=8fe06ce0-e36a-4967-9120-660bb32accb8",
-            "OrderInUI": 1,
-            "MoreInfos": [
-                {
-                    "Position": "Senior Software Engineer",
-                    "StartDate": "2021-01-04",
-                    "EndDate": "",
-                    "Responsibilities": [
-                        "Create angular based components, services and modals supporting multiple themes.",
-                        "Update all the dependent microservices and publish nugets using different tools for build and release.",
-                        "Write unit test cases for frontend and service layer.",
-                        "Analyse the moscow and prepare tech approach for the implementation"
-                    ]
-                }
-            ]
+          "Position": "Associate Staff Engineer",
+          "StartDate": "2023-07-01",
+          "EndDate": "2024-04-01",
+          "Responsibilities": [
+            "Led technical delivery for complex full-stack workstreams spanning .NET microservices and modern web clients.",
+            "Mentored engineers on design patterns, code quality, and scalable service boundaries.",
+            "Partnered with stakeholders to translate requirements into incremental, production-ready releases."
+          ]
         },
         {
-            "CompanyName": "MAQ Software",
-            "Location": "Hyderabad, Telangana, India",
-            "LogoUrl": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/maq_logo.png?alt=media&token=77377f88-b428-45a1-98dc-06205e5b3fe2",
-            "OrderInUI": 2,
-            "MoreInfos": [
-                {
-                    "Position": "Software Engineer 2",
-                    "StartDate": "2020-02-28",
-                    "EndDate": "2020-12-29",
-                    "Responsibilities": [
-                        "Created .Net Core Microservices with complete Dev/Prod Release and Build Pipelines.",
-                        "Worked on every stage of development (Design, Implementation, Testing, deployment).",
-                        "Interacted with clients in a daily stand ups and gathered requirements.",
-                        "Worked with Continuous Integration Methodology and DevOps.",
-                        "Performed Load Testing for the Web API over multiple platforms.",
-                        "Created custom visual using d3.js for PowerBI and Web Applications."
-                    ]
-                },
-                {
-                    "Position": "Software Engineer 1",
-                    "StartDate": "2018-07-30",
-                    "EndDate": "2020-02-27",
-                    "Responsibilities": [
-                        "MCSA Certified and also Completed Microsoft's certification on SQL, Power BI, Azure.",
-                        "Created design documents for the new PBIs and fixed the dev and prod build failures.",
-                        "Worked on Recommendation Engine, Business Rules, GDPR, ML POCs.",
-                        "Wrote Unit, smoke and integration tests and also wrote front end test cases using jasmine and karma framework."
-                    ]
-                }
-            ]
-        },
-        {
-            "CompanyName": "Tata Consultancy Services",
-            "Location": "Lucknow, Uttar Pradesh, India",
-            "LogoUrl": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tcs_logo.jpg?alt=media&token=e3e7e4dd-7389-4f6f-aa51-4c5401483511",
-            "OrderInUI": 3,
-            "MoreInfos": [
-                {
-                    "Position": "Intern",
-                    "StartDate": "2017-06-14",
-                    "EndDate": "2017-07-19",
-                    "Responsibilities": [
-                        "Developed an android application for the Jeev Aashraya (a Lucknow based NGO).",
-                        "It has an user friendly interface and helps user to directly connect to the Jeev Ashraya.",
-                        "It has features like Goggle map routes, Google signin, NewsFeed, Localization etc."
-                    ]
-                }
-            ]
+          "Position": "Senior Engineer",
+          "StartDate": "2022-01-01",
+          "EndDate": "2023-07-01",
+          "Responsibilities": [
+            "Developed and maintained .NET Web APIs and microservices with Azure-backed deployments.",
+            "Improved system quality through unit/integration testing, CI pipelines, and refactoring toward SOLID design.",
+            "Delivered end-to-end features in collaboration with cross-functional product teams."
+          ]
         }
-    ],
-    "Educations":[
+      ]
+    },
+    {
+      "CompanyName": "Ivy (Entain Group)",
+      "Location": "Hyderabad, Telangana, India",
+      "LogoUrl": "assets/logos/ivy.svg",
+      "OrderInUI": 3,
+      "MoreInfos": [
         {
-            "InstituteName":"FGIET",
-            "Location":"Raebareli",
-            "Board": "AKTU",
-            "CourseName": "Bachelor of Technology",
-            "StartDate": "2014-06-1",
-            "EndDate": "2018-06-1",
-            "Stream": "Computer Science and Engineering",
-            "Percentile": "76.44%"
-        },
-        {
-            "InstituteName":"Pt. G. R. S. Inter College",
-            "Location":"Agra",
-            "Board":"UP Board",
-            "CourseName": "Intermediate",
-            "StartDate": "2011-06-1",
-            "EndDate": "2013-06-1",
-            "Stream": "PCM",
-            "Percentile": "76.40%"
-        },
-        {
-            "InstituteName":"Pt. G. R. S. Inter College",
-            "Location":"Agra",
-            "Board":"UP Board",
-            "CourseName": "High School",
-            "StartDate": "2010-06-1",
-            "EndDate": "2011-06-1",
-            "Stream": "Science",
-            "Percentile": "70.67%"
+          "Position": "Senior Software Engineer",
+          "StartDate": "2021-01-04",
+          "EndDate": "2022-01-31",
+          "Responsibilities": [
+            "Built core product features for web applications deployed to production.",
+            "Developed .NET Core microservices from scratch using Agile delivery, including Docker-based packaging.",
+            "Implemented design patterns for high code quality and maintainable service architecture.",
+            "Created Angular UI components from Figma designs and worked with Sitecore CMS configuration across domains.",
+            "Participated in sprint planning, retrospectives, and requirement workshops with product owners."
+          ]
         }
-    ],
-    "Projects":[
+      ]
+    },
+    {
+      "CompanyName": "MAQ Software",
+      "Location": "Hyderabad, Telangana, India",
+      "LogoUrl": "assets/logos/maq.svg",
+      "OrderInUI": 4,
+      "MoreInfos": [
         {
-            "Title":"FEE Hub",
-            "Description": "It is a single page Angular 9 based web application for Front end expertise assignment. Build is setup using Github action and deployed using firebase",
-            "Technologies": ["Angular", "Typescript", "Bootstrap", "HTML/SCSS"],
-            "StartDate": "2020-03-1",
-            "EndDate": "2020-04-1",
-            "RepoLink": "https://github.com/sachindevtomar/FEEHub",
-            "HostLink": "https://feehub-b8a09.firebaseapp.com/",
-            "FontAwesomeClass": "fa-laptop",
-            "ProjectType": "Web App"
+          "Position": "Software Engineer 2",
+          "StartDate": "2020-02-28",
+          "EndDate": "2020-12-29",
+          "Responsibilities": [
+            "Created .NET Core microservices with complete Dev/Prod build and release pipelines.",
+            "Owned design, implementation, testing, and deployment across the delivery lifecycle.",
+            "Partnered with clients in daily stand-ups to gather requirements and clarify scope.",
+            "Worked with Continuous Integration and DevOps practices; performed API load testing across platforms.",
+            "Built custom visuals using D3.js for Power BI and web applications."
+          ]
         },
         {
-            "Title":"Incident Reporting",
-            "Description": "Incident Reporting is an android application which provides easy and safe handling of accident cases. It has user 3 user interface for police admin, public user, onsite police",
-            "Technologies": ["Android", "Firebase", "XML", "Google APIs"],
-            "StartDate": "2018-04-1",
-            "EndDate": "2018-07-1",
-            "RepoLink": "https://github.com/sachindevtomar/IncidentReporting",
-            "HostLink": "",
-            "FontAwesomeClass": "fa-mobile-alt",
-            "ProjectType": "Mobile App"
-        },
-        {
-            "Title":"Jeev Aashraya",
-            "Description": "It is an android application for the Jeev Aashraya (a Lucknow based NGO). It has an user friendly interface and helps user to directly connect to the Jeev Ashraya.",
-            "Technologies": ["Android", "Firebase", "XML", "Google APIs"],
-            "StartDate": "2017-06-1",
-            "EndDate": "2017-08-1",
-            "RepoLink": "",
-            "HostLink": "",
-            "FontAwesomeClass": "fa-mobile-alt",
-            "ProjectType": "Mobile App"
-        },
-        {
-            "Title":"ShopEasy",
-            "Description": "It is an Online Shopping Cart System with lots of features. It is a responsive and user friendly web application. ",
-            "Technologies": ["JSP", "Servlet", "MySql", "HTML/CSS", "JQuery", "JavaScript", "Bootstrap"],
-            "StartDate": "2017-01-1",
-            "EndDate": "2017-03-1",
-            "RepoLink": "https://github.com/sachindevtomar/ShopEasy",
-            "HostLink": "",
-            "FontAwesomeClass": "fa-laptop",
-            "ProjectType": "Web App"
+          "Position": "Software Engineer 1",
+          "StartDate": "2018-07-30",
+          "EndDate": "2020-02-27",
+          "Responsibilities": [
+            "Earned Microsoft certifications covering SQL, Power BI, and Azure.",
+            "Authored design documents for new PBIs and resolved development/production build failures.",
+            "Worked on recommendation engine, business rules, GDPR, and ML proof-of-concepts.",
+            "Wrote unit, smoke, and integration tests, including frontend tests with Jasmine and Karma."
+          ]
         }
-    ],
-    "Skills":[
+      ]
+    },
+    {
+      "CompanyName": "Tata Consultancy Services",
+      "Location": "Lucknow, Uttar Pradesh, India",
+      "LogoUrl": "assets/logos/tcs.svg",
+      "OrderInUI": 5,
+      "MoreInfos": [
         {
-            "Name": ".Net Core",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fdotnet.svg?alt=media&token=bd7e41e4-a56e-43bb-b367-ade435c31248"
-        },
-        {
-            "Name": "Angular",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fangular.svg?alt=media&token=dd0b4d6a-2d2a-4348-8421-f0a114b65f0b"
-        },
-        {
-            "Name": "C++",
-            "TotalLevel": 10,
-            "MyLevel": 8,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fcpp.svg?alt=media&token=224d6560-974c-4b1d-a8f4-84af5f029056"
-        },
-        {
-            "Name": "Android",
-            "TotalLevel": 10,
-            "MyLevel": 7,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fandroid.svg?alt=media&token=4d5c6336-513c-42dc-92b1-1fcdbd20728b"
-        },
-        {
-            "Name": "Microsoft Azure",
-            "TotalLevel": 10,
-            "MyLevel": 8,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fazure.svg?alt=media&token=f09e81dd-76dd-420b-8684-6dac98b0a75e"
-        },
-        {
-            "Name": "Bootstrap",
-            "TotalLevel": 10,
-            "MyLevel": 8,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fbootstrap.svg?alt=media&token=805c87da-f2dd-4f98-abdc-0545224a677b"
-        },
-        {
-            "Name": "CSharp",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fcsharp.svg?alt=media&token=f019c911-28f7-4244-b67a-63d216974342"
-        },
-        {
-            "Name": "HTML",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fhtml.svg?alt=media&token=1432151d-2bde-461f-95c5-c497cbdb601f"
-        },
-        {
-            "Name": "CSS",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fcss.svg?alt=media&token=1d651666-1d91-4197-a7c7-a8c65d9585de"
-        },
-        {
-            "Name": "Javascript",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fjavascript.svg?alt=media&token=2ef27808-639f-484f-aaf5-d49444a7fdcb"
-        },
-        {
-            "Name": "Typescript",
-            "TotalLevel": 10,
-            "MyLevel": 8,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Ftypescript.svg?alt=media&token=3902f4da-e743-46fd-bed3-0af12bd6ab97"
-        },
-        {
-            "Name": "GitHub",
-            "TotalLevel": 10,
-            "MyLevel": 9,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fgithub.svg?alt=media&token=e4dead40-c563-44d3-a2e2-20e50883858e"
-        },
-        {
-            "Name": "React",
-            "TotalLevel": 10,
-            "MyLevel": 8,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Freact.svg?alt=media&token=dc06fb00-e0ed-4963-a26f-3bd6d5175a0f"
-        },
-        {
-            "Name": "Java",
-            "TotalLevel": 10,
-            "MyLevel": 7,
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/tech-logo%2Fjava.svg?alt=media&token=be3910a5-35cf-49e4-8c1b-cbdbb00b3ddc"
+          "Position": "Intern",
+          "StartDate": "2017-06-14",
+          "EndDate": "2017-07-19",
+          "Responsibilities": [
+            "Developed an Android application for Jeev Aashraya, a Lucknow-based NGO.",
+            "Delivered a user-friendly interface that helped people connect with the organization.",
+            "Implemented features such as Google Maps routes, Google Sign-In, news feed, and localization."
+          ]
         }
-    ],
-    "Certifications":[
-        {
-            "Name": "AZ-303 Microsoft Azure Architect Technologies",
-            "Company": "Microsoft",
-            "IssuedDate": "2020-11-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/500d4682-ef58-4a22-a9a5-89b07ff33411",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "Azure for Developers: Implementing and Developing Functions",
-            "Company": "LinkedIn",
-            "IssuedDate": "2020-09-01",
-            "VerificationLink": "http://www.linkedin.com/learning/azure-for-developers-implementing-and-developing-functions?trk=flagship-lil_details_certification",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/linkedin_logo.jpg?alt=media&token=8352bff7-35fc-4405-956b-8712af5e21c5" 
-        },
-        {
-            "Name": "DP-201 Designing an Azure Data Solution",
-            "Company": "Microsoft",
-            "IssuedDate": "2020-09-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/25fb0823-9145-4b0d-ae50-cee15dc48161",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "Microsoft Certified: Azure Data Engineer Associate",
-            "Company": "Microsoft",
-            "IssuedDate": "2020-09-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/76a714f4-cfdc-483b-9c3f-ebcef8f750cd",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "DP-200 Implementing an Azure Data Solution",
-            "Company": "Microsoft",
-            "IssuedDate": "2020-07-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/a9b98975-b17e-459b-ab22-67f72b06ada9",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "Microsoft Certified: Azure AI Engineer Associate",
-            "Company": "Microsoft",
-            "IssuedDate": "2019-12-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/668b8aa8-55c0-4e79-abc3-2ece1b718952",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "Exam 762: Developing SQL Databases",
-            "Company": "Microsoft",
-            "IssuedDate": "2019-04-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/feb180e7-684a-4895-9ec5-1ada2644066f",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "MCSA: SQL 2016 Database Development - Certified 2019",
-            "Company": "Microsoft",
-            "IssuedDate": "2019-04-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/8cd9d589-c95a-4ec0-8eb9-d77dd73f77ee",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "EF SET Certificate™",
-            "Company": "EF Standard English Test (EF SET) ",
-            "IssuedDate": "2019-10-01",
-            "VerificationLink": "https://www.efset.org/cert/k3PWBG",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/efset_logo.png?alt=media&token=b4e0933e-b035-4406-910a-a58a777e2763" 
-        },
-        {
-            "Name": "Exam 778: Analyzing and Visualizing Data with Power BI",
-            "Company": "Microsoft",
-            "IssuedDate": "2018-10-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/edffaba5-8e9a-4bee-b5b4-28fd68d3621a",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "Exam 761: Querying Data with Transact-SQL",
-            "Company": "Microsoft",
-            "IssuedDate": "2018-09-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/32758fc3-ea6f-469a-9281-0b8adcea2387",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        },
-        {
-            "Name": "Microsoft Certified: Azure Developer Associate",
-            "Company": "Microsoft",
-            "IssuedDate": "2019-07-01",
-            "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/d42a1479-e3c1-41fd-9846-0786e85fdc5e",
-            "LogoURL": "https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/microsoft_logo.jpg?alt=media&token=fc669b71-261e-419b-84c5-a81c8b815747" 
-        }
-    ]
+      ]
+    }
+  ],
+  "Educations": [
+    {
+      "InstituteName": "FGIET",
+      "Location": "Raebareli",
+      "Board": "AKTU",
+      "CourseName": "Bachelor of Technology",
+      "StartDate": "2014-06-01",
+      "EndDate": "2018-06-01",
+      "Stream": "Computer Science and Engineering",
+      "Percentile": "76.44%"
+    },
+    {
+      "InstituteName": "Pt. G. R. S. Inter College",
+      "Location": "Agra",
+      "Board": "UP Board",
+      "CourseName": "Intermediate",
+      "StartDate": "2011-06-01",
+      "EndDate": "2013-06-01",
+      "Stream": "PCM",
+      "Percentile": "76.40%"
+    },
+    {
+      "InstituteName": "Pt. G. R. S. Inter College",
+      "Location": "Agra",
+      "Board": "UP Board",
+      "CourseName": "High School",
+      "StartDate": "2010-06-01",
+      "EndDate": "2011-06-01",
+      "Stream": "Science",
+      "Percentile": "70.67%"
+    }
+  ],
+  "Projects": [
+    {
+      "Title": "FEE Hub",
+      "Description": "Single-page Angular web application for front-end expertise assignment. CI is set up with GitHub Actions and the app is deployed on Firebase.",
+      "Technologies": ["Angular", "Typescript", "Bootstrap", "HTML/SCSS"],
+      "StartDate": "2020-03-01",
+      "EndDate": "2020-04-01",
+      "RepoLink": "https://github.com/sachindevtomar/FEEHub",
+      "HostLink": "https://feehub-b8a09.firebaseapp.com/",
+      "FontAwesomeClass": "fa-laptop",
+      "ProjectType": "Web App"
+    },
+    {
+      "Title": "Incident Reporting",
+      "Description": "Android application for safer handling of accident cases, with interfaces for police admin, public users, and onsite police.",
+      "Technologies": ["Android", "Firebase", "XML", "Google APIs"],
+      "StartDate": "2018-04-01",
+      "EndDate": "2018-07-01",
+      "RepoLink": "https://github.com/sachindevtomar/IncidentReporting",
+      "HostLink": "",
+      "FontAwesomeClass": "fa-mobile-alt",
+      "ProjectType": "Mobile App"
+    },
+    {
+      "Title": "Jeev Aashraya",
+      "Description": "Android application for Jeev Aashraya NGO with a friendly interface to help users connect with the organization.",
+      "Technologies": ["Android", "Firebase", "XML", "Google APIs"],
+      "StartDate": "2017-06-01",
+      "EndDate": "2017-08-01",
+      "RepoLink": "",
+      "HostLink": "",
+      "FontAwesomeClass": "fa-mobile-alt",
+      "ProjectType": "Mobile App"
+    },
+    {
+      "Title": "ShopEasy",
+      "Description": "Responsive online shopping cart system with a user-friendly web experience.",
+      "Technologies": ["JSP", "Servlet", "MySql", "HTML/CSS", "JQuery", "JavaScript", "Bootstrap"],
+      "StartDate": "2017-01-01",
+      "EndDate": "2017-03-01",
+      "RepoLink": "https://github.com/sachindevtomar/ShopEasy",
+      "HostLink": "",
+      "FontAwesomeClass": "fa-laptop",
+      "ProjectType": "Web App"
+    }
+  ],
+  "Skills": [
+    {
+      "Name": ".Net Core",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+    },
+    {
+      "Name": "Angular",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+    },
+    {
+      "Name": "C++",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+    },
+    {
+      "Name": "Android",
+      "TotalLevel": 10,
+      "MyLevel": 7,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+    },
+    {
+      "Name": "Microsoft Azure",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+    },
+    {
+      "Name": "Bootstrap",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+    },
+    {
+      "Name": "CSharp",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    },
+    {
+      "Name": "HTML",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+      "Name": "CSS",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+      "Name": "Javascript",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "Name": "Typescript",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
+      "Name": "GitHub",
+      "TotalLevel": 10,
+      "MyLevel": 9,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+    },
+    {
+      "Name": "React",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    },
+    {
+      "Name": "Java",
+      "TotalLevel": 10,
+      "MyLevel": 7,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    },
+    {
+      "Name": "Docker",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+    },
+    {
+      "Name": "SQL Server",
+      "TotalLevel": 10,
+      "MyLevel": 8,
+      "LogoURL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+    }
+  ],
+  "Certifications": [
+    {
+      "Name": "AZ-303 Microsoft Azure Architect Technologies",
+      "Company": "Microsoft",
+      "IssuedDate": "2020-11-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/500d4682-ef58-4a22-a9a5-89b07ff33411",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "Azure for Developers: Implementing and Developing Functions",
+      "Company": "LinkedIn",
+      "IssuedDate": "2020-09-01",
+      "VerificationLink": "http://www.linkedin.com/learning/azure-for-developers-implementing-and-developing-functions?trk=flagship-lil_details_certification",
+      "LogoURL": "assets/logos/linkedin.svg"
+    },
+    {
+      "Name": "DP-201 Designing an Azure Data Solution",
+      "Company": "Microsoft",
+      "IssuedDate": "2020-09-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/25fb0823-9145-4b0d-ae50-cee15dc48161",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "Microsoft Certified: Azure Data Engineer Associate",
+      "Company": "Microsoft",
+      "IssuedDate": "2020-09-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/76a714f4-cfdc-483b-9c3f-ebcef8f750cd",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "DP-200 Implementing an Azure Data Solution",
+      "Company": "Microsoft",
+      "IssuedDate": "2020-07-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/a9b98975-b17e-459b-ab22-67f72b06ada9",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "Microsoft Certified: Azure AI Engineer Associate",
+      "Company": "Microsoft",
+      "IssuedDate": "2019-12-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/668b8aa8-55c0-4e79-abc3-2ece1b718952",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "Exam 762: Developing SQL Databases",
+      "Company": "Microsoft",
+      "IssuedDate": "2019-04-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/feb180e7-684a-4895-9ec5-1ada2644066f",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "MCSA: SQL 2016 Database Development - Certified 2019",
+      "Company": "Microsoft",
+      "IssuedDate": "2019-04-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/8cd9d589-c95a-4ec0-8eb9-d77dd73f77ee",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "EF SET Certificate™",
+      "Company": "EF Standard English Test (EF SET)",
+      "IssuedDate": "2019-10-01",
+      "VerificationLink": "https://www.efset.org/cert/k3PWBG",
+      "LogoURL": "assets/logos/efset.svg"
+    },
+    {
+      "Name": "Exam 778: Analyzing and Visualizing Data with Power BI",
+      "Company": "Microsoft",
+      "IssuedDate": "2018-10-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/edffaba5-8e9a-4bee-b5b4-28fd68d3621a",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "Exam 761: Querying Data with Transact-SQL",
+      "Company": "Microsoft",
+      "IssuedDate": "2018-09-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/32758fc3-ea6f-469a-9281-0b8adcea2387",
+      "LogoURL": "assets/logos/microsoft.svg"
+    },
+    {
+      "Name": "Microsoft Certified: Azure Developer Associate",
+      "Company": "Microsoft",
+      "IssuedDate": "2019-07-01",
+      "VerificationLink": "https://www.youracclaim.com/earner/earned/badge/d42a1479-e3c1-41fd-9846-0786e85fdc5e",
+      "LogoURL": "assets/logos/microsoft.svg"
+    }
+  ]
 }
