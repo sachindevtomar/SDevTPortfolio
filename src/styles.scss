@@ -16,11 +16,15 @@ $primary-darktheme-color: #0d0d0d;
 body { 
     padding-top: 50px; 
     font-family: 'Poppins', sans-serif;
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/feehub-b8a09.appspot.com/o/Main-Desktop-Background.jpg?alt=media&token=1e62d940-fe0d-4294-a8e2-e0adf7812908");
+    color: #f8fafc;
+    background-color: #0b1220;
+    background-image:
+      radial-gradient(circle at 12% 18%, rgba(0, 196, 204, 0.18), transparent 28%),
+      radial-gradient(circle at 88% 8%, rgba(45, 18, 124, 0.28), transparent 32%),
+      linear-gradient(160deg, #0b1220 0%, #111827 45%, #0f172a 100%);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 //Common Styling
@@ -48,9 +52,10 @@ body {
   }
 
 .content-div {
-    //background-image: linear-gradient(to top, rgba(0,196,204, 0.5), rgba(45,18,124, 0.5));
-    background-color: rgba($color: #000000, $alpha: 0.5 );
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.48);
+    padding: 1.25rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .custom-hr{

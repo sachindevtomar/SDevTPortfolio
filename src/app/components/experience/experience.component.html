@@ -1,54 +1,61 @@
-<div class="row" data-aos="zoom-in-right">
-    <div class="logo-right-div col-md-2 col-3">
-        <img [src]="exp.LogoUrl" class="company-logo-img" width="60px" height="60px">
+<div class="experience-entry" data-aos="fade-up">
+  <div class="company-rail">
+    <div class="company-mark">
+      <img
+        *ngIf="!logoFailed"
+        [src]="exp.LogoUrl"
+        [alt]="exp.CompanyName + ' logo'"
+        class="company-logo"
+        (error)="onLogoError()">
+      <span *ngIf="logoFailed" class="company-initials" aria-hidden="true">{{ companyInitials }}</span>
     </div>
-    <div class="company-info-left-div col-md-10 col-9">
-        <ng-container
-        [ngTemplateOutlet]="exp.MoreInfos.length == 1 ? singlePositions:multiplePositions" [ngTemplateOutletContext]="{experience:exp}">
-        </ng-container>   
-    </div>
-</div>
+    <div class="rail-line" *ngIf="exp.MoreInfos.length > 1" aria-hidden="true"></div>
+  </div>
 
-<div *ngIf="exp.MoreInfos.length > 1">
-    <div class="multiple-exp-div row" data-aos="zoom-in-right" *ngFor="let info of exp.MoreInfos">
-        <div class="exp-connection-div col-md-2 col-3">
-            <i class="exp-connecting-dot-i fas fa-dot-circle"></i>
-            <div class="exp-connecting-line-div"></div>
-        </div>
-        <div class="col-md-10 col-9">
-            <h4 class="themed-text">{{info.Position}}</h4>
-            <p class="plain-text fade-text">{{info.StartDate.toString() | date: 'MMM yyyy'}} - {{(info.EndDate.toString() !== "") ? (info.EndDate.toString() | date: 'MMM yyyy') : "Present"}} ({{getDateDifference(info.StartDate.toString(), info.EndDate.toString())}})</p>
-            <p class="plain-text fade-text">{{exp.Location}}</p>
-            <ng-container 
-            [ngTemplateOutlet] = "keyResponsibilities"
-            [ngTemplateOutletContext]="{responsibilities:info.Responsibilities}">
-            </ng-container>
-        </div>
-    </div>
-</div>
-
-<ng-template #singlePositions let-experience='experience'> 
-    <h4 class="themed-text">{{exp.MoreInfos[0].Position}}</h4>
-    <p class="plain-text">{{exp.CompanyName}}</p>
-    <p class="plain-text fade-text">{{exp.MoreInfos[0].StartDate.toString() | date: 'MMM yyyy'}} - {{(exp.MoreInfos[0].EndDate.toString() !== "") ? (exp.MoreInfos[0].EndDate.toString() | date: 'MMM yyyy') : "Present"}} ({{getDateDifference(exp.MoreInfos[0].StartDate.toString(), exp.MoreInfos[0].EndDate.toString())}})</p>
-    <p class="plain-text fade-text">{{exp.Location}}</p>
-    <ng-container 
-     [ngTemplateOutlet] = "keyResponsibilities"
-     [ngTemplateOutletContext]="{responsibilities:exp.MoreInfos[0].Responsibilities}">
+  <div class="experience-body">
+    <ng-container *ngIf="exp.MoreInfos.length === 1; else multiRoleHeader">
+      <div class="role-block">
+        <h3 class="role-title">{{ exp.MoreInfos[0].Position }}</h3>
+        <p class="company-name">{{ exp.CompanyName }}</p>
+        <p class="meta-line">
+          <span>{{ formatTenure(exp.MoreInfos[0].StartDate, exp.MoreInfos[0].EndDate) }}</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>{{ getDateDifference(exp.MoreInfos[0].StartDate.toString(), exp.MoreInfos[0].EndDate.toString()) }}</span>
+        </p>
+        <p class="meta-line location">{{ exp.Location }}</p>
+        <ul class="responsibility-list">
+          <li *ngFor="let item of exp.MoreInfos[0].Responsibilities">{{ item }}</li>
+        </ul>
+      </div>
     </ng-container>
-</ng-template>
 
-<ng-template #multiplePositions let-experience='experience'> 
-    <div class="multiple-company-title-div">
+    <ng-template #multiRoleHeader>
+      <div class="company-summary">
+        <h3 class="company-name large">{{ exp.CompanyName }}</h3>
+        <p class="meta-line">
+          {{ getDateDifference(
+            exp.MoreInfos[exp.MoreInfos.length - 1].StartDate.toString(),
+            exp.MoreInfos[0].EndDate.toString()
+          ) }}
+          <span class="dot" aria-hidden="true">·</span>
+          {{ exp.Location }}
+        </p>
+      </div>
+
+      <div class="role-block nested" *ngFor="let info of exp.MoreInfos">
+        <div class="nested-marker" aria-hidden="true"></div>
         <div>
-            <h3 class="plain-text">{{experience.CompanyName}}</h3>
-            <p class="plain-text">{{getDateDifference(experience.MoreInfos[experience.MoreInfos.length -1].StartDate, experience.MoreInfos[0].EndDate)}}</p>
+          <h4 class="role-title">{{ info.Position }}</h4>
+          <p class="meta-line">
+            <span>{{ formatTenure(info.StartDate, info.EndDate) }}</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span>{{ getDateDifference(info.StartDate.toString(), info.EndDate.toString()) }}</span>
+          </p>
+          <ul class="responsibility-list">
+            <li *ngFor="let item of info.Responsibilities">{{ item }}</li>
+          </ul>
         </div>
-    </div>
-</ng-template>  
-
-<ng-template #keyResponsibilities let-responsibilities='responsibilities'>
-    <ul class="plain-text custom-ul">
-        <li *ngFor="let item of responsibilities">{{item}}</li>
-    </ul>
-</ng-template>
+      </div>
+    </ng-template>
+  </div>
+</div>

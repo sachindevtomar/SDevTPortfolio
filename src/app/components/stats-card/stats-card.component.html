@@ -1,5 +1,8 @@
-<div class="card">
+<div class="card" [style.--accent]="statsFigure.color">
   <h3>{{statsFigure.difficulty}}</h3>
-  <p class="plain-text">{{statsFigure.myCount}} / {{statsFigure.totalCount}}</p> 
+  <p class="plain-text">{{statsFigure.myCount}} / {{statsFigure.totalCount}}</p>
   <p class="plain-text">Submissions: {{statsFigure.mySubmissions}}</p>
+  <div class="mini-progress" aria-hidden="true">
+    <span [style.width.%]="statsFigure.percent"></span>
+  </div>
 </div>

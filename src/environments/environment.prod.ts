@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  leetCodeApiBaseUrl: 'https://alfa-leetcode-api.onrender.com'
 };

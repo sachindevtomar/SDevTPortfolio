@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Certification } from 'src/app/model/ProfileDataInterfaces';
 
 @Component({
@@ -7,12 +7,7 @@ import { Certification } from 'src/app/model/ProfileDataInterfaces';
   templateUrl: './certification-card.component.html',
   styleUrls: ['./certification-card.component.scss']
 })
-export class CertificationCardComponent implements OnInit {
-  @Input() cert: Certification;
-  @Input() position: number;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class CertificationCardComponent {
+  @Input() cert!: Certification;
+  @Input() position = 0;
 }

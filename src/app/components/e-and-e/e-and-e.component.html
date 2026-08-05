@@ -1,39 +1,43 @@
-<div class="full-div">
-    <div class="content-div container">
-        <section id="work-experience">
-            <div class="row section-title">
-                <p class="title-text">WORK EXPERIENCE</p>
-            </div>
-            <div class="section-content">
-                <div *ngFor="let exp of data.WorkExperiences | orderBy: 'OrderInUI'">
-                    <app-experience [exp]="exp"></app-experience>
-                    <div class="custom-hr"></div>
-                </div>
-            </div>
-        </section>
+<div class="full-div career-page">
+  <div class="container content-div career-panel">
+    <section id="work-experience">
+      <div class="section-title">
+        <p class="title-text">Work Experience</p>
+      </div>
+      <p class="section-lead">A timeline of roles across product and engineering teams.</p>
 
-        <section id="education">
-            <div class="row section-title">
-                <p class="title-text">EDUCATION</p>
-            </div>
-            <div class="section-content row">
-                <div class="col-md-4 col-xs-12 tile-section-single-div" *ngFor="let edu of data.Educations">
-                    <div class="edu-tile-full" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
-                        <div class="edu-tile-inside">
-                            <p class="edu-tile-image"><span><i class="fas fa-landmark edu-tile-image-icon"></i></span></p>
-                            <div class="edu-tile-content">
-                                <h4 class="themed-text">{{edu.CourseName}}</h4>
-                                <p class="plain-text">{{edu.InstituteName}} , {{edu.Location}}</p>
-                                <p class="plain-text">{{edu.StartDate.toString() | date: 'yyyy'}} - {{edu.EndDate.toString() | date: 'yyyy'}}</p>
-                                <p class="plain-text">{{edu.Stream}}</p>
-                                <p class="plain-text">Percentage: <b>{{edu.Percentile}}</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+      <div class="experience-stack">
+        <app-experience
+          *ngFor="let exp of data.WorkExperiences | orderBy: 'OrderInUI'"
+          [exp]="exp">
+        </app-experience>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-title">
+        <p class="title-text">Education</p>
+      </div>
+      <p class="section-lead">Academic foundation in computer science and engineering.</p>
+
+      <div class="education-grid">
+        <article class="edu-item" *ngFor="let edu of data.Educations">
+          <div class="edu-icon" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-body">
+            <h3>{{ edu.CourseName }}</h3>
+            <p class="edu-institute">{{ edu.InstituteName }}, {{ edu.Location }}</p>
+            <p class="edu-meta">
+              {{ edu.StartDate.toString() | date: 'yyyy' }} – {{ edu.EndDate.toString() | date: 'yyyy' }}
+              <span class="dot" aria-hidden="true">·</span>
+              {{ edu.Board }}
+            </p>
+            <p class="edu-stream">{{ edu.Stream }}</p>
+            <p class="edu-score" *ngIf="edu.Percentile">Score: <strong>{{ edu.Percentile }}</strong></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
 </div>

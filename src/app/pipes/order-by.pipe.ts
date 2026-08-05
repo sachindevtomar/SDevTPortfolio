@@ -6,12 +6,20 @@ import { Pipe, PipeTransform } from '@angular/core';
   pure: true
 })
 export class OrderByPipe implements PipeTransform {
-
-  transform(value: any[], propertyName: string): any[] {
-    if (propertyName)
-      return value.sort((a: any, b: any) => b[propertyName] < a[propertyName]? b[propertyName] : a[propertyName]);
-    else
+  transform(value: any[] | null | undefined, propertyName: string): any[] {
+    if (!value?.length) {
+      return [];
+    }
+    if (!propertyName) {
       return value;
+    }
+    return [...value].sort((a: any, b: any) => {
+      const left = Number(a?.[propertyName]);
+      const right = Number(b?.[propertyName]);
+      if (Number.isFinite(left) && Number.isFinite(right)) {
+        return left - right;
+      }
+      return String(a?.[propertyName] ?? '').localeCompare(String(b?.[propertyName] ?? ''));
+    });
   }
-
 }

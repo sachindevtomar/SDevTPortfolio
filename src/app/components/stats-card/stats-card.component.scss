@@ -1,27 +1,41 @@
-@import "../../../styles.scss";
-
+$primary-color: #00c4cc;
+$secondary-color: #2D127C;
 
 .card {
-    background-image: linear-gradient(to right, $secondary-color , $primary-color);
-    color: white;
-    padding-top: 20px;
-    padding-left: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+  background: linear-gradient(135deg, rgba(45, 18, 124, 0.9), rgba(0, 196, 204, 0.55));
+  color: white;
+  padding: 1rem 1.1rem;
+  margin-top: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  .mini-progress {
+    margin-top: 0.65rem;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+
+    span {
+      display: block;
+      height: 100%;
+      background: var(--accent, #00c4cc);
+      border-radius: inherit;
+    }
+  }
 }
 
-//for mobile
 @media screen and (max-width: 480px) {
-    
-        .card {
-            padding-top: 10px;
-        
-            h3{
-                font-size: large;
-            }
-            .plain-text{
-                font-size: small;
-            }
-        }
+  .card {
+    padding-top: 10px;
+
+    h3 {
+      font-size: large;
+    }
+
+    .plain-text {
+      font-size: small;
+    }
+  }
 }

@@ -1,40 +1,41 @@
-<div class="full-div">
-    <div class="content-div container">
-        <section id="projects">
-            <div class="row section-title">
-                <p class="title-text">PROJECTS</p>
+<div class="full-div projects-page">
+  <div class="container content-div projects-panel">
+    <section id="projects">
+      <div class="section-title">
+        <p class="title-text">Projects</p>
+      </div>
+      <p class="section-lead">Selected builds across web and mobile.</p>
+
+      <div class="projects-grid">
+        <article class="project-card" *ngFor="let proj of data.Projects">
+          <div class="project-top">
+            <span class="project-type" [title]="proj.ProjectType">
+              <i class="fas" [ngClass]="proj.FontAwesomeClass" aria-hidden="true"></i>
+            </span>
+            <h3>{{ proj.Title }}</h3>
+          </div>
+
+          <p class="project-description">{{ proj.Description }}</p>
+
+          <div class="project-meta">
+            <div class="project-links">
+              <a *ngIf="proj.RepoLink" [href]="proj.RepoLink" target="_blank" rel="noopener" aria-label="GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a *ngIf="proj.HostLink" [href]="proj.HostLink" target="_blank" rel="noopener" aria-label="Live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
             </div>
-            <div class="row section-content">
-                <div class="col-md-4 col-12 proj-main-tile-div" *ngFor="let proj of data.Projects">
-                    <div class="col-md-12 col-12 proj-tile-div" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
-                        <div class="tile-logo-div">
-                            <i class="fas" [title]="proj.ProjectType" [ngClass]="proj.FontAwesomeClass"></i>
-                        </div>
-                        <div class="proj-tile-content">
-                            <h4 class="themed-text">{{proj.Title}}</h4>
-                            <div class="proj-description-div">
-                                <p class="plain-text">{{proj.Description}}</p>
-                            </div>
-                            <div class="link-time-div row">
-                                <div class="link-time-left-div col-md-5 col-5">
-                                    <a [href]="proj.RepoLink" target="_blank" *ngIf="proj.RepoLink !==''"><i class="fab fa-github"></i></a>
-                                    <a [href]="proj.HostLink" target="_blank" *ngIf="proj.HostLink"><i class="fas fa-rocket"></i></a>
-                                </div>
-                                <div class="link-time-right-div col-md-7 col-7">
-                                    <p class="plain-text">({{proj.StartDate.toString() | date: 'MMM yyyy'}} - {{proj.EndDate.toString() | date: 'MMM yyyy'}})</p>
-                                </div>
-                            </div>
-                            <div class="tech-tag-div row">
-                                <div class="single-tag-div" *ngFor="let tech of proj.Technologies">
-                                    <p>{{tech}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+            <p class="project-dates">
+              {{ proj.StartDate.toString() | date: 'MMM yyyy' }} – {{ proj.EndDate.toString() | date: 'MMM yyyy' }}
+            </p>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag" *ngFor="let tech of proj.Technologies">{{ tech }}</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
 </div>

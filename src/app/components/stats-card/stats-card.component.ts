@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IStatsFigure } from 'src/app/model/StatsFigure';
 
 @Component({
@@ -7,13 +7,6 @@ import { IStatsFigure } from 'src/app/model/StatsFigure';
   templateUrl: './stats-card.component.html',
   styleUrls: ['./stats-card.component.scss']
 })
-export class StatsCardComponent implements OnInit {
-  @Input() statsFigure: IStatsFigure;
-
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class StatsCardComponent {
+  @Input() statsFigure!: IStatsFigure;
 }

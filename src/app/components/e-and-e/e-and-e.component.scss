@@ -1,58 +1,105 @@
+$primary-color: #00c4cc;
+$ink: rgba(248, 250, 252, 0.95);
+$muted: rgba(203, 213, 225, 0.8);
+$line: rgba(255, 255, 255, 0.12);
 
-$primary-color:#00c4cc;
-$secondary-color:#2D127C;
-
-#education{
-    margin-top: 30px;
-}
-
-.edu-tile-full{
-    padding: 20px 0px 20px 0px;
-}
-.edu-tile-inside{
-    background-color: rgba(255,255,255,0.2);
-    float: left;
-    border: 1px solid black;
-    min-height: 130px;
-    width: 100%;
-    text-align: center;
-}
-.edu-tile-image{
-    border: black;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    padding-top: 10px;
-}
-.edu-tile-image-icon{
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 30px;
-}
-.edu-tile-content{
-    margin-top: -40px;
+.career-page {
+  padding-bottom: 2rem;
 }
 
-.themed-text{
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    margin-bottom: 0em;
+.career-panel {
+  border-radius: 18px;
+  border: 1px solid $line;
+  backdrop-filter: blur(8px);
 }
 
-.plain-text{
-    margin-bottom: 0em;
-    color:white;
+.section-lead {
+  color: $muted;
+  margin: -0.25rem 0 1.25rem;
+  max-width: 42rem;
 }
+
+.experience-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+#education {
+  margin-top: 2.25rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 0.85rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid $line;
+  background: rgba(0, 0, 0, 0.22);
+  min-height: 100%;
+  transition: border-color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    border-color: rgba(0, 196, 204, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+.edu-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(45, 18, 124, 0.7), rgba(0, 196, 204, 0.35));
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.edu-body {
+  h3 {
+    margin: 0;
+    color: $primary-color;
+    font-size: 1.02rem;
+    font-weight: 650;
+  }
+}
+
+.edu-institute,
+.edu-meta,
+.edu-stream,
+.edu-score {
+  margin: 0.3rem 0 0;
+  color: $muted;
+  font-size: 0.9rem;
+}
+
+.edu-institute {
+  color: $ink;
+}
+
+.edu-score strong {
+  color: $ink;
+}
+
+.dot {
+  margin: 0 0.35rem;
+}
+
+@media screen and (max-width: 900px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 480px) {
-    .edu-tile-full{
-        margin-top: 20px;
-    }
+  .section-lead {
+    font-size: 0.92rem;
+  }
 }

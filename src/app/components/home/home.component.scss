@@ -1,11 +1,16 @@
 
 $primary-color:#00c4cc;
 $secondary-color:#2D127C;
+$panel-ink: rgba(248, 250, 252, 0.92);
+$panel-muted: rgba(226, 232, 240, 0.72);
+$line: rgba(255, 255, 255, 0.12);
 
 #home-section{
     height: 100%;
     min-height: 92vh;
-    background-color: rgb(221, 228, 236);
+    background:
+      radial-gradient(circle at 20% 20%, rgba(0, 196, 204, 0.12), transparent 40%),
+      linear-gradient(180deg, rgba(221, 228, 236, 0.96), rgba(226, 232, 240, 0.9));
 
     .center-content{
         width: 100%;
@@ -25,6 +30,17 @@ $secondary-color:#2D127C;
         .profile-pic{
             margin-top: 20px;
             margin-bottom: 20px;
+            border: 3px solid rgba(45, 18, 124, 0.2);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+        }
+
+        .role-eyebrow {
+            margin: 0.35rem 0 0;
+            color: #475569;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
         #full-name-text{
@@ -70,42 +86,283 @@ $secondary-color:#2D127C;
     width: 100%;
     min-height: 92vh;
     height: 100%;
-    
-    .spinner-border{
-        position: relative;
-        left: 50%;
-        margin-left: -50px;
-        margin-top: 150px;
-        width: 100px;
-        height: 100px;
 
+    .leetcode-panel{
+        border: 1px solid $line;
+        border-radius: 18px;
+        backdrop-filter: blur(8px);
+        overflow: hidden;
     }
 
-    .dashboard{
-        .pie-chart{
-            width: 40%;
-        }
-        .stats{
-            width: 60%;
-            app-stats-card{
-                display: inline-block;
-                width: 30%;
-                margin: 10px;
-            }
-        }
-        .plain-text{
-            margin-bottom: 0em;
-            color:white;
+    .leetcode-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+
+        .section-title{
+            margin-left: 0;
         }
     }
 
-    .recent-submission{
-        margin-top: 20px;
-        .title-text{
-            margin-bottom: 5px;
+    .profile-link{
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        color: $panel-ink;
+        text-decoration: none;
+        font-size: 0.95rem;
+        letter-spacing: 0.04em;
+        border-bottom: 1px solid rgba(0, 196, 204, 0.45);
+        padding-bottom: 2px;
+        transition: color 180ms ease, border-color 180ms ease;
+
+        &:hover{
+            color: $primary-color;
+            border-color: $primary-color;
         }
     }
 
+    .leetcode-loading,
+    .leetcode-error{
+        min-height: 220px;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        gap: 0.85rem;
+        text-align: center;
+        color: $panel-ink;
+        padding: 2rem 1rem;
+    }
+
+    .loading-orb{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 3px solid rgba(0, 196, 204, 0.25);
+        border-top-color: $primary-color;
+        animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .summary-strip{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .summary-metric{
+        padding: 1rem 1.1rem;
+        border-radius: 14px;
+        background:
+            linear-gradient(135deg, rgba(45, 18, 124, 0.55), rgba(0, 196, 204, 0.18));
+        border: 1px solid $line;
+        animation: rise-in 480ms ease both;
+
+        .metric-value{
+            display: block;
+            color: #fff;
+            font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+            font-weight: 600;
+            line-height: 1.15;
+            letter-spacing: 0.02em;
+        }
+
+        .metric-label{
+            display: block;
+            margin-top: 0.35rem;
+            color: $panel-muted;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+    }
+
+    .leetcode-grid{
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        gap: 1.25rem;
+    }
+
+    .board-title{
+        color: $panel-ink;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.9rem;
+    }
+
+    .board-empty{
+        color: $panel-muted;
+        margin: 0;
+    }
+
+    .difficulty-board,
+    .submission-board{
+        padding: 1rem;
+        border-radius: 14px;
+        background: rgba(0, 0, 0, 0.22);
+        border: 1px solid $line;
+    }
+
+    .difficulty-row{
+        width: 100%;
+        display: block;
+        text-align: left;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding: 0.85rem 0.75rem;
+        margin-bottom: 0.55rem;
+        color: inherit;
+        cursor: pointer;
+        transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+
+        &:hover,
+        &.is-active{
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(0, 196, 204, 0.35);
+            transform: translateY(-1px);
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .difficulty-meta,
+    .difficulty-foot{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.75rem;
+        align-items: baseline;
+    }
+
+    .difficulty-name{
+        font-weight: 600;
+        letter-spacing: 0.04em;
+    }
+
+    .difficulty-count,
+    .difficulty-foot{
+        color: $panel-muted;
+        font-size: 0.85rem;
+    }
+
+    .difficulty-foot{
+        margin-top: 0.45rem;
+    }
+
+    .progress-track{
+        margin-top: 0.55rem;
+        height: 8px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        overflow: hidden;
+    }
+
+    .progress-fill{
+        height: 100%;
+        border-radius: inherit;
+        min-width: 2px;
+        transition: width 700ms cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .submission-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.85rem;
+        padding: 0.8rem 0.7rem;
+        margin-bottom: 0.45rem;
+        border-radius: 12px;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid transparent;
+        transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+        animation: rise-in 520ms ease both;
+
+        &:hover{
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(0, 196, 204, 0.3);
+            transform: translateX(2px);
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .submission-main{
+        min-width: 0;
+        flex: 1;
+    }
+
+    .submission-title{
+        display: block;
+        color: $panel-ink;
+        font-weight: 500;
+        margin-bottom: 0.35rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .submission-meta{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .lang-chip,
+    .time-chip,
+    .status-chip{
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        padding: 0.15rem 0.55rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.02em;
+    }
+
+    .lang-chip,
+    .time-chip{
+        color: $panel-muted;
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .status-chip{
+        flex-shrink: 0;
+        font-weight: 600;
+    }
+
+    .status-pass{
+        color: #0b3b2e;
+        background: #85d885;
+    }
+
+    .status-fail{
+        color: #4a1717;
+        background: #d66b6b;
+    }
+
+    @keyframes rise-in {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -128,60 +385,29 @@ $secondary-color:#2D127C;
         margin-top: 10px;
     }
     #leetcode-section{
-    
-        .spinner-border{
-            position: relative;
-            left: 50%;
-            margin-left: -40px;
-            margin-top: 120px;
-            width: 80px;
-            height: 80px;
+        .summary-strip{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .dashboard{
-            .pie-chart{
-                width: 100%;
-            }
-            .stats{
-                width: 100%;
-                app-stats-card{
-                    width: 45%;
-                    margin: 0px;
-                    margin-left: 3%;
-                }
-                margin-bottom: 10px;
-            }
+        .leetcode-grid{
+            grid-template-columns: 1fr;
+        }
+
+        .submission-row{
+            align-items: flex-start;
+            flex-direction: column;
         }
     }
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px){
-    
     #leetcode-section{
-        width: 100%;
-        min-height: 92vh;
-
-        .spinner-border{
-            position: relative;
-            left: 50%;
-            margin-left: -30px;
-            width: 60px;
-            height: 60px;
-            margin-top: 120px;
+        .summary-strip{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .dashboard{
-            .pie-chart{
-                width: 50%;
-            }
-            .stats{
-                width: 50%;
-                app-stats-card{
-                    width: 40%;
-                    margin-left: 6%;
-                }
-            }
+        .leetcode-grid{
+            grid-template-columns: 1fr;
         }
-
     }
 }

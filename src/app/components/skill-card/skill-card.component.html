@@ -1,16 +1,22 @@
-<div>
-    <div class="flip-card" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img [src]="skill.LogoURL" alt="tech-logo" class="tech-img">
-            <h4 class="themed-text">{{skill.Name}}</h4>
-          </div>
-          <div class="flip-card-back">
-            <p class="plain-text">Skill Level</p>
-            <h3>{{skill.MyLevel}} / {{skill.TotalLevel}}</h3> 
-            <p class="plain-text">{{getSkillLevel(skill.MyLevel, skill.TotalLevel)}}</p>
-          </div>
-        </div>
+<div
+  class="skill-tile"
+  tabindex="0"
+  [class.is-flipped]="flipped"
+  (click)="toggleFlip()"
+  (keydown.enter)="toggleFlip()"
+  (keydown.space)="$event.preventDefault(); toggleFlip()">
+  <div class="skill-tile-inner">
+    <div class="skill-face skill-front">
+      <img [src]="skill.LogoURL" [alt]="skill.Name + ' logo'" class="skill-logo">
+      <h4>{{ skill.Name }}</h4>
     </div>
+    <div class="skill-face skill-back">
+      <p class="label">Skill level</p>
+      <p class="score">{{ skill.MyLevel }} / {{ skill.TotalLevel }}</p>
+      <p class="level">{{ getSkillLevel(skill.MyLevel, skill.TotalLevel) }}</p>
+      <div class="meter" aria-hidden="true">
+        <span [style.width.%]="(skill.MyLevel / skill.TotalLevel) * 100"></span>
+      </div>
+    </div>
+  </div>
 </div>

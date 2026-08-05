@@ -1,40 +1,115 @@
 <section id="home-section">
     <div class="container center-content">
-        <h3 id>Hi👋, I'm <b id="full-name-text">{{data.FullName}}</b></h3>
+        <h3>Hi👋, I'm <b id="full-name-text">{{data.FullName}}</b></h3>
+        <p class="role-eyebrow">{{ data.CurrentRole }}</p>
         <img class="img-fluid rounded-circle profile-pic" [src]="data.ProfilePicURL" alt="Profile Pic" width="150">
         <h3 id="home-into-text">{{intoText}}<span id="home-cursor-span"><h1 id="home-custom-cursor">I</h1></span></h3>
 
         <div id="social-media-div">
-            <a [href]="data.SocialMediaLinks[2]" target="_blank"><i class="fab fa-github font-awesome-icon" aria-hidden="true"></i></a>
-            <a [href]="data.SocialMediaLinks[1]" target="_blank"><i class="fab fa-linkedin-in font-awesome-icon" aria-hidden="true"></i></a>
-            <a [href]="data.SocialMediaLinks[0]" target="_blank"><i class="fab fa-facebook font-awesome-icon" aria-hidden="true"></i></a>
-            <a [href]="data.SocialMediaLinks[6]" target="_blank"><i class="fab fa-google-plus font-awesome-icon" aria-hidden="true"></i></a>
-            <a [href]="data.SocialMediaLinks[3]" target="_blank"><i class="fab fa-twitter font-awesome-icon" aria-hidden="true"></i></a>
-            <a [href]="data.SocialMediaLinks[4]" target="_blank"><i class="fab fa-hackerrank font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.SocialMediaLinks[2]" target="_blank" rel="noopener"><i class="fab fa-github font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.SocialMediaLinks[1]" target="_blank" rel="noopener"><i class="fab fa-linkedin-in font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.SocialMediaLinks[0]" target="_blank" rel="noopener"><i class="fab fa-facebook font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.SocialMediaLinks[6]" target="_blank" rel="noopener"><i class="fab fa-google-plus font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.SocialMediaLinks[3]" target="_blank" rel="noopener"><i class="fab fa-twitter font-awesome-icon" aria-hidden="true"></i></a>
+            <a [href]="data.SocialMediaLinks[4]" target="_blank" rel="noopener"><i class="fab fa-hackerrank font-awesome-icon" aria-hidden="true"></i></a>
         </div>
     </div>
 </section>
 
 <section id="leetcode-section">
+    <div class="container content-div leetcode-panel">
+        <div class="leetcode-header">
+            <div class="section-title">
+                <p class="title-text">LeetCode</p>
+            </div>
+            <a class="profile-link" [href]="profileUrl" target="_blank" rel="noopener">
+                @{{ leetCodeUsername }}
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+        </div>
 
-    <div class="container content-div">
-        <div class="row section-title">
-            <p class="title-text">LeetCode</p>
+        <div class="leetcode-loading" *ngIf="leetCodeLoading" role="status" aria-live="polite">
+            <div class="loading-orb"></div>
+            <p>Fetching latest LeetCode activity…</p>
         </div>
-        <div class="spinner-border text-primary" *ngIf="leetCodeLoading"></div>
-        <p class="title-text" *ngIf="!leetCodeLoading && seriesData.length === 0">LeetCode stats are temporarily unavailable.</p>
-        <div class="row dashboard">
-            <div class="pie-chart" *ngIf="seriesData.length > 0">
-                <app-3D-donut-chart [seriesData]="seriesData" seriesName="Solved" [selectedDifficulty]="selectedDifficulty"></app-3D-donut-chart>
+
+        <div class="leetcode-error" *ngIf="!leetCodeLoading && leetCodeError">
+            <p>Couldn’t load live stats right now. The public API may be rate-limited — try again shortly.</p>
+            <a class="profile-link" [href]="profileUrl" target="_blank" rel="noopener">Open LeetCode profile</a>
+        </div>
+
+        <ng-container *ngIf="!leetCodeLoading && !leetCodeError">
+            <div class="summary-strip">
+                <div class="summary-metric">
+                    <span class="metric-value">{{ totalSolved }}</span>
+                    <span class="metric-label">Solved</span>
+                </div>
+                <div class="summary-metric">
+                    <span class="metric-value">{{ ranking | number }}</span>
+                    <span class="metric-label">Global Rank</span>
+                </div>
+                <div class="summary-metric">
+                    <span class="metric-value">{{ acceptanceRate }}%</span>
+                    <span class="metric-label">Acceptance</span>
+                </div>
+                <div class="summary-metric">
+                    <span class="metric-value">{{ reputation }}</span>
+                    <span class="metric-label">Reputation</span>
+                </div>
             </div>
-            <div class="stats">
-                <app-stats-card *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure" [statsFigure]="statsFigure" (click)="highlightChart(statsFigure.difficulty)"></app-stats-card>   
+
+            <div class="leetcode-grid">
+                <div class="difficulty-board">
+                    <h3 class="board-title">Problem breakdown</h3>
+                    <button
+                        type="button"
+                        class="difficulty-row"
+                        *ngFor="let statsFigure of statsFigures; trackBy: trackByStatsFigure"
+                        [class.is-active]="selectedDifficulty === statsFigure.difficulty"
+                        (click)="selectDifficulty(statsFigure.difficulty)">
+                        <div class="difficulty-meta">
+                            <span class="difficulty-name" [style.color]="statsFigure.color">{{ statsFigure.difficulty }}</span>
+                            <span class="difficulty-count">{{ statsFigure.myCount }} / {{ statsFigure.totalCount }}</span>
+                        </div>
+                        <div class="progress-track" aria-hidden="true">
+                            <div
+                                class="progress-fill"
+                                [style.width.%]="statsFigure.percent"
+                                [style.background]="statsFigure.color">
+                            </div>
+                        </div>
+                        <div class="difficulty-foot">
+                            <span>{{ statsFigure.percent }}% of catalog</span>
+                            <span>{{ statsFigure.mySubmissions }} submissions</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="submission-board">
+                    <h3 class="board-title">Recent submissions</h3>
+                    <p class="board-empty" *ngIf="uniqueRecentSubmissions.length === 0">No recent submissions available.</p>
+                    <a
+                        class="submission-row"
+                        *ngFor="let recentSubmission of uniqueRecentSubmissions; trackBy: trackByRecentSubmission"
+                        [href]="problemUrl(recentSubmission)"
+                        target="_blank"
+                        rel="noopener">
+                        <div class="submission-main">
+                            <span class="submission-title">{{ recentSubmission.title }}</span>
+                            <span class="submission-meta">
+                                <span class="lang-chip">{{ recentSubmission.lang }}</span>
+                                <span class="time-chip">{{ relativeTime(recentSubmission.timestamp) }}</span>
+                            </span>
+                        </div>
+                        <span
+                            class="status-chip"
+                            [class.status-pass]="recentSubmission.statusDisplay === 'Accepted'"
+                            [class.status-fail]="recentSubmission.statusDisplay !== 'Accepted'">
+                            {{ recentSubmission.statusDisplay }}
+                        </span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="recent-submission row" *ngIf="uniqueRecentSubmissions.length > 0">
-            <p class="title-text col-lg-12 col-md-12">Recent {{uniqueRecentSubmissions.length}} submissions</p>
-            
-            <app-recent-submission-card *ngFor="let recentSubmission of uniqueRecentSubmissions; trackBy:trackByRecentSubmission" [recentSubmission]="recentSubmission" class="col-lg-6 col-md-12"></app-recent-submission-card> 
-        </div>
+        </ng-container>
     </div>
 </section>

@@ -1,90 +1,157 @@
-@import "../../../styles.scss";
+$primary-color: #00c4cc;
+$secondary-color: #2D127C;
+$ink: rgba(248, 250, 252, 0.95);
+$muted: rgba(203, 213, 225, 0.82);
+$line: rgba(255, 255, 255, 0.12);
 
-.company-logo-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80px;
-    height: 80px;
+.experience-entry {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.15rem 1rem;
+  border-radius: 16px;
+  border: 1px solid $line;
+  background:
+    linear-gradient(145deg, rgba(15, 23, 42, 0.35), rgba(45, 18, 124, 0.18));
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+
+  &:hover {
+    border-color: rgba(0, 196, 204, 0.4);
+    transform: translateY(-2px);
+    background:
+      linear-gradient(145deg, rgba(15, 23, 42, 0.45), rgba(0, 196, 204, 0.12));
+  }
 }
 
-.themed-text{
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    margin-bottom: 0em;
+.company-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.plain-text{
-    margin-bottom: 0em;
-    color:white;
+.company-mark {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid $line;
+  background: rgba(255, 255, 255, 0.06);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
 }
 
-.fade-text{
-    color:gray;
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.custom-ul{
-    padding: 0;
+.company-initials {
+  color: $primary-color;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
-.multiple-company-title-div{
-    min-height: 90px;
-    display: flex;
-    align-items: center;
+.rail-line {
+  width: 2px;
+  flex: 1;
+  min-height: 24px;
+  margin-top: 0.65rem;
+  background: linear-gradient(to bottom, $primary-color, transparent);
 }
 
-.multiple-exp-div{
-    margin-top: 20px;
+.role-title {
+  margin: 0;
+  color: $primary-color;
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
 }
 
-.exp-connecting-dot-i{
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 5px;
+.company-name {
+  margin: 0.2rem 0 0;
+  color: $ink;
+  font-size: 1rem;
+  font-weight: 560;
+
+  &.large {
+    font-size: 1.2rem;
+  }
 }
 
-.exp-connection-div{
-    text-align: center;
-    overflow: hidden;
+.meta-line {
+  margin: 0.35rem 0 0;
+  color: $muted;
+  font-size: 0.9rem;
+
+  .dot {
+    margin: 0 0.35rem;
+  }
+
+  &.location {
+    margin-bottom: 0.65rem;
+  }
 }
 
-.exp-connecting-line-div{
-    width: 3px;
-    height: 100%;
-    margin: auto;
-    margin-top: 25px;
-    background-image: linear-gradient(to top, white, $primary-color);
+.company-summary {
+  margin-bottom: 0.85rem;
+}
+
+.role-block.nested {
+  position: relative;
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nested-marker {
+  width: 10px;
+  height: 10px;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background: $primary-color;
+  box-shadow: 0 0 0 4px rgba(0, 196, 204, 0.15);
+}
+
+.responsibility-list {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+  color: $ink;
+
+  li {
+    margin-bottom: 0.4rem;
+    line-height: 1.45;
+
+    &::marker {
+      color: $primary-color;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .company-logo-img{
-        display: block;
-        width: 60px;
-        height: 60px;
-    }
-    .multiple-company-title-div{
-        min-height: 70px;
-    }
-    .company-info-left-div, .multiple-exp-div {
-        .plain-text{
-            font-size: small;
-        }
-        .themed-text{
-            font-size: large;
-        }
-        .multiple-company-title-div{
-            .plain-text{
-                font-size: large;
-            }
-        }
-    }
-    .plain-text h4{
-        font-size: 1.0rem;
-        color:yellow;
-    }
+  .experience-entry {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.95rem 0.8rem;
+  }
+
+  .company-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  .role-title {
+    font-size: 1.02rem;
+  }
+
+  .meta-line,
+  .responsibility-list {
+    font-size: 0.86rem;
+  }
 }

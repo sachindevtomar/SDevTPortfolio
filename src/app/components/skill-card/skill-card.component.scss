@@ -1,84 +1,121 @@
-@import "../../../styles.scss";
+$primary-color: #00c4cc;
+$secondary-color: #2D127C;
+$ink: rgba(248, 250, 252, 0.95);
+$muted: rgba(203, 213, 225, 0.85);
+$line: rgba(255, 255, 255, 0.12);
 
-@import "../skills/skills.component.scss";
-
-.flip-card {
-    height: 150px;
-    perspective: 1000px;
-
-    .tech-img{
-        width: 100%;
-        height: 60px;
-        max-width: 100px;
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-      
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-      
-    .flip-card-front {
-        background-color: rgba(255,255,255,0.2);
-        color: white;
-        padding-top: 20px;
-        text-align: center;
-    }
-      
-    .flip-card-back {
-        background-image: linear-gradient(to right, $secondary-color , $primary-color);
-        color: white;
-        transform: rotateY(180deg);
-        padding-top: 20px;
-    }
-
-    h4{
-        margin-top: 10px;
-    }
-}
-  
-.flip-card:hover .flip-card-inner {
-transform: rotateY(180deg);
+:host {
+  display: block;
+  min-width: 0;
 }
 
-//for mobile
+.skill-tile {
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+}
+
+.skill-tile-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.55s ease;
+  transform-style: preserve-3d;
+}
+
+.skill-tile:hover .skill-tile-inner,
+.skill-tile.is-flipped .skill-tile-inner,
+.skill-tile:focus-visible .skill-tile-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  border: 1px solid $line;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 0.6rem;
+  text-align: center;
+}
+
+.skill-front {
+  background: rgba(255, 255, 255, 0.08);
+
+  h4 {
+    margin: 0.55rem 0 0;
+    color: $ink;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+}
+
+.skill-back {
+  background: linear-gradient(135deg, rgba(45, 18, 124, 0.95), rgba(0, 196, 204, 0.75));
+  transform: rotateY(180deg);
+  color: #fff;
+
+  .label,
+  .level {
+    margin: 0;
+    font-size: 0.78rem;
+    opacity: 0.9;
+  }
+
+  .score {
+    margin: 0.35rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.skill-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.meter {
+  width: 80%;
+  height: 6px;
+  margin-top: 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+
+  span {
+    display: block;
+    height: 100%;
+    background: #fff;
+    border-radius: inherit;
+  }
+}
+
 @media screen and (max-width: 480px) {
-    .flip-card {
-        height: 100px;
-        .tech-img{
-            width: 100%;
-            height: 50px;
-            max-width: 60px;
-        }
-        h4{
-            font-size: small;
-        }
-        .flip-card-front {
-            padding-top: 8px;
-        }
-          
-        .flip-card-back {
-            padding-top: 10px;
-        
-            h3{
-                font-size: large;
-            }
-            .plain-text{
-                font-size: small;
-            }
-        }
-        
-    }
+  .skill-tile {
+    height: 128px;
+  }
+
+  .skill-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-front h4 {
+    font-size: 0.8rem;
+  }
+
+  .skill-back .score {
+    font-size: 1.05rem;
+  }
 }
