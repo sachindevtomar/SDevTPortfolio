@@ -19,7 +19,7 @@
         <p class="company-name">{{ exp.CompanyName }}</p>
         <p class="meta-line">
           <span>{{ formatTenure(exp.MoreInfos[0].StartDate, exp.MoreInfos[0].EndDate) }}</span>
-          <span class="dot" aria-hidden="true">·</span>
+          <span class="dot" aria-hidden="true"> · </span>
           <span>{{ getDateDifference(exp.MoreInfos[0].StartDate.toString(), exp.MoreInfos[0].EndDate.toString()) }}</span>
         </p>
         <p class="meta-line location">{{ exp.Location }}</p>
@@ -37,7 +37,7 @@
             exp.MoreInfos[exp.MoreInfos.length - 1].StartDate.toString(),
             exp.MoreInfos[0].EndDate.toString()
           ) }}
-          <span class="dot" aria-hidden="true">·</span>
+          <span class="dot" aria-hidden="true"> · </span>
           {{ exp.Location }}
         </p>
       </div>
@@ -48,7 +48,7 @@
           <h4 class="role-title">{{ info.Position }}</h4>
           <p class="meta-line">
             <span>{{ formatTenure(info.StartDate, info.EndDate) }}</span>
-            <span class="dot" aria-hidden="true">·</span>
+            <span class="dot" aria-hidden="true"> · </span>
             <span>{{ getDateDifference(info.StartDate.toString(), info.EndDate.toString()) }}</span>
           </p>
           <ul class="responsibility-list">

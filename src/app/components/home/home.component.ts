@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   totalSolved = 0;
   ranking = 0;
+  rankingLabel = '—';
   reputation = 0;
   contributionPoint = 0;
   acceptanceRate = 0;
@@ -111,6 +112,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private applyProfile(profile: AlfaLeetCodeProfile): void {
     this.totalSolved = profile.totalSolved ?? 0;
     this.ranking = profile.ranking ?? 0;
+    this.rankingLabel = this.ranking >= 5000000 ? 'Unranked' : this.ranking.toLocaleString('en-US');
     this.reputation = profile.reputation ?? 0;
     this.contributionPoint = profile.contributionPoint ?? 0;
 

@@ -1,51 +1,49 @@
-<div class="full-div">
-    <div class="content-div container">
-        <section id="aboutme">
-            <div class="">
-                <div class="row section-title">
-                    <p class="title-text">ABOUT ME</p>
-                </div>
-                <div class="row section-content">
-                    <div class="pic-content col-md-3 col-xs-12">
-                        <img [src]="data.SecondaryPicURL" class="col-md-12 pic-img">
-                    </div>
-                    <div class="intro-content col-md-9 col-xs-12">
-                        <h3 class="primary-name-text">Hello! I am {{data.FullName}}</h3>
-                        <em><p class="plain-text">{{data.Intro.Short}}</p></em>
-                        <div class="container grid-text">
-                            <div class="row grid-text-1">
-                                <div class="grid-text-11 col-md-6 grid-text-common">
-                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Birthday : </strong>{{data.Intro.DOB.toString() | date}}</p>
-                                </div>
-                                <div class="grid-text-12 col-md-6 grid-text-common">
-                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Degree : </strong>{{data.Intro.Graduation}}</p>
-                                </div>
-                            </div>
-                            <div class="row grid-text-2">
-                                <div class="grid-text-21 col-md-6 grid-text-common">
-                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Hometown : </strong>{{data.Intro.Hometown}}, {{data.Intro.State}}</p>
-                                </div>
-                                <div class="grid-text-22 col-md-6 grid-text-common">
-                                    <p class="plain-text"><span><i class="fas fa-chevron-circle-right primary-name-text grid-text-span-i"></i></span><strong>Email : </strong>{{data.Intro.EmailId}}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="plain-text">{{data.Intro.Long}}</p>
-                    </div>
+<div class="full-div about-page">
+  <div class="container content-div about-panel">
+    <section id="aboutme">
+      <div class="section-title">
+        <p class="title-text">About Me</p>
+      </div>
 
-                    <div class="row col-md-12 col-xs-12 tile-section-main-div">
-                        <div class="col-md-3 col-xs-12 tile-section-single-div" *ngFor="let numberTile of data.NumberTiles">
-                            <app-number-tile [numberTile]="numberTile"> </app-number-tile>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills">
+      <div class="about-grid">
+        <div class="pic-content">
+          <img [src]="data.SecondaryPicURL" class="pic-img" alt="Sachin Dev Tomar">
+        </div>
 
-        </section>
-        <section id="interests">
+        <div class="intro-content">
+          <h3 class="primary-name-text">Hello! I am {{ data.FullName }}</h3>
+          <p class="role-line">{{ data.CurrentRole }}</p>
+          <em><p class="plain-text short-intro">{{ data.Intro.Short }}</p></em>
 
-        </section>
-    </div>
+          <div class="info-grid">
+            <p class="plain-text">
+              <i class="fas fa-chevron-circle-right primary-name-text" aria-hidden="true"></i>
+              <strong>Birthday:</strong> {{ data.Intro.DOB.toString() | date }}
+            </p>
+            <p class="plain-text">
+              <i class="fas fa-chevron-circle-right primary-name-text" aria-hidden="true"></i>
+              <strong>Degree:</strong> {{ data.Intro.Graduation }}
+            </p>
+            <p class="plain-text">
+              <i class="fas fa-chevron-circle-right primary-name-text" aria-hidden="true"></i>
+              <strong>Hometown:</strong> {{ data.Intro.Hometown }}, {{ data.Intro.State }}
+            </p>
+            <p class="plain-text">
+              <i class="fas fa-chevron-circle-right primary-name-text" aria-hidden="true"></i>
+              <strong>Email:</strong> {{ data.Intro.EmailId }}
+            </p>
+          </div>
+
+          <p class="plain-text long-intro">{{ data.Intro.Long }}</p>
+        </div>
+      </div>
+
+      <div class="tiles-grid">
+        <app-number-tile
+          *ngFor="let numberTile of data.NumberTiles"
+          [numberTile]="numberTile">
+        </app-number-tile>
+      </div>
+    </section>
+  </div>
 </div>

@@ -29,30 +29,16 @@ export class AppComponent implements OnInit, OnDestroy {
       if (this.timerId) {
         clearInterval(this.timerId);
       }
-      setTimeout(() => {
-        this.showLoading = false;
-        this.cdr.detectChanges();
-      }, 500);
-    }, 7000);
+      this.showLoading = false;
+      this.cdr.detectChanges();
+    }, 1800);
   }
 
   loadingTextAnimation(): void {
     let dotCount = 0;
     this.timerId = setInterval(() => {
-      dotCount++;
-      switch (dotCount) {
-        case 0: this.loadingText = 'Loading';
-                break;
-        case 1: this.loadingText = 'Loading.';
-                break;
-        case 2: this.loadingText = 'Loading..';
-                break;
-        case 3: this.loadingText = 'Loading...';
-                break;
-        case 4: this.loadingText = 'Loading....';
-                dotCount = 0;
-                break;
-      }
+      dotCount = (dotCount + 1) % 4;
+      this.loadingText = 'Loading' + '.'.repeat(dotCount);
       this.cdr.detectChanges();
     }, 300);
   }

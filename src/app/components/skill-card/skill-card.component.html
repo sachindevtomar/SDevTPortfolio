@@ -6,11 +6,11 @@
   (keydown.enter)="toggleFlip()"
   (keydown.space)="$event.preventDefault(); toggleFlip()">
   <div class="skill-tile-inner">
-    <div class="skill-face skill-front">
+    <div class="skill-face skill-front" [attr.aria-hidden]="flipped">
       <img [src]="skill.LogoURL" [alt]="skill.Name + ' logo'" class="skill-logo">
       <h4>{{ skill.Name }}</h4>
     </div>
-    <div class="skill-face skill-back">
+    <div class="skill-face skill-back" [attr.aria-hidden]="!flipped">
       <p class="label">Skill level</p>
       <p class="score">{{ skill.MyLevel }} / {{ skill.TotalLevel }}</p>
       <p class="level">{{ getSkillLevel(skill.MyLevel, skill.TotalLevel) }}</p>

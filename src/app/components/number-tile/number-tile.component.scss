@@ -1,48 +1,58 @@
-@import "../../../styles.scss";
+$primary-color: #00c4cc;
+$ink: rgba(248, 250, 252, 0.95);
+$line: rgba(255, 255, 255, 0.12);
 
-.number-tile-full{
-    padding: 20px 0px 20px 0px;
+.number-tile-full {
+  height: 100%;
 }
-.number-tile-inside{
-    background-color: rgba(255,255,255,0.2);
-    float: left;
-    border: 1px solid black;
-    min-height: 130px;
-    width: 100%;
-    text-align: center;
+
+.number-tile-inside {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid $line;
+  border-radius: 14px;
+  min-height: 140px;
+  width: 100%;
+  text-align: center;
+  padding: 1.1rem 0.75rem 0.9rem;
+  transition: border-color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    border-color: rgba(0, 196, 204, 0.4);
+    transform: translateY(-2px);
+  }
 }
-.number-tile-image{
-    border: black;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    padding-top: 10px;
+
+.number-tile-image {
+  margin: 0 auto 0.35rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 196, 204, 0.12);
 }
-.number-tile-image-icon{
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 30px;
+
+.number-tile-image-icon {
+  color: $primary-color;
+  font-size: 1.25rem;
 }
-.number-tile-count{
-    margin-top: -25px;
-    background: -webkit-linear-gradient($primary-color, white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+
+.number-tile-count {
+  margin: 0.2rem 0;
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
 }
-.number-tile-text{
-    margin-top: -10px;
-    color: white;
+
+.number-tile-text {
+  margin: 0;
+  color: $ink;
+  font-size: 0.92rem;
 }
 
 @media screen and (max-width: 480px) {
-    .number-tile-full{
-        margin-top: 20px;
-    }
+  .number-tile-full {
+    margin-top: 0.75rem;
+  }
 }

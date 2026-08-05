@@ -16,11 +16,21 @@ $line: rgba(255, 255, 255, 0.12);
         width: 100%;
         padding-top: 60px;
         text-align: center;
-        
+        color: #0f172a;
+
+        h3 {
+          color: #0f172a;
+        }
+
+        #home-into-text {
+          color: #1e293b;
+        }
+
         #home-custom-cursor{
             display: inline-block;
             position: relative;
             top: 4px;
+            color: $secondary-color;
             animation-name: blink;
             animation-duration: 800ms;
             animation-iteration-count: infinite;
