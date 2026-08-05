@@ -3,6 +3,7 @@ import fullData from '../../../assets/data/data.json';
 import {Data} from '../../model/ProfileDataInterfaces';
 
 @Component({
+  standalone: false,
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']

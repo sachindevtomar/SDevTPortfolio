@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
 import { EAndEComponent } from './components/e-and-e/e-and-e.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -16,7 +16,6 @@ import { OrderByPipe } from './pipes/order-by.pipe';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { CertificationCardComponent } from './components/certification-card/certification-card.component';
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
-import { HighchartsChartModule } from 'highcharts-angular';
 import { Donut3DChartComponent } from './components/high-charts/3D-donut-chart/3D-donut-chart.component';
 import { RecentSubmissionCardComponent } from './components/recent-submission-card/recent-submission-card.component';
 
@@ -30,9 +29,9 @@ import { RecentSubmissionCardComponent } from './components/recent-submission-ca
     SkillsComponent,
     AboutComponent,
     NumberTileComponent,
-    ExperienceComponent, 
-    OrderByPipe, 
-    SkillCardComponent, 
+    ExperienceComponent,
+    OrderByPipe,
+    SkillCardComponent,
     CertificationCardComponent,
     StatsCardComponent,
     RecentSubmissionCardComponent,
@@ -41,9 +40,8 @@ import { RecentSubmissionCardComponent } from './components/recent-submission-ca
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    HighchartsChartModule
+    NgbCollapseModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

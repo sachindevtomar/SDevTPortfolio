@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-10 col-9">
             <h4 class="themed-text">{{info.Position}}</h4>
-            <p class="plain-text fade-text">{{info.StartDate.toString() | date: 'MMM YYYY'}} - {{(info.EndDate.toString() !== "") ? (info.EndDate.toString() | date: 'MMM YYYY') : "Present"}} ({{getDateDifference(info.StartDate.toString(), info.EndDate.toString())}})</p>
+            <p class="plain-text fade-text">{{info.StartDate.toString() | date: 'MMM yyyy'}} - {{(info.EndDate.toString() !== "") ? (info.EndDate.toString() | date: 'MMM yyyy') : "Present"}} ({{getDateDifference(info.StartDate.toString(), info.EndDate.toString())}})</p>
             <p class="plain-text fade-text">{{exp.Location}}</p>
             <ng-container 
             [ngTemplateOutlet] = "keyResponsibilities"
@@ -30,7 +30,7 @@
 <ng-template #singlePositions let-experience='experience'> 
     <h4 class="themed-text">{{exp.MoreInfos[0].Position}}</h4>
     <p class="plain-text">{{exp.CompanyName}}</p>
-    <p class="plain-text fade-text">{{exp.MoreInfos[0].StartDate.toString() | date: 'MMM YYYY'}} - {{(exp.MoreInfos[0].EndDate.toString() !== "") ? (exp.MoreInfos[0].EndDate.toString() | date: 'MMM YYYY') : "Present"}} ({{getDateDifference(exp.MoreInfos[0].StartDate.toString(), exp.MoreInfos[0].EndDate.toString())}})</p>
+    <p class="plain-text fade-text">{{exp.MoreInfos[0].StartDate.toString() | date: 'MMM yyyy'}} - {{(exp.MoreInfos[0].EndDate.toString() !== "") ? (exp.MoreInfos[0].EndDate.toString() | date: 'MMM yyyy') : "Present"}} ({{getDateDifference(exp.MoreInfos[0].StartDate.toString(), exp.MoreInfos[0].EndDate.toString())}})</p>
     <p class="plain-text fade-text">{{exp.Location}}</p>
     <ng-container 
      [ngTemplateOutlet] = "keyResponsibilities"

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NumberTile } from 'src/app/model/ProfileDataInterfaces';
 
 @Component({
+  standalone: false,
   selector: 'app-number-tile',
   templateUrl: './number-tile.component.html',
   styleUrls: ['./number-tile.component.scss']

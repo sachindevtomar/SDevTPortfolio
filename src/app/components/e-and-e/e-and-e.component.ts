@@ -3,6 +3,7 @@ import fullData from '../../../assets/data/data.json';
 import {Data} from '../../model/ProfileDataInterfaces';
 
 @Component({
+  standalone: false,
   selector: 'app-e-and-e',
   templateUrl: './e-and-e.component.html',
   styleUrls: ['./e-and-e.component.scss']

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {Skill} from '../../model/ProfileDataInterfaces';
 
 @Component({
+  standalone: false,
   selector: 'app-skill-card',
   templateUrl: './skill-card.component.html',
   styleUrls: ['./skill-card.component.scss']

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { WorkExperience } from '../../model/ProfileDataInterfaces'
 
 @Component({
+  standalone: false,
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss']

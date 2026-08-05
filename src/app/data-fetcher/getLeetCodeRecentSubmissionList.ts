@@ -1,4 +1,4 @@
-import { request, gql } from "graphql-request";
+import { GraphQLClient, gql } from "graphql-request";
 
 import { IGetRecentSubmissionList } from "../model/LeetCodeTypes";
 
@@ -14,12 +14,17 @@ query getRecentSubmissionList($username: String!, $limit: Int) {
     }
 }`;
 
-const requestHeaders = {
-    'Access-Control-Allow-Origin': 'http://localhost:4200',
-    'Access-Control-Allow-Credentials': 'true'
-  };
+const client = new GraphQLClient(
+  "https://obscure-escarpment-76911.herokuapp.com/https://leetcode.com/graphql",
+  {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:4200',
+      'Access-Control-Allow-Credentials': 'true'
+    }
+  }
+);
 
 export const getLeetCodeRecentSubmissionList = async (
-  username: any
+  username: string
 ): Promise<IGetRecentSubmissionList> =>
-  await request("https://obscure-escarpment-76911.herokuapp.com/https://leetcode.com/graphql", query, { username }, requestHeaders);
+  await client.request<IGetRecentSubmissionList>(query, { username });

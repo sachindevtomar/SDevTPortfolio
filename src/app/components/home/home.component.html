@@ -21,7 +21,8 @@
         <div class="row section-title">
             <p class="title-text">LeetCode</p>
         </div>
-        <div class="spinner-border text-primary" *ngIf="seriesData.length == 0"></div>
+        <div class="spinner-border text-primary" *ngIf="leetCodeLoading"></div>
+        <p class="title-text" *ngIf="!leetCodeLoading && seriesData.length === 0">LeetCode stats are temporarily unavailable.</p>
         <div class="row dashboard">
             <div class="pie-chart" *ngIf="seriesData.length > 0">
                 <app-3D-donut-chart [seriesData]="seriesData" seriesName="Solved" [selectedDifficulty]="selectedDifficulty"></app-3D-donut-chart>
@@ -30,10 +31,10 @@
                 <app-stats-card *ngFor="let statsFigure of statsFigures; trackBy:trackByStatsFigure" [statsFigure]="statsFigure" (click)="highlightChart(statsFigure.difficulty)"></app-stats-card>   
             </div>
         </div>
-        <div class="recent-submission row" *ngIf="userRecentSubmissions.recentSubmissionList.length > 0">
-            <p class="title-text col-lg-12 col-md-12">Recent {{userRecentSubmissions.recentSubmissionList.length}} submissions</p>
+        <div class="recent-submission row" *ngIf="uniqueRecentSubmissions.length > 0">
+            <p class="title-text col-lg-12 col-md-12">Recent {{uniqueRecentSubmissions.length}} submissions</p>
             
-            <app-recent-submission-card *ngFor="let recentSubmission of userRecentSubmissions.recentSubmissionList; trackBy:trackByRecentSubmission" [recentSubmission]="recentSubmission" class="col-lg-6 col-md-12"></app-recent-submission-card> 
+            <app-recent-submission-card *ngFor="let recentSubmission of uniqueRecentSubmissions; trackBy:trackByRecentSubmission" [recentSubmission]="recentSubmission" class="col-lg-6 col-md-12"></app-recent-submission-card> 
         </div>
     </div>
 </section>
